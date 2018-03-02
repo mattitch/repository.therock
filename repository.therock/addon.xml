@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.mattbox" name="Mattbox" version="0.0.1" provider-name="Mattitch">
-	<extension point="xbmc.addon.repository" name="Mattbox">
+<addon id="repository.therock" name="The Rock" version="0.0.1" provider-name="Mattitch">
+	<extension point="xbmc.addon.repository" name="The Rock">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/</datadir>
 		</dir>
-		<info compressed="false">https://raw.githubusercontent.com/mattitch/repository.mattbox/master/zips/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/mattitch/repository.mattbox/master/zips/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/mattitch/repository.mattbox/master/zips/</datadir>
+		<info compressed="false">https://raw.githubusercontent.com/mattitch/repository.therock/master/zips/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/mattitch/repository.therock/master/zips/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/mattitch/repository.therock/master/zips/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">My Repo</summary>
-		<description lang="en">Mattbox Repo</description>
-		<genre>tvshows,uk</genre>
+		<summary lang="en">Repo for Rock Build and addons</summary>
+		<description lang="en">My First Repo</description>
+		<genre>uk</genre>
 	</extension>
 </addon>
