@@ -1,0 +1,81 @@
+
+<keymap>
+  <global>
+    <remote>
+      <forward>noop</forward>
+      <reverse>noop</reverse>
+      <skipplus>noop</skipplus>
+      <skipminus>noop</skipminus>
+    </remote>
+    <keyboard>
+      <f>noop</f>
+      <r>noop</r>
+      <left mod="ctrl">noop</left>
+      <right mod="ctrl">noop</right>
+      <period>noop</period>
+      <comma>noop</comma>
+      <next_track>noop</next_track>
+      <prev_track>noop</prev_track>
+      <fastforward>noop</fastforward>
+      <rewind>noop</rewind>
+      <f mod="ctrl,shift">noop</f>
+      <b mod="ctrl,shift">noop</b>
+      <f mod="ctrl">noop</f>
+      <b mod="ctrl">noop</b>
+    </keyboard>
+    <gamepad>
+      <rightthumbstickleft>noop</rightthumbstickleft>
+      <rightthumbstickright>noop</rightthumbstickright>
+    </gamepad>
+  </global>
+  <FullscreenVideo>
+    <remote>
+      <left>noop</left>
+      <right>noop</right>
+      <up>noop</up>
+      <down>noop</down>
+      <pageplus>noop</pageplus>
+      <pageminus>noop</pageminus>
+    </remote>
+    <keyboard>
+      <f>noop</f>
+      <r>noop</r>
+      <period>noop</period>
+      <comma>noop</comma>
+      <quote>noop</quote>
+      <opensquarebracket>noop</opensquarebracket>
+      <closesquarebracket>noop</closesquarebracket>
+      <left>noop</left>
+      <right>noop</right>
+      <up>noop</up>
+      <down>noop</down>
+      <pageup>noop</pageup>
+      <pagedown>noop</pagedown>
+    </keyboard>
+    <gamepad>
+      <back>noop</back>
+      <leftanalogtrigger>noop</leftanalogtrigger>
+      <rightanalogtrigger>noop</rightanalogtrigger>
+      <dpadleft>noop</dpadleft>
+      <dpadright>noop</dpadright>
+      <dpadup>noop</dpadup>
+      <dpaddown>noop</dpaddown>
+    </gamepad>
+  </FullscreenVideo>
+  <VideoMenu>
+    <remote>
+      <pageplus>noop</pageplus>
+      <pageminus>noop</pageminus>
+    </remote>
+    <keyboard>
+      <opensquarebracket>noop</opensquarebracket>
+      <closesquarebracket>noop</closesquarebracket>
+      <pageup>noop</pageup>
+      <pagedown>noop</pagedown>
+    </keyboard>
+    <gamepad>
+      <leftanalogtrigger>noop</leftanalogtrigger>
+      <rightanalogtrigger>noop</rightanalogtrigger>
+    </gamepad>
+  </VideoMenu>
+</keymap>
