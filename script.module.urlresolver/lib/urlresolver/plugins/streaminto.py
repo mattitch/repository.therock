@@ -15,59 +15,54 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
-
-import re
-import xbmc
-from t0mm0.common.net import Net
-from urlresolver.plugnplay.interfaces import UrlResolver
-from urlresolver.plugnplay.interfaces import PluginSettings
-from urlresolver.plugnplay import Plugin
+import json
+from lib import helpers
 from urlresolver import common
+from urlresolver.common import i18n
+from urlresolver.resolver import UrlResolver, ResolverError
 
-class StreamintoResolver(Plugin, UrlResolver, PluginSettings):
-    implements = [UrlResolver, PluginSettings]
+class StreamintoResolver(UrlResolver):
     name = "streaminto"
     domains = ["streamin.to"]
-
+    pattern = '(?://|\.)(streamin\.to)/(?:embed-|)?([0-9A-Za-z]+)'
+    
     def __init__(self):
-        p = self.get_setting('priority') or 100
-        self.priority = int(p)
-        self.net = Net()
-        #e.g. http://streamin.to/20xk6r5vpkch
-        self.pattern = 'http://((?:www.)?streamin.to)/(.*)'
+        self.net = common.Net()
+        self.headers = {'User-Agent': common.SMU_USER_AGENT}
 
     def get_media_url(self, host, media_id):
         web_url = self.get_url(host, media_id)
-        resp = self.net.http_GET(web_url)
-        html = resp.content
-        post_url = web_url
-
-        # get post vars
-        form_values = {}
-        for i in re.finditer('<input.*?name="(.*?)".*?value="(.*?)">', html):
-            form_values[i.group(1)] = i.group(2)
-        xbmc.sleep(5000)
-        html = self.net.http_POST(post_url, form_data=form_values).content
-
-        # get stream url
-        pattern = 'streamer:\s*"([^"]+)",'  # streamer: "
-        file = 'file:\s*"([^"]+)",'  # streamer: "
-        r = re.search(pattern, html)
-        rr = re.search(file, html)
-        if r:
-            return r.group(1).replace(':1935', '') + ' swfUrl=http://streamin.to/player/player.swf live=false swfVfy=1 playpath=' + rr.group(1).replace('.flv', '')
-        raise UrlResolver.ResolverError('File Not Found or removed')
-
-    def get_url(self, host, media_id):
-            return 'http://streamin.to/%s' % (media_id)
-
-    def get_host_and_id(self, url):
-        r = re.search(self.pattern, url)
-        if r:
-            return r.groups()
+        headers = {'Referer': web_url}
+        headers.update(self.headers)
+        html = self.net.http_GET(web_url, headers=headers).content
+        sources = helpers.scrape_sources(html, patterns=["""file:\s*["'](?P<url>[^"']+)"""])
+        if sources:
+            auth = self.__check_auth(media_id)
+            if not auth:
+                auth = self.__auth_ip(media_id)
+                
+            if auth:
+                return helpers.pick_source(sources) + helpers.append_headers(headers)
+            else:
+                raise ResolverError(i18n('no_ip_authorization'))
         else:
-            return False
+            raise ResolverError('Unable to locate links')
 
-    def valid_url(self, url, host):
-        if self.get_setting('enabled') == 'false': return False
-        return re.match(self.pattern, url) or self.name in host
+    def __auth_ip(self, media_id):
+        header = i18n('stream_auth_header')
+        line1 = i18n('auth_required')
+        line2 = i18n('visit_link')
+        line3 = i18n('click_pair') % ('http://api.streamin.to/pair')
+        with common.kodi.CountdownDialog(header, line1, line2, line3) as cd:
+            return cd.start(self.__check_auth, [media_id])
+        
+    def __check_auth(self, media_id):
+        common.logger.log('Checking Auth: %s' % (media_id))
+        url = 'http://api.streamin.to/pair/check.php'
+        try: js_result = json.loads(self.net.http_GET(url, headers=self.headers).content)
+        except ValueError: raise ResolverError('Unusable Authorization Response')
+        common.logger.log('Auth Result: %s' % (js_result))
+        return js_result.get('status') == 200
+        
+    def get_url(self, host, media_id):
+        return self._default_get_url(host, media_id)

@@ -15,47 +15,39 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
-import re
-from t0mm0.common.net import Net
-from urlresolver import common
-from urlresolver.plugnplay.interfaces import UrlResolver
-from urlresolver.plugnplay.interfaces import PluginSettings
-from urlresolver.plugnplay import Plugin
 
-class VideowoodResolver(Plugin, UrlResolver, PluginSettings):
-    implements = [UrlResolver, PluginSettings]
+import re
+from lib import aa_decoder
+from urlresolver import common
+from lib import helpers
+from urlresolver.resolver import UrlResolver, ResolverError
+
+class VideowoodResolver(UrlResolver):
     name = "videowood"
     domains = ['videowood.tv']
-    pattern = '//((?:www.)?videowood.tv)/(?:embed/|video/)([0-9a-z]+)'
+    pattern = '(?://|\.)(videowood\.tv)/(?:embed/|video/)([0-9a-z]+)'
 
     def __init__(self):
-        p = self.get_setting('priority') or 100
-        self.priority = int(p)
-        self.net = Net()
+        self.net = common.Net()
 
     def get_media_url(self, host, media_id):
         web_url = self.get_url(host, media_id)
-        html = self.net.http_GET(web_url).content
+        headers = {'Referer': web_url, 'User-Agent': common.FF_USER_AGENT}
+        html = self.net.http_GET(web_url, headers=headers).content
+        try: html = html.encode('utf-8')
+        except: pass
         if "This video doesn't exist." in html:
-            raise UrlResolver.ResolverError('The requested video was not found.')
-
-        pattern = "file\s*:\s*'([^']+/video/[^']+)"
-        match = re.search(pattern, html)
+            raise ResolverError('The requested video was not found.')
+        
+        match = re.search("split\('\|'\)\)\)\s*(.*?)</script>", html)
         if match:
-            return match.group(1)
-    
-        raise UrlResolver.ResolverError('No video link found.')
+            aa_text = aa_decoder.AADecoder(match.group(1)).decode()
+            match = re.search("'([^']+)", aa_text)
+            if match:
+                stream_url = match.group(1)
+                return stream_url + helpers.append_headers({'User-Agent': common.FF_USER_AGENT})
+        
+        raise ResolverError('Video Link Not Found')
 
     def get_url(self, host, media_id):
-        return 'http://%s/embed/%s' % (host, media_id)
-
-    def get_host_and_id(self, url):
-        r = re.search(self.pattern, url)
-        if r:
-            return r.groups()
-        else:
-            return False
-
-    def valid_url(self, url, host):
-        if self.get_setting('enabled') == 'false': return False
-        return re.search(self.pattern, url) or 'filehoot' in host
+        return 'http://videowood.tv/embed/%s' % media_id

@@ -15,52 +15,40 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
+from urlresolver.resolver import UrlResolver, ResolverError
+from urlresolver.lib import kodi
+from lib import helpers
 
-import re
-from t0mm0.common.net import Net
-from urlresolver import common
-from urlresolver.plugnplay.interfaces import UrlResolver
-from urlresolver.plugnplay.interfaces import PluginSettings
-from urlresolver.plugnplay import Plugin
+try:
+    import youtube_resolver
+except ImportError:
+    youtube_resolver = None
 
-class YoutubeResolver(Plugin, UrlResolver, PluginSettings):
-    implements = [UrlResolver, PluginSettings]
+
+class YoutubeResolver(UrlResolver):
     name = "youtube"
-    domains = [ 'youtube.com', 'youtu.be' ]
-
-    def __init__(self):
-        p = self.get_setting('priority') or 100
-        self.priority = int(p)
+    domains = ['youtube.com', 'youtu.be', 'youtube-nocookie.com']
+    pattern = '''https?://(?:[0-9A-Z-]+\.)?(?:(youtu\.be|youtube(?:-nocookie)?\.com)/?\S*?[^\w\s-])([\w-]{11})(?=[^\w-]|$)(?![?=&+%\w.-]*(?:['"][^<>]*>|</a>))[?=&+%\w.-]*'''
 
     def get_media_url(self, host, media_id):
-        #just call youtube addon
-        plugin = 'plugin://plugin.video.youtube/?action=play_video&videoid=' + media_id
-        return plugin
+        if youtube_resolver is None:
+            return 'plugin://plugin.video.youtube/play/?video_id=' + media_id
+        else:
+            streams = youtube_resolver.resolve(media_id)
+            streams_no_dash = [item for item in streams if item['container'] != 'mpd']
+            stream_tuples = [(item['title'], item['url']) for item in streams_no_dash]
+            return helpers.pick_source(stream_tuples)
 
     def get_url(self, host, media_id):
         return 'http://youtube.com/watch?v=%s' % media_id
 
-    def get_host_and_id(self, url):
-        if url.find('?') > -1:
-            queries = common.addon.parse_query(url.split('?')[1])
-            video_id = queries.get('v', None)
-        else:
-            r = re.findall('/([0-9A-Za-z_\-]+)', url)
-            if r:
-                video_id = r[-1]
-        if video_id:
-            return ('youtube.com', video_id)
-        else:
-            return False
+    @classmethod
+    def _is_enabled(cls):
+        return cls.get_setting('enabled') == 'true' and kodi.has_addon('plugin.video.youtube')
 
-    def valid_url(self, url, host):
-        if self.get_setting('enabled') == 'false': return False
-        return re.match('http[s]*://(((www.|m.)?youtube.+?(v|embed)(=|/))|' +
-                        'youtu.be/)[0-9A-Za-z_\-]+', 
-                        url) or 'youtube' in host or 'youtu.be' in host
-
-    def get_settings_xml(self):
-        xml = PluginSettings.get_settings_xml(self)
-        xml += '<setting label="This plugin calls the youtube addon - '
-        xml += 'change settings there." type="lsep" />\n'
+    @classmethod
+    def get_settings_xml(cls):
+        xml = super(cls, cls).get_settings_xml()
+        if youtube_resolver is None:
+            xml.append('<setting label="This plugin calls the youtube addon -change settings there." type="lsep" />')
         return xml

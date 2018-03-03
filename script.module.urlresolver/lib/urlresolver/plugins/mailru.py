@@ -21,61 +21,49 @@
 
 import re
 import json
-from t0mm0.common.net import Net
+from lib import helpers
 from urlresolver import common
-from urlresolver.plugnplay.interfaces import UrlResolver
-from urlresolver.plugnplay.interfaces import PluginSettings
-from urlresolver.plugnplay import Plugin
+from urlresolver.resolver import UrlResolver, ResolverError
 
-class MailRuResolver(Plugin, UrlResolver, PluginSettings):
-    implements = [UrlResolver, PluginSettings]
+class MailRuResolver(UrlResolver):
     name = "mail.ru"
-    domains = ["mail.ru"]
-    pattern = '//((?:videoapi.)?my\.mail\.ru)/(?:videos/embed/)?mail/([^/]+)/(?:video/)?(?:st|tv|archi)/([a-zA-Z0-9]+)'
+    domains = ['mail.ru', 'my.mail.ru', 'm.my.mail.ru', 'videoapi.my.mail.ru', 'api.video.mail.ru']
+    # This pattern is starting to becoming unreliable and we may have to rethink it to support all the current urls 
+    pattern = '(?://|\.)(mail\.ru)/(?:\w+/)?(?:videos/embed/)?(inbox|mail|embed|mailua|list|bk|v)/(?:([^/]+)/[^.]+/)?(\d+)'
 
     def __init__(self):
-        p = self.get_setting('priority') or 100
-        self.priority = int(p)
-        self.net = Net()
+        self.net = common.Net()
 
     def get_media_url(self, host, media_id):
         web_url = self.get_url(host, media_id)
-        html = self.net.http_GET(web_url).content
-        match = re.search('"metadataUrl"\s*:\s*"([^"]+)', html)
-        if match:
-            json_url = match.group(1)
-            response = self.net.http_GET(json_url)
-            html = response.content
-            if html:
-                js_data = json.loads(html)
-                headers = dict(response._response.info().items())
-                stream_url = ''
-                best_quality = 0
-                for video in js_data['videos']:
-                    if int(video['key'][:-1]) > best_quality:
-                        stream_url = video['url']
-                        best_quality = int(video['key'][:-1])
-                    
-                    if 'set-cookie' in headers:
-                        stream_url += '|Cookie=%s' % (headers['set-cookie'])
-                    
-                if stream_url:
-                    return stream_url
 
-        raise UrlResolver.ResolverError('No playable video found.')
+        response = self.net.http_GET(web_url)
+        html = response.content
+
+        if html:
+            try:
+                js_data = json.loads(html)
+                sources = [(video['key'], video['url']) for video in js_data['videos']]
+                #sources = sources[::-1]
+                sorted(sources)
+                source = helpers.pick_source(sources)
+                source = source.encode('utf-8')
+                if source.startswith("//"): source = 'http:%s' % source
+                return source + helpers.append_headers({'Cookie': response.get_headers(as_dict=True).get('Set-Cookie', '')})
+            except:
+                raise ResolverError('No playable video found.')
+
+        else:
+            raise ResolverError('No playable video found.')
 
     def get_url(self, host, media_id):
-        user, media_id = media_id.split('|')
-        return 'http://videoapi.my.mail.ru/videos/embed/mail/%s/st/%s.html' % (user, media_id)
+        location, user, media_id = media_id.split('|')
+        if user == 'None': return 'http://my.mail.ru/+/video/meta/%s' % (media_id)
+        else: return 'http://my.mail.ru/+/video/meta/%s/%s/%s?ver=0.2.60' % (location, user, media_id)
 
     def get_host_and_id(self, url):
         r = re.search(self.pattern, url)
         if r:
-            host, user, media_id = r.groups()
-            return host, '%s|%s' % (user, media_id)
+            return (r.groups()[0], '%s|%s|%s' % (r.groups()[1], r.groups()[2], r.groups()[3]))
         else:
             return False
-
-    def valid_url(self, url, host):
-        if self.get_setting('enabled') == 'false': return False
-        return re.search(self.pattern, url) or 'mail.ru' in host

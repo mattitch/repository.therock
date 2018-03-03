@@ -15,53 +15,57 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.
 '''
-
-from t0mm0.common.net import Net
-from urlresolver.plugnplay.interfaces import UrlResolver
-from urlresolver.plugnplay.interfaces import PluginSettings
-from urlresolver.plugnplay import Plugin
-import re, urllib
+import urllib
+import urllib2
+import json
+from lib import helpers
 from urlresolver import common
-from lib import jsunpack
+from urlresolver.common import i18n
+from urlresolver.resolver import UrlResolver, ResolverError
 
-MAX_TRIES=3
-
-class TheVideoResolver(Plugin, UrlResolver, PluginSettings):
-    implements = [UrlResolver, PluginSettings]
+class TheVideoResolver(UrlResolver):
     name = "thevideo"
-    domains = ["thevideo.me"]
+    domains = ["thevideo.me", "tvad.me"]
+    pattern = '(?://|\.)((?:thevideo|tvad)\.me)/(?:embed-|download/)?([0-9a-zA-Z]+)'
 
     def __init__(self):
-        p = self.get_setting('priority') or 100
-        self.priority = int(p)
-        self.net = Net()
+        self.net = common.Net()
+        self.headers = {'User-Agent': common.SMU_USER_AGENT}
 
     def get_media_url(self, host, media_id):
-        web_url = self.get_url(host, media_id)
-        html = self.net.http_GET(web_url).content
-        r = re.findall(r"'label'\s*:\s*'([^']+)p'\s*,\s*'file'\s*:\s*'([^']+)", html)
-        if not r:
-            raise UrlResolver.ResolverError('Unable to locate link')
+        result = self.__auth_ip(media_id)
+        if 'vt' in result:
+            vt = result['vt']
+            del result['vt']
+            return helpers.pick_source(result.items()) + '?' + urllib.urlencode({'vt': vt}) + helpers.append_headers(self.headers)
         else:
-            max_quality = 0
-            for quality, stream_url in r:
-                if int(quality) >= max_quality:
-                    best_stream_url = stream_url
-                    max_quality = int(quality)
-            return best_stream_url
+            raise ResolverError('Video Token Missing')
 
+    def __auth_ip(self, media_id):
+        header = i18n('thevideo_auth_header')
+        line1 = i18n('auth_required')
+        line2 = i18n('visit_link')
+        line3 = i18n('click_pair') % ('https://tvad.me/pair')
+        with common.kodi.CountdownDialog(header, line1, line2, line3) as cd:
+            return cd.start(self.__check_auth, [media_id])
+        
+    def __check_auth(self, media_id):
+        common.logger.log('Checking Auth: %s' % (media_id))
+        url = 'https://thevideo.me/pair?file_code=%s&check' % (media_id)
+        try: js_result = json.loads(self.net.http_GET(url, headers=self.headers).content)
+        except ValueError:
+            raise ResolverError('Unusable Authorization Response')
+        except urllib2.HTTPError as e:
+            if e.code == 401:
+                js_result = json.loads(str(e.read()))
+            else:
+                raise
+            
+        common.logger.log('Auth Result: %s' % (js_result))
+        if js_result.get('status'):
+            return js_result.get('response', {})
+        else:
+            return {}
+        
     def get_url(self, host, media_id):
-        return 'http://%s/embed-%s.html' % (host, media_id)
-
-    def get_host_and_id(self, url):
-        r = re.search('//(.+?)/(?:embed-)?([0-9a-zA-Z/]+)', url)
-        if r:
-            return r.groups()
-        else:
-            return False
-
-    def valid_url(self, url, host):
-        if self.get_setting('enabled') == 'false': return False
-        return (re.match('http://(www\.|embed-)?thevideo.me/' +
-                         '[0-9A-Za-z]+', url) or
-                         'thevideo' in host)
+        return self._default_get_url(host, media_id, template='https://tvad.me/embed-{media_id}.html')

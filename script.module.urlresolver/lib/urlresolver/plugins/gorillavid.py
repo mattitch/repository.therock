@@ -16,54 +16,31 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 
-from t0mm0.common.net import Net
-from urlresolver.plugnplay.interfaces import UrlResolver
-from urlresolver.plugnplay.interfaces import PluginSettings
-from urlresolver.plugnplay import Plugin
-import urllib2, re, os
+from lib import helpers
 from urlresolver import common
+from urlresolver.resolver import UrlResolver, ResolverError
 
-class GorillavidResolver(Plugin, UrlResolver, PluginSettings):
-    implements = [UrlResolver, PluginSettings]
+
+class GorillavidResolver(UrlResolver):
     name = "gorillavid"
     domains = ["gorillavid.in", "gorillavid.com"]
+    pattern = '(?://|\.)(gorillavid\.(?:in|com))/(?:embed-)?([0-9a-zA-Z]+)'
 
     def __init__(self):
-        p = self.get_setting('priority') or 100
-        self.priority = int(p)
-        self.net = Net()
-        #e.g. http://gorillavid.com/vb80o1esx2eb
-        self.pattern = 'http://((?:www.)?gorillavid.(?:in|com))/(?:embed-)?([0-9a-zA-Z]+)'
+        self.net = common.Net()
 
     def get_media_url(self, host, media_id):
         web_url = self.get_url(host, media_id)
-        resp = self.net.http_GET(web_url)
-        html = resp.content
-        r = re.findall(r"<title>404 - Not Found</title>", html)
-        if r:
-            raise UrlResolver.ResolverError('File Not Found or removed')
-        post_url = resp.get_url()
-        form_values = {}
-        for i in re.finditer('<input type="hidden" name="(.+?)" value="(.+?)">', html):
-            form_values[i.group(1)] = i.group(2)
-            
-        html = self.net.http_POST(post_url, form_data=form_values).content
-        r = re.search('file: "(.+?)"', html)
-        if r:
-            return r.group(1)
-        else:
-            raise UrlResolver.ResolverError('Unable to resolve Gorillavid link')
+        headers = {'User-Agent': common.FF_USER_AGENT}
+        response = self.net.http_GET(web_url, headers=headers)
+        html = response.content
+        sources = helpers.scrape_sources(html, patterns=['''["']?(?:file|url)["']?\s*[:=]\s*["'](?P<url>[^"']+)'''])
+        if not sources:
+            data = helpers.get_hidden(html)
+            headers['Cookie'] = response.get_headers(as_dict=True).get('Set-Cookie', '')
+            html = self.net.http_POST(response.get_url(), headers=headers, form_data=data).content
+            sources = helpers.scrape_sources(html, patterns=['''["']?(?:file|url)["']?\s*[:=]\s*["'](?P<url>[^"']+)'''])
+        return helpers.pick_source(sources) + helpers.append_headers(headers)
 
     def get_url(self, host, media_id):
         return 'http://gorillavid.in/%s' % (media_id)
-
-    def get_host_and_id(self, url):
-        r = re.search(self.pattern, url)
-        if r:
-            return r.groups()
-        else:
-            return False
-
-    def valid_url(self, url, host):
-        if self.get_setting('enabled') == 'false': return False
-        return re.match(self.pattern, url) or self.name in host

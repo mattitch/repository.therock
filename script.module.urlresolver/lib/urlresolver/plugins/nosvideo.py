@@ -15,92 +15,38 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.
 '''
-
-from t0mm0.common.net import Net
-from urlresolver.plugnplay.interfaces import UrlResolver
-from urlresolver.plugnplay.interfaces import PluginSettings
-from urlresolver.plugnplay import Plugin
 import re
+from lib import helpers
 from urlresolver import common
-from lib import jsunpack
+from urlresolver.resolver import UrlResolver, ResolverError
 
-class NosvideoResolver(Plugin, UrlResolver, PluginSettings):
-    implements = [UrlResolver, PluginSettings]
+class NosvideoResolver(UrlResolver):
     name = "nosvideo"
     domains = ["nosvideo.com", "noslocker.com"]
+    pattern = '(?://|\.)(nosvideo.com|noslocker.com)/(?:\?v\=|embed/|.+?\u=)?([0-9a-zA-Z]+)'
 
     def __init__(self):
-        p = self.get_setting('priority') or 100
-        self.priority = int(p)
-        self.net = Net()
+        self.net = common.Net()
 
     def get_media_url(self, host, media_id):
-        url = self.get_url(host, media_id)
-        html = self.net.http_GET(url).content
-        if 'File Not Found' in html:
-            raise UrlResolver.ResolverError('File Not Found')
+        web_url = self.get_url(host, media_id)
+        headers = {'User-Agent': common.FF_USER_AGENT, 'Referer': web_url}
+        html = self.net.http_GET(web_url, headers=headers).content
+        html += helpers.get_packed_data(html)
+        match = re.search('playlist\s*:\s*"([^"]+)', html)
+        if match:
+            xml = self.net.http_GET(match.group(1), headers=headers).content
+            count = 1
+            sources = []
+            streams = set()
+            for match in re.finditer('''file="([^'"]*mp4)''', xml):
+                stream_url = match.group(1)
+                if stream_url not in streams:
+                    sources.append(('Source %s' % (count), stream_url))
+                    streams.add(stream_url)
+                    count += 1
+            
+        return helpers.pick_source(sources) + helpers.append_headers(headers)
 
-        headers = {
-            'Referer': url
-        }
-
-        data = {}
-        r = re.findall(r'type="hidden" name="(.+?)"\s* value="(.+?)"', html)
-        for name, value in r:
-            data[name] = value
-        data.update({'method_free': 'Continue to Video'})
-
-        html = self.net.http_POST(url, data, headers=headers).content
-
-        r = re.search('(eval\(function\(p,a,c,k,e,[dr].*)', html)
-        if r:
-            js = jsunpack.unpack(r.group(1))
-            js = js.replace('\\', '')
-            html = js
-        else:
-            r = re.search("src='([^']+/videojs/[^']+)", html)
-            if r:
-                html = self.net.http_GET(r.group(1)).content
-            else:
-                r = re.search('<iframe\s+src="([^"]+)', html)
-                if r:
-                    html = self.net.http_GET(r.group(1)).content
-        
-        return self.__find_links(html)
-
-    def __find_links(self, html):
-        r = re.search('playlist=([^&]+)', html)
-        if r:
-            html = self.net.http_GET(r.group(1)).content
-            r = re.search('<file>\s*(.*)\s*</file>', html)
-            if r:
-                return r.group(1) + '|User-Agent=%s' % (common.IE_USER_AGENT)
-            else:
-                raise UrlResolver.ResolverError('Unable to locate video file')
-        else:
-            r = re.search("file\s*:\s*'([^']+)", html)
-            if r:
-                return r.group(1) + '|User-Agent=%s' % (common.IE_USER_AGENT)
-            else:
-                r = re.search('<source\s+src="([^"]+)', html)
-                if r:
-                    return r.group(1) + '|User-Agent=%s' % (common.IE_USER_AGENT)
-                else:
-                    raise UrlResolver.ResolverError('Unable to locate playlist')
-        
     def get_url(self, host, media_id):
-        return 'http://nosvideo.com/?v=%s' % media_id
-
-    def get_host_and_id(self, url):
-        r = re.search('//(.+?)/(?:\?v\=|embed/)?([0-9a-zA-Z]+)', url)
-        if r:
-            return r.groups()
-        else:
-            return False
-        return('host', 'media_id')
-
-    def valid_url(self, url, host):
-        if self.get_setting('enabled') == 'false': return False
-        return (re.match('http://(www.)?(nosvideo|noslocker).com/' +
-                         '(?:\?v\=|embed/)?[0-9A-Za-z]+', url) or
-                         'nosvideo' in host)
+        return 'http://nosvideo.com/embed/%s' % media_id

@@ -15,48 +15,28 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
-
-import re
-from t0mm0.common.net import Net
+import json
+from lib import helpers
 from urlresolver import common
-from urlresolver.plugnplay.interfaces import UrlResolver
-from urlresolver.plugnplay.interfaces import PluginSettings
-from urlresolver.plugnplay import Plugin
+from urlresolver.resolver import UrlResolver, ResolverError
 
-class VimeoResolver(Plugin, UrlResolver, PluginSettings):
-    implements = [UrlResolver, PluginSettings]
+class VimeoResolver(UrlResolver):
     name = "vimeo"
     domains = ["vimeo.com"]
+    pattern = '(?://|\.)(vimeo\.com)/(?:video/)?([0-9a-zA-Z]+)'
 
     def __init__(self):
-        p = self.get_setting('priority') or 100
-        self.priority = int(p)
+        self.net = common.Net()
 
     def get_media_url(self, host, media_id):
-        #just call vimeo addon
-        plugin = 'plugin://plugin.video.vimeo/?action=play_video&videoid=' + media_id
-        return plugin
+        web_url = self.get_url(host, media_id)
+        headers = {'Referer': 'https://vimeo.com/', 'Origin': 'https://vimeo.com'}
+        data = self.net.http_GET(web_url, headers).content
+        data = json.loads(data)
+        sources = [(vid['height'], vid['url']) for vid in data.get('request', {}).get('files', {}).get('progressive', {})]
+        try: sources.sort(key=lambda x: x[0], reverse=True)
+        except: pass
+        return helpers.pick_source(sources)
 
     def get_url(self, host, media_id):
-        return 'http://vimeo.com/%s' % media_id
-
-    def get_host_and_id(self, url):
-        r = re.findall('/([0-9]+)', url)
-        if r:
-            video_id = r[-1]
-        if video_id:
-            return ('vimeo.com', video_id)
-        else:
-            common.addon.log_error('vimeo: video id not found')
-            return False
-
-    def valid_url(self, url, host):
-        if self.get_setting('enabled') == 'false': return False
-        return re.match('http://(.+)?vimeo.com/(video\/)?[0-9]+',
-                        url) or 'vimeo' in host
-
-    def get_settings_xml(self):
-        xml = PluginSettings.get_settings_xml(self)
-        xml += '<setting label="This plugin calls the vimeo addon - '
-        xml += 'change settings there." type="lsep" />\n'
-        return xml
+        return 'https://player.vimeo.com/video/%s/config' % media_id

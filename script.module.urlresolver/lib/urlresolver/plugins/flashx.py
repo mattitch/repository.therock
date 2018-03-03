@@ -1,74 +1,97 @@
 """
-    Kodi urlresolver plugin
-    Copyright (C) 2014  smokdpi
+flashx.tv urlresolver plugin
+Copyright (C) 2017 jsergio
 
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
 
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <http://www.gnu.org/licenses/>.
 """
 
-from t0mm0.common.net import Net
-from urlresolver import common
-from urlresolver.plugnplay import Plugin
-from urlresolver.plugnplay.interfaces import UrlResolver
-from urlresolver.plugnplay.interfaces import PluginSettings
 import re
-from lib import jsunpack
+import urllib2
+import json
+from lib import helpers
+from urlresolver import common
+from urlresolver.common import i18n
+from urlresolver.resolver import UrlResolver, ResolverError
 
-class FlashxResolver(Plugin, UrlResolver, PluginSettings):
-    implements = [UrlResolver, PluginSettings]
+
+class FlashxResolver(UrlResolver):
     name = "flashx"
-    domains = ["flashx.tv"]
+    domains = ["flashx.tv", "flashx.to"]
+    pattern = '(?://|\.)(flashx\.(?:tv|to))/(?:embed-|dl\?|embed.php\?c=)?([0-9a-zA-Z]+)'
 
     def __init__(self):
-        p = self.get_setting('priority') or 100
-        self.priority = int(p)
-        self.net = Net()
-        self.pattern = '//((?:www.|play.)?flashx.tv)/(?:embed-|dl\?)?([0-9a-zA-Z/-]+)'
+        self.net = common.Net()
+        self.headers = {'User-Agent': common.RAND_UA}
 
     def get_media_url(self, host, media_id):
-        web_url = self.get_url(host, media_id)
-        headers = {'Referer': web_url}
-        stream_url = self.__get_link(web_url, headers)
-        if stream_url is None:
-            headers['User-Agent'] = common.IOS_USER_AGENT
-            stream_url = self.__get_link(web_url, headers)
-        
-        if stream_url is not None:
-            return stream_url + '|User-Agent=%s' % (common.IE_USER_AGENT)
+        result = self.__check_auth(media_id)
+        if not result:
+            result = self.__auth_ip(media_id)
 
-        raise UrlResolver.ResolverError('File not found')
+        if result:
+            return helpers.get_media_url(result, patterns=['''src:\s*["'](?P<url>[^"']+).+?res:\s*(?P<label>\d+)'''], result_blacklist=["trailer"], generic_patterns=False).replace(' ', '%20')
 
-    def __get_link(self, web_url, headers):
-        html = self.net.http_GET(web_url, headers=headers).content
-        for match in re.finditer('(eval\(function\(p,a,c,k,e,d\).*?)</script>', html, re.DOTALL):
-            js = jsunpack.unpack(match.group(1))
-            match2 = re.search('file\s*:\s*"([^"]+(?:video|mobile)[^"]+)', js)
-            if match2:
-                return match2.group(1)
-        
+        raise ResolverError(i18n('no_ip_authorization'))
+
+    def __auth_ip(self, media_id):
+        header = i18n('flashx_auth_header')
+        line1 = i18n('auth_required')
+        line2 = i18n('visit_link')
+        line3 = i18n('click_pair') % ('http://flashx.tv/pair')
+        with common.kodi.CountdownDialog(header, line1, line2, line3, countdown=120) as cd:
+            return cd.start(self.__check_auth, [media_id])
+
+    def __check_auth(self, media_id):
+        common.logger.log('Checking Auth: %s' % (media_id))
+        url = 'https://www.flashx.tv/pairing.php?c=paircheckjson'
+        try:
+            js_result = json.loads(self.net.http_GET(url, headers=self.headers).content)
+        except ValueError:
+            raise ResolverError('Unusable Authorization Response')
+        except urllib2.HTTPError as e:
+            if e.code == 401:
+                js_result = json.loads(str(e.read()))
+            else:
+                raise
+
+        common.logger.log('Auth Result: %s' % (js_result))
+        if js_result.get('status') == 'true':
+            return self.resolve_url(media_id)
+        else:
+            return False
+
+    def resolve_url(self, media_id):
+        web_url = self.get_url('flashx.tv', media_id)
+        html = self.net.http_GET(web_url, headers=self.headers).content
+
+        if html:
+            try:
+                scripts = ['/code.js', '/counter.cgi']
+                self.headers.update({'Referer': web_url})
+                for match in re.finditer('''<script[^>]*src=["']([^'"]+)''', html):
+                    url = 'http:%s' % match.group(1) if match.group(1).startswith('//') else match.group(1)
+                    if any(i in url.lower() for i in scripts):
+                        self.net.http_GET(url, headers=self.headers)
+                self.net.http_GET('https://www.flashx.tv/flashx.php', headers=self.headers)
+                playvid_url = re.search('''href=['"]([^"']+/playvideo-[^"']+)''', html)
+                if playvid_url:
+                    return playvid_url.group(1)
+
+                raise ResolverError('Could not locate playvideo url')
+
+            except Exception as e:
+                raise ResolverError('Exception during flashx resolve parse: %s' % e)
+
     def get_url(self, host, media_id):
-        return 'http://flashx.tv/embed-%s.html' % media_id
-
-    def get_host_and_id(self, url):
-        r = re.search(self.pattern, url)
-        if r: return r.groups()
-        else: return False
-
-    def valid_url(self, url, host):
-        if self.get_setting('enabled') == 'false': return False
-        return re.search(self.pattern, url) or self.name in host
-
-    def get_settings_xml(self):
-        xml = PluginSettings.get_settings_xml(self)
-        xml += '<setting id="%s_auto_pick" type="bool" label="Automatically pick best quality" default="false" visible="true"/>' % (self.__class__.__name__)
-        return xml
+        return self._default_get_url(host, media_id, template='https://www.flashx.tv/embed.php?c={media_id}')
