@@ -23,7 +23,7 @@
 import re,urllib,urlparse
 
 import client
-from salts_lib import debrid
+from deaths_lib import debrid
 
 class source:
     def __init__(self):

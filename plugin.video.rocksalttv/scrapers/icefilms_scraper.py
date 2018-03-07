@@ -23,10 +23,10 @@ import urlparse
 import kodi
 import log_utils  # @UnusedImport
 import dom_parser2
-from salts_lib import scraper_utils
-from salts_lib.constants import FORCE_NO_MATCH
-from salts_lib.constants import QUALITIES
-from salts_lib.constants import VIDEO_TYPES
+from deaths_lib import scraper_utils
+from deaths_lib.constants import FORCE_NO_MATCH
+from deaths_lib.constants import QUALITIES
+from deaths_lib.constants import VIDEO_TYPES
 import scraper
 
 logger = log_utils.Logger.get_logger()
@@ -55,7 +55,7 @@ class Scraper(scraper.Scraper):
         parts = urlparse.urlparse(link)
         data = urlparse.parse_qs(parts.query, True)
         url = scraper_utils.urljoin(self.base_url, parts.path)
-        params = {'s': data['id'][0], 't': data['t'][0], 'app_id': 'SALTS'}
+        params = {'s': data['id'][0], 't': data['t'][0], 'app_id': 'Death Streams'}
         headers = {'Referer': LIST_URL.format(vid_id=data['t'][0])}
         html = self._http_get(url, params=params, data=data, headers=headers, cache_limit=0)
         match = re.search('url=(http.*)', html)

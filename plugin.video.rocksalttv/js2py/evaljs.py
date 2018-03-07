@@ -13,7 +13,7 @@ __all__  = ['EvalJs', 'translate_js', 'import_js', 'eval_js', 'translate_file', 
 DEBUG = False
 
 def disable_pyimport():
-    from salts_lib import pyjsparser
+    from deaths_lib import pyjsparser
     pyjsparser.parser.ENABLE_PYIMPORT = False
 
 def path_as_local(path):

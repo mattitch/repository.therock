@@ -19,9 +19,9 @@ import time
 
 import kodi
 import log_utils  # @UnusedImport
-from salts_lib import utils2
-from salts_lib.constants import FORCE_NO_MATCH
-from salts_lib.constants import VIDEO_TYPES
+from deaths_lib import utils2
+from deaths_lib.constants import FORCE_NO_MATCH
+from deaths_lib.constants import VIDEO_TYPES
 
 files = os.listdir(os.path.dirname(__file__))
 __all__ = [filename[:-3] for filename in files if not filename.startswith('__') and filename.endswith('.py')]

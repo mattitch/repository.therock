@@ -3,7 +3,7 @@
 # Addon Provider: Mattitch
 msgid ""
 msgstr ""
-"Project-Id-Version: Death Streams\n"
+"Project-Id-Version: Rock Salt TV\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Language-Team: English\n"
@@ -46,11 +46,11 @@ msgid "Add-on Settings"
 msgstr ""
 
 msgctxt "#30008"
-msgid "Auto-Configure Death Streams"
+msgid "Auto-Configure Rock Salt TV"
 msgstr ""
 
 msgctxt "#30009"
-msgid "Authorize Death Streams to access my trakt.tv account"
+msgid "Authorize Rock Salt TV to access my trakt.tv account"
 msgstr ""
 
 msgctxt "#30010"
@@ -515,11 +515,11 @@ msgid "Next Week"
 msgstr ""
 
 msgctxt "#30125"
-msgid "Mark as Unwatched (Death Streams)"
+msgid "Mark as Unwatched (Rock Salt TV)"
 msgstr ""
 
 msgctxt "#30126"
-msgid "Mark as Watched (Death Streams)"
+msgid "Mark as Watched (Rock Salt TV)"
 msgstr ""
 
 msgctxt "#30127"
@@ -959,11 +959,11 @@ msgid " Database Issue Recovery"
 msgstr ""
 
 msgctxt "#30247"
-msgid "The Death Streams DB has an issue that may be correctable by a forced DB migration."
+msgid "The Rock Salt TV DB has an issue that may be correctable by a forced DB migration."
 msgstr ""
 
 msgctxt "#30248"
-msgid "Should Death Streams attempt a DB migration?"
+msgid "Should Rock Salt TV attempt a DB migration?"
 msgstr ""
 
 msgctxt "#30249"
@@ -971,7 +971,7 @@ msgid "DB Migration Failed but a DB reset may succeed."
 msgstr ""
 
 msgctxt "#30250"
-msgid "Should Death Streams attempt a DB reset?"
+msgid "Should Rock Salt TV attempt a DB reset?"
 msgstr ""
 
 msgctxt "#30251"
@@ -1083,7 +1083,7 @@ msgid "Set as Watch It Again List"
 msgstr ""
 
 msgctxt "#30278"
-msgid "Playback only allowed from Library & Death Streams"
+msgid "Playback only allowed from Library & Rock Salt TV"
 msgstr ""
 
 msgctxt "#30279"
@@ -1147,7 +1147,7 @@ msgid "Torba Authorization Failed"
 msgstr ""
 
 msgctxt "#30294"
-msgid "Authorize Death Streams to access my torba account"
+msgid "Authorize Rock Salt TV to access my torba account"
 msgstr ""
 
 msgctxt "#30295"
@@ -1389,7 +1389,7 @@ msgid "User Interface"
 msgstr ""
 
 msgctxt "#30547"
-msgid "How do I authorize Death Streams to access my trakt.tv account?"
+msgid "How do I authorize Rock Salt TV to access my trakt.tv account?"
 msgstr ""
 
 msgctxt "#30548"
@@ -1733,15 +1733,15 @@ msgid "Flush webpage cache..."
 msgstr ""
 
 msgctxt "#30631"
-msgid "Reset Death Streams DB ([COLOR red]SQLITE Only[/COLOR])"
+msgid "Reset Rock Salt TV DB ([COLOR red]SQLITE Only[/COLOR])"
 msgstr ""
 
 msgctxt "#30632"
-msgid "Export data from Death Streams DB"
+msgid "Export data from Rock Salt TV DB"
 msgstr ""
 
 msgctxt "#30633"
-msgid "Import data into Death Streams DB"
+msgid "Import data into Rock Salt TV DB"
 msgstr ""
 
 msgctxt "#30634"
@@ -1874,7 +1874,7 @@ msgid "Automatically pick first matching subtitle"
 msgstr ""
 
 msgctxt "#30666"
-msgid "Death Streams Auto Configuration"
+msgid "Rock Salt TV Auto Configuration"
 msgstr ""
 
 msgctxt "#30667"
@@ -1886,7 +1886,7 @@ msgid "Cancel"
 msgstr ""
 
 msgctxt "#30669"
-msgid "Select this item to Install the Death Streams Themepak"
+msgid "Select this item to Install the Rock Salt TV Themepak"
 msgstr ""
 
 msgctxt "#30670"

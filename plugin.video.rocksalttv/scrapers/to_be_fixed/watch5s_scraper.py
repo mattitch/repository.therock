@@ -25,15 +25,15 @@ import cache
 import kodi
 import log_utils  # @UnusedImport
 import dom_parser2
-from salts_lib import scraper_utils
-from salts_lib import aa_decoder
-from salts_lib import client
-from salts_lib import directstream
-from salts_lib import source_utils
-from salts_lib import jsunpack
-from salts_lib.constants import FORCE_NO_MATCH
-from salts_lib.constants import QUALITIES
-from salts_lib.constants import VIDEO_TYPES
+from deaths_lib import scraper_utils
+from deaths_lib import aa_decoder
+from deaths_lib import client
+from deaths_lib import directstream
+from deaths_lib import source_utils
+from deaths_lib import jsunpack
+from deaths_lib.constants import FORCE_NO_MATCH
+from deaths_lib.constants import QUALITIES
+from deaths_lib.constants import VIDEO_TYPES
 import scraper
 
 logger = log_utils.Logger.get_logger()

@@ -1,4 +1,4 @@
-from salts_lib import pyjsparser
+from deaths_lib import pyjsparser
 from . import translating_nodes
 
 import hashlib

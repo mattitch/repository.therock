@@ -21,11 +21,11 @@ import re
 import kodi
 import log_utils  # @UnusedImport
 import dom_parser2
-from salts_lib import cfscrape
-from salts_lib import scraper_utils
-from salts_lib.constants import VIDEO_TYPES
-from salts_lib.constants import FORCE_NO_MATCH
-from salts_lib.constants import QUALITIES
+from deaths_lib import cfscrape
+from deaths_lib import scraper_utils
+from deaths_lib.constants import VIDEO_TYPES
+from deaths_lib.constants import FORCE_NO_MATCH
+from deaths_lib.constants import QUALITIES
 
 BASE_URL = 'http://hevcbluray.info'
 QUALITY_MAP = {'HD 720P': QUALITIES.HD720, 'HD 1080P': QUALITIES.HD1080, '1080P BLURAY': QUALITIES.HD1080}

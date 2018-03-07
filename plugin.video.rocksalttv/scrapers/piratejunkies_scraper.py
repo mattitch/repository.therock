@@ -18,10 +18,10 @@
 import re
 import kodi
 import log_utils  # @UnusedImport
-from salts_lib import scraper_utils
-from salts_lib.constants import FORCE_NO_MATCH
-from salts_lib.constants import VIDEO_TYPES
-from salts_lib.constants import QUALITIES
+from deaths_lib import scraper_utils
+from deaths_lib.constants import FORCE_NO_MATCH
+from deaths_lib.constants import VIDEO_TYPES
+from deaths_lib.constants import QUALITIES
 import scraper
 
 BASE_URL = 'http://www.iframetv.com'

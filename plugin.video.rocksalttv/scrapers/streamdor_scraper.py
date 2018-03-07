@@ -19,11 +19,11 @@ import urllib
 import scraper
 import kodi
 import log_utils  # @UnusedImport
-from salts_lib import scraper_utils
-from salts_lib.constants import VIDEO_TYPES
-from salts_lib.constants import FORCE_NO_MATCH
-from salts_lib.constants import QUALITIES
-from salts_lib.constants import XHR
+from deaths_lib import scraper_utils
+from deaths_lib.constants import VIDEO_TYPES
+from deaths_lib.constants import FORCE_NO_MATCH
+from deaths_lib.constants import QUALITIES
+from deaths_lib.constants import XHR
 
 BASE_URL = 'https://api.streamdor.com'
 Q_MAP = {'hd': QUALITIES.HD720, 'sd': QUALITIES.HIGH}

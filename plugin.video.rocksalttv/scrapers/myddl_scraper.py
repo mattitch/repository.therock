@@ -22,12 +22,12 @@ import urlparse
 import kodi
 import log_utils  # @UnusedImport
 import dom_parser2
-from salts_lib import debrid
-from salts_lib.utils2 import i18n
-from salts_lib import scraper_utils
-from salts_lib.constants import FORCE_NO_MATCH
-from salts_lib.constants import MONTHS
-from salts_lib.constants import VIDEO_TYPES
+from deaths_lib import debrid
+from deaths_lib.utils2 import i18n
+from deaths_lib import scraper_utils
+from deaths_lib.constants import FORCE_NO_MATCH
+from deaths_lib.constants import MONTHS
+from deaths_lib.constants import VIDEO_TYPES
 import scraper
 
 BASE_URL = 'http://xtremeli.me'

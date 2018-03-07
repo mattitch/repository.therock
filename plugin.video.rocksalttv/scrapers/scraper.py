@@ -25,18 +25,18 @@ import cloudflare
 import urllib
 import urllib2
 import urlparse
-from salts_lib import cloudflare
-from salts_lib import cf_captcha
+from deaths_lib import cloudflare
+from deaths_lib import cf_captcha
 import kodi
 import log_utils  # @UnusedImport
-from salts_lib import scraper_utils
-from salts_lib.constants import FORCE_NO_MATCH
-from salts_lib.constants import Q_ORDER
-from salts_lib.constants import SHORT_MONS
-from salts_lib.constants import VIDEO_TYPES
-from salts_lib.constants import DEFAULT_TIMEOUT
-from salts_lib.db_utils import DB_Connection
-from salts_lib.utils2 import i18n, ungz
+from deaths_lib import scraper_utils
+from deaths_lib.constants import FORCE_NO_MATCH
+from deaths_lib.constants import Q_ORDER
+from deaths_lib.constants import SHORT_MONS
+from deaths_lib.constants import VIDEO_TYPES
+from deaths_lib.constants import DEFAULT_TIMEOUT
+from deaths_lib.db_utils import DB_Connection
+from deaths_lib.utils2 import i18n, ungz
 
 try:
     import resolveurl

@@ -20,10 +20,10 @@ import re
 import kodi
 import log_utils  # @UnusedImport
 import dom_parser2
-from salts_lib import scraper_utils
-from salts_lib.constants import FORCE_NO_MATCH
-from salts_lib.constants import QUALITIES
-from salts_lib.constants import VIDEO_TYPES
+from deaths_lib import scraper_utils
+from deaths_lib.constants import FORCE_NO_MATCH
+from deaths_lib.constants import QUALITIES
+from deaths_lib.constants import VIDEO_TYPES
 import scraper
 
 QUALITY_MAP = {'DVD': QUALITIES.HIGH, 'TS': QUALITIES.MEDIUM, 'CAM': QUALITIES.LOW}

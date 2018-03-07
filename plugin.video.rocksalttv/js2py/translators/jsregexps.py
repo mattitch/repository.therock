@@ -1,4 +1,4 @@
-from salts_lib.pyjsparser.pyjsparserdata import *
+from deaths_lib.pyjsparser.pyjsparserdata import *
 
 REGEXP_SPECIAL_SINGLE = {'\\', '^', '$', '*', '+', '?', '.'}
 

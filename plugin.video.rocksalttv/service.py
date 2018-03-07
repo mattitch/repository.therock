@@ -1,5 +1,5 @@
 """
-    SALTS XBMC Addon
+    Rock Salt TV Addon
     Copyright (C) 2014 tknorris
 
     This program is free software: you can redistribute it and/or modify
@@ -23,13 +23,13 @@ import time
 import kodi
 import log_utils
 import utils
-from salts_lib import salts_utils
-from salts_lib import image_proxy
-from salts_lib import utils2
-from salts_lib.utils2 import i18n
-from salts_lib.constants import MODES
-from salts_lib.db_utils import DB_Connection
-from salts_lib.trakt_api import Trakt_API
+from deaths_lib import salts_utils
+from deaths_lib import image_proxy
+from deaths_lib import utils2
+from deaths_lib.utils2 import i18n
+from deaths_lib.constants import MODES
+from deaths_lib.db_utils import DB_Connection
+from deaths_lib.trakt_api import Trakt_API
 
 logger = log_utils.Logger.get_logger()
 logger.disable()
@@ -44,14 +44,14 @@ class Service(xbmc.Player):
 
     def reset(self):
         logger.log('Service: Resetting...', log_utils.LOGDEBUG)
-        self.win.clearProperty('salts.playing')
-        self.win.clearProperty('salts.playing.trakt_id')
-        self.win.clearProperty('salts.playing.season')
-        self.win.clearProperty('salts.playing.episode')
-        self.win.clearProperty('salts.playing.srt')
-        self.win.clearProperty('salts.playing.trakt_resume')
-        self.win.clearProperty('salts.playing.salts_resume')
-        self.win.clearProperty('salts.playing.library')
+        self.win.clearProperty('blamo.playing')
+        self.win.clearProperty('blamo.playing.trakt_id')
+        self.win.clearProperty('blamo.playing.season')
+        self.win.clearProperty('blamo.playing.episode')
+        self.win.clearProperty('blamo.playing.srt')
+        self.win.clearProperty('blamo.playing.trakt_resume')
+        self.win.clearProperty('blamo.playing.salts_resume')
+        self.win.clearProperty('blamo.playing.library')
         self._from_library = False
         self.tracked = False
         self._totalTime = 999999
@@ -62,14 +62,14 @@ class Service(xbmc.Player):
 
     def onPlayBackStarted(self):
         logger.log('Service: Playback started', log_utils.LOGNOTICE)
-        playing = self.win.getProperty('salts.playing') == 'True'
-        self.trakt_id = self.win.getProperty('salts.playing.trakt_id')
-        self.season = self.win.getProperty('salts.playing.season')
-        self.episode = self.win.getProperty('salts.playing.episode')
-        srt_path = self.win.getProperty('salts.playing.srt')
-        trakt_resume = self.win.getProperty('salts.playing.trakt_resume')
-        salts_resume = self.win.getProperty('salts.playing.salts_resume')
-        self._from_library = self.win.getProperty('salts.playing.library') == 'True'
+        playing = self.win.getProperty('blamo.playing') == 'True'
+        self.trakt_id = self.win.getProperty('blamo.playing.trakt_id')
+        self.season = self.win.getProperty('blamo.playing.season')
+        self.episode = self.win.getProperty('blamo.playing.episode')
+        srt_path = self.win.getProperty('blamo.playing.srt')
+        trakt_resume = self.win.getProperty('blamo.playing.trakt_resume')
+        salts_resume = self.win.getProperty('blamo.playing.salts_resume')
+        self._from_library = self.win.getProperty('blamo.playing.library') == 'True'
         if playing:   # Playback is ours
             logger.log('Service: tracking progress...', log_utils.LOGNOTICE)
             self.tracked = True
@@ -104,7 +104,7 @@ class Service(xbmc.Player):
             pl = xbmc.PlayList(xbmc.PLAYLIST_VIDEO)
             plugin_url = 'plugin://%s/' % (kodi.get_id())
             if pl.size() == 1 and pl[0].getfilename().lower().startswith(plugin_url):
-                logger.log('Service: Clearing Single Item Death Streams Playlist', log_utils.LOGDEBUG)
+                logger.log('Service: Clearing Single Item Rock Salt TV Playlist', log_utils.LOGDEBUG)
                 pl.clear()
                 
             playedTime = float(self._lastPos)
@@ -136,11 +136,11 @@ def disable_global_cx(was_on):
         sf = xbmcaddon.Addon('plugin.program.super.favourites')
         if active_plugin == kodi.get_id():
             if sf.getSetting('CONTEXT') == 'true':
-                logger.log('Disabling Global CX while Death Streams is active', log_utils.LOGDEBUG)
+                logger.log('Disabling Global CX while Rock Salt TV is active', log_utils.LOGDEBUG)
                 was_on = True
                 sf.setSetting('CONTEXT', 'false')
         elif was_on:
-            logger.log('Re-enabling Global CX while Death Streams is not active', log_utils.LOGDEBUG)
+            logger.log('Re-enabling Global CX while Rock Salt TV is not active', log_utils.LOGDEBUG)
             sf.setSetting('CONTEXT', 'true')
             was_on = False
     

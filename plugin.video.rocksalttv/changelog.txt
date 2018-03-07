@@ -1,1 +1,2 @@
 0.0.1 - Forked DS to Rock Salt TV
+0.1.0 - Updated to DS 2.5.1

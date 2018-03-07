@@ -1,5 +1,5 @@
 from __future__ import unicode_literals
-from salts_lib.pyjsparser.pyjsparserdata import *
+from deaths_lib.pyjsparser.pyjsparserdata import *
 from .friendly_nodes import *
 import random
 import six
@@ -623,7 +623,7 @@ clean_stacks()
 if __name__=='__main__':
     import codecs
     import time
-    from salts_lib import pyjsparser
+    from deaths_lib import pyjsparser
 
     c = None#'''`ijfdij`'''
     if not c:

@@ -1,6 +1,6 @@
 import binascii
 
-from salts_lib.pyjsparser import PyJsParser
+from deaths_lib.pyjsparser import PyJsParser
 import six
 if six.PY3:
     basestring = str

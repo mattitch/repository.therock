@@ -22,11 +22,11 @@ import kodi
 import log_utils  # @UnusedImport
 import dom_parser2
 import HTMLParser
-from salts_lib import scraper_utils
-from salts_lib import jsunpack
-from salts_lib.constants import VIDEO_TYPES
-from salts_lib.constants import FORCE_NO_MATCH
-from salts_lib.constants import QUALITIES
+from deaths_lib import scraper_utils
+from deaths_lib import jsunpack
+from deaths_lib.constants import VIDEO_TYPES
+from deaths_lib.constants import FORCE_NO_MATCH
+from deaths_lib.constants import QUALITIES
 User_Agent = 'Mozilla/5.0 (iPhone; CPU iPhone OS 8_4 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12H143 Safari/600.1.4'
 clean_up = HTMLParser.HTMLParser()
 

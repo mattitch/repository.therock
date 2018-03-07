@@ -1,6 +1,6 @@
 <settings>
     <category label="30545">
-        <setting id="install_theme" label="30669" type="action" action="RunPlugin(plugin://plugin.video.rocksalttv/?mode=install_themes)"
+        <setting id="install_theme" label="30669" type="action" action="RunPlugin(plugin://plugin.video.blamo/?mode=install_themes)"
         option="close" visible="!System.HasAddon(script.deaths.themepak)"/>
         <setting id="theme" type="enum" label="30500" values="4Horsemen|Charon|Deadly Elegant|Death|DOA|Famine|Hades|Heinous|Pepper Shaker|Pestilence|Purgatory|Rock Salt|Seasoned|The Underworld|Toxic Death|Unsalted|War" default="0"
         visible="System.HasAddon(script.deaths.themepak)"/>
@@ -80,8 +80,8 @@
 
     <category label="Trakt.tv">
         <setting id="trakt_offline" label="30674" type="bool" default="false"/>
-        <setting id="get_pin" label="30547" type="action" action="RunPlugin(plugin://plugin.video.rocksalttv/?mode=auth_trakt)" option="close" enable="eq(-1,false)" visible="eq(1,)"/>
-        <setting id="trakt_user" label="30501" type="action" action="RunPlugin(plugin://plugin.video.rocksalttv/?mode=auth_trakt)" option="close" enable="eq(-2,false)"  visible="!eq(0,)"/>
+        <setting id="get_pin" label="30547" type="action" action="RunPlugin(plugin://plugin.video.blamo/?mode=auth_trakt)" option="close" enable="eq(-1,false)" visible="eq(1,)"/>
+        <setting id="trakt_user" label="30501" type="action" action="RunPlugin(plugin://plugin.video.blamo/?mode=auth_trakt)" option="close" enable="eq(-2,false)"  visible="!eq(0,)"/>
         <setting id="use_https" type="bool" label="30548" enable="eq(-3,false)" default="false"/>
         <setting id="trakt_timeout" type="slider" label="30549" default="30" range="0,120" option="int" enable="eq(-4,false)"/>
         <setting id="list_size" type="slider" label="30550" default="30" range="1,100" option="int" enable="eq(-5,false)"/>
@@ -109,7 +109,7 @@
         <setting id="cast_enable" type="bool" label="30727" default="true"/>"
         <setting type="lsep" label="30710"/>
         <setting id="fanart_enable" label="30717" type="bool" default="true"/>
-        <setting id="fanart_person_key" type="text" label="30718" visible="eq(-1,true)" default="d21eae37e9f4a9a3f32128af2bf0b586"/>
+        <setting id="fanart_person_key" type="text" label="30718" visible="eq(-1,true)" default="4304388d7266cc1fc5fdd87015712373"/>
         <setting id="omdb_enable" label="30714" type="bool" default="true"/>
         <setting id="tvmaze_enable" label="30715" type="bool" default="true"/>
         <setting id="fanart_key" type="text" label="30711" visible="false" default=""/>
@@ -119,9 +119,9 @@
 
     <category label="30557">
         <setting id="tvshow-folder" type="folder" label="30558"
-                 default="special://userdata/addon_data/plugin.video.rocksalttv/TVShows"/>
+                 default="special://userdata/addon_data/plugin.video.blamo/TVShows"/>
         <setting id="movie-folder" type="folder" label="30559"
-                 default="special://userdata/addon_data/plugin.video.rocksalttv/Movies"/>
+                 default="special://userdata/addon_data/plugin.video.blamo/Movies"/>
         <setting id="auto-update_subs" type="bool" label="30560" default="false"/>
         <setting id="update_subs-interval" type="slider" range=".2,.5,24" option="float" label="30561" default="2" visible="eq(-1,true)"/>
         <setting id="update_subs-during-startup" type="bool" label="30562" default="false" visible="eq(-2,true)"/>
@@ -144,9 +144,9 @@
         <setting id="show_download" type="bool" label="30574" default="false"/>
         <setting id="down_progress" type="enum" label="30575" lvalues="30511|30589|30590" default="1" enable="eq(-1,true)"/>
         <setting id="tv-download-folder" type="folder" label="30576"
-                 default="special://userdata/addon_data/plugin.video.rocksalttv/Download/TVShows" enable="eq(-2,true)"/>
+                 default="special://userdata/addon_data/plugin.video.blamo/Download/TVShows" enable="eq(-2,true)"/>
         <setting id="movie-download-folder" type="folder" label="30577"
-                 default="special://userdata/addon_data/plugin.video.rocksalttv/Download/Movies" enable="eq(-3,true)"/>
+                 default="special://userdata/addon_data/plugin.video.blamo/Download/Movies" enable="eq(-3,true)"/>
         <setting id="source_timeout" type="slider" label="30578" default="25" range="0,120" option="int"/>
         <setting id="source_results" type="number" label="30579" default="0"/>
         <setting id="filter_unusable" type="bool" label="30580" default="true"/>
@@ -258,6 +258,9 @@
          <setting id="DL Mac-enable" type="bool" label="DL Mac Enabled" default="true" visible="true"/>
          <setting id="DL Mac-base_url" type="text" label="    Base Url" default="http://sv4avadl.uploadt.com/Movie/2017/" visible="eq(-1,true)"/>
          <setting id="DL Mac-sub_check" type="bool" label="    Include in Page Existence checks?" default="true" visible="eq(-2,true)"/>
+         <setting id="DlMov-enable" type="bool" label="DlMov Enabled" default="true" visible="true"/>
+         <setting id="DlMov-base_url" type="text" label="    Base Url" default="http://server1.timepassbd.com/ftpdata1/Movies/Hollywood/2017/" visible="eq(-1,true)"/>
+         <setting id="DlMov-sub_check" type="bool" label="    Include in Page Existence checks?" default="true" visible="eq(-2,true)"/>
          <setting id="DownloadTube-enable" type="bool" label="DownloadTube Enabled" default="true" visible="true"/>
          <setting id="DownloadTube-base_url" type="text" label="    Base Url" default="https://mydownloadtube.to" visible="eq(-1,true)"/>
          <setting id="DownloadTube-sub_check" type="bool" label="    Include in Page Existence checks?" default="true" visible="eq(-2,true)"/>
@@ -269,14 +272,11 @@
          <setting id="EasyNews-result_limit" label="     Maximum Source Results" type="slider" default="10" range="10,100" option="int" visible="eq(-5,true)"/>
          <setting id="EasyNews-size_limit" label="     Maximum Allowed Size (GB) (0 = No Limit)" type="slider" default="0" range="0,50" option="int" visible="eq(-6,true)"/>
          <setting id="EpisodeWatch-enable" type="bool" label="EpisodeWatch Enabled" default="true" visible="true"/>
-         <setting id="EpisodeWatch-base_url" type="text" label="    Base Url" default="https://watchepisodes.unblocked.vc" visible="eq(-1,true)"/>
+         <setting id="EpisodeWatch-base_url" type="text" label="    Base Url" default="http://www.watchepisodeseries.com" visible="eq(-1,true)"/>
          <setting id="EpisodeWatch-sub_check" type="bool" label="    Include in Page Existence checks?" default="true" visible="eq(-2,true)"/>
          <setting id="ExtraDL-enable" type="bool" label="ExtraDL Enabled" default="true" visible="true"/>
          <setting id="ExtraDL-base_url" type="text" label="    Base Url" default="http://79.127.126.110/Movie/5/" visible="eq(-1,true)"/>
          <setting id="ExtraDL-sub_check" type="bool" label="    Include in Page Existence checks?" default="true" visible="eq(-2,true)"/>
-         <setting id="Filmbar-enable" type="bool" label="Filmbar Enabled" default="true" visible="true"/>
-         <setting id="Filmbar-base_url" type="text" label="    Base Url" default="http://dl.filmbaroon.com/" visible="eq(-1,true)"/>
-         <setting id="Filmbar-sub_check" type="bool" label="    Include in Page Existence checks?" default="true" visible="eq(-2,true)"/>
          <setting id="filmikz.ch-enable" type="bool" label="filmikz.ch Enabled" default="true" visible="true"/>
          <setting id="filmikz.ch-base_url" type="text" label="    Base Url" default="https://filmikz.ch" visible="eq(-1,true)"/>
          <setting id="filmikz.ch-sub_check" type="bool" label="    Include in Page Existence checks?" default="true" visible="eq(-2,true)"/>
@@ -284,7 +284,7 @@
          <setting id="Filmovizija-base_url" type="text" label="    Base Url" default="http://www.filmovizija.tv" visible="eq(-1,true)"/>
          <setting id="Filmovizija-sub_check" type="bool" label="    Include in Page Existence checks?" default="true" visible="eq(-2,true)"/>
          <setting id="Filmrev-enable" type="bool" label="Filmrev Enabled" default="true" visible="true"/>
-         <setting id="Filmrev-base_url" type="text" label="    Base Url" default="http://dl.filmbaroon.com/delete/" visible="eq(-1,true)"/>
+         <setting id="Filmrev-base_url" type="text" label="    Base Url" default="http://likecool.com/Gear/Film/" visible="eq(-1,true)"/>
          <setting id="Filmrev-sub_check" type="bool" label="    Include in Page Existence checks?" default="true" visible="eq(-2,true)"/>
     </category>
 
@@ -305,13 +305,13 @@
          <setting id="Hastidl-base_url" type="text" label="    Base Url" default="http://dl.hastidl.net/remotes/" visible="eq(-1,true)"/>
          <setting id="Hastidl-sub_check" type="bool" label="    Include in Page Existence checks?" default="true" visible="eq(-2,true)"/>
          <setting id="HDMovieFree-enable" type="bool" label="HDMovieFree Enabled" default="true" visible="true"/>
-         <setting id="HDMovieFree-base_url" type="text" label="    Base Url" default="https://hdmoviesfree.org" visible="eq(-1,true)"/>
+         <setting id="HDMovieFree-base_url" type="text" label="    Base Url" default="http://moviestreamhd.org" visible="eq(-1,true)"/>
          <setting id="HDMovieFree-sub_check" type="bool" label="    Include in Page Existence checks?" default="true" visible="eq(-2,true)"/>
          <setting id="HEVCBluRay-enable" type="bool" label="HEVCBluRay Enabled" default="true" visible="true"/>
          <setting id="HEVCBluRay-base_url" type="text" label="    Base Url" default="http://hevcbluray.info" visible="eq(-1,true)"/>
          <setting id="HEVCBluRay-sub_check" type="bool" label="    Include in Page Existence checks?" default="true" visible="eq(-2,true)"/>
          <setting id="HeyDL-enable" type="bool" label="HeyDL Enabled" default="true" visible="true"/>
-         <setting id="HeyDL-base_url" type="text" label="    Base Url" default="http://heydl.org" visible="eq(-1,true)"/>
+         <setting id="HeyDL-base_url" type="text" label="    Base Url" default="https://heydl.org" visible="eq(-1,true)"/>
          <setting id="HeyDL-sub_check" type="bool" label="    Include in Page Existence checks?" default="true" visible="eq(-2,true)"/>
          <setting id="IceFilms-enable" type="bool" label="IceFilms Enabled" default="true" visible="true"/>
          <setting id="IceFilms-base_url" type="text" label="    Base Url" default="http://www.icefilms.info" visible="eq(-1,true)"/>
@@ -371,7 +371,7 @@
          <setting id="MovieSub-base_url" type="text" label="    Base Url" default="https://moviesub.is" visible="eq(-1,true)"/>
          <setting id="MovieSub-sub_check" type="bool" label="    Include in Page Existence checks?" default="true" visible="eq(-2,true)"/>
          <setting id="MovieTube-enable" type="bool" label="MovieTube Enabled" default="true" visible="true"/>
-         <setting id="MovieTube-base_url" type="text" label="    Base Url" default="http://www.movie-tube.co" visible="eq(-1,true)"/>
+         <setting id="MovieTube-base_url" type="text" label="    Base Url" default="http://movietube.top" visible="eq(-1,true)"/>
          <setting id="MovieTube-sub_check" type="bool" label="    Include in Page Existence checks?" default="true" visible="eq(-2,true)"/>
          <setting id="MovieWatcher-enable" type="bool" label="MovieWatcher Enabled" default="true" visible="true"/>
          <setting id="MovieWatcher-base_url" type="text" label="    Base Url" default="http://moviewatcher.is" visible="eq(-1,true)"/>
@@ -432,12 +432,6 @@
          <setting id="Quikr-enable" type="bool" label="Quikr Enabled" default="true" visible="true"/>
          <setting id="Quikr-base_url" type="text" label="    Base Url" default="http://quikrmovies.to" visible="eq(-1,true)"/>
          <setting id="Quikr-sub_check" type="bool" label="    Include in Page Existence checks?" default="true" visible="eq(-2,true)"/>
-         <setting id="ReleaseBB-enable" type="bool" label="ReleaseBB Enabled" default="true" visible="true"/>
-         <setting id="ReleaseBB-base_url" type="text" label="    Base Url" default="http://rlsbb.ru" visible="eq(-1,true)"/>
-         <setting id="ReleaseBB-sub_check" type="bool" label="    Include in Page Existence checks?" default="false" visible="eq(-2,true)"/>
-         <setting id="ReleaseBB-filter" type="slider" range="0,180" option="int" label="     Filter results older than (0=No Filter) (days)" default="60" visible="eq(-3,true)"/>
-         <setting id="ReleaseBB-select" type="enum" label="     Automatically Select" lvalues="30636|30637" default="0" visible="eq(-4,true)"/>
-         <setting id="ReleaseBB-include_comments" type="bool" label="     Include Links from Comments" default="false" visible="eq(-5,true)"/>
          <setting id="Rlsbb-enable" type="bool" label="Rlsbb Enabled" default="true" visible="true"/>
          <setting id="Rlsbb-base_url" type="text" label="    Base Url" default="http://rlsbb.ru" visible="eq(-1,true)"/>
          <setting id="Rlsbb-sub_check" type="bool" label="    Include in Page Existence checks?" default="false" visible="eq(-2,true)"/>
@@ -465,7 +459,7 @@
          <setting id="scene-rls-filter" type="slider" range="0,180" option="int" label="     Filter results older than (0=No Filter) (days)" default="30" visible="eq(-3,true)"/>
          <setting id="scene-rls-select" type="enum" label="     Automatically Select" lvalues="30636|30637" default="0" visible="eq(-4,true)"/>
          <setting id="SeeHD-enable" type="bool" label="SeeHD Enabled" default="true" visible="true"/>
-         <setting id="SeeHD-base_url" type="text" label="    Base Url" default="http://seehd.club" visible="eq(-1,true)"/>
+         <setting id="SeeHD-base_url" type="text" label="    Base Url" default="https://seehd.uno" visible="eq(-1,true)"/>
          <setting id="SeeHD-sub_check" type="bool" label="    Include in Page Existence checks?" default="true" visible="eq(-2,true)"/>
          <setting id="SeriesOnline-enable" type="bool" label="SeriesOnline Enabled" default="true" visible="true"/>
          <setting id="SeriesOnline-base_url" type="text" label="    Base Url" default="https://series9.co" visible="eq(-1,true)"/>
@@ -481,14 +475,14 @@
          <setting id="Sit2Play-sub_check" type="bool" label="    Include in Page Existence checks?" default="true" visible="eq(-2,true)"/>
          <setting id="Sit2Play-username" type="text" label="     Username" default="" visible="eq(-3,true)"/>
          <setting id="Sit2Play-password" type="text" label="     Password" option="hidden" default="" visible="eq(-4,true)"/>
-    </category>
-    
-    <category label="Scrapers 4">
          <setting id="SnagFilms-enable" type="bool" label="SnagFilms Enabled" default="true" visible="true"/>
          <setting id="SnagFilms-base_url" type="text" label="    Base Url" default="http://www.snagfilms.com" visible="eq(-1,true)"/>
          <setting id="SnagFilms-sub_check" type="bool" label="    Include in Page Existence checks?" default="true" visible="eq(-2,true)"/>
          <setting id="SnagFilms-username" type="text" label="     Username" default="" visible="eq(-3,true)"/>
          <setting id="SnagFilms-password" type="text" label="     Password" option="hidden" default="" visible="eq(-4,true)"/>
+    </category>
+    
+    <category label="Scrapers 4">
          <setting id="SpaceMov-enable" type="bool" label="SpaceMov Enabled" default="true" visible="true"/>
          <setting id="SpaceMov-base_url" type="text" label="    Base Url" default="http://spacemov.io" visible="eq(-1,true)"/>
          <setting id="SpaceMov-sub_check" type="bool" label="    Include in Page Existence checks?" default="true" visible="eq(-2,true)"/>
@@ -569,7 +563,7 @@
         <setting id="subtitle-hd" type="bool" label="30619" default="false" enable="eq(-4,true)"/>
         <setting id="subtitle-download" type="bool" label="30620" default="true" enable="eq(-5,true)"/>
         <setting id="subtitle-autopick" type="bool" label="30665" default="false" enable="eq(-1,true) + eq(-6,true)"/>
-        <setting id="subtitle-folder" type="folder" label="30621" default="special://userdata/addon_data/plugin.video.rocksalttv/Subtitles" enable="eq(-2,true)+eq(-7,true)"/>
+        <setting id="subtitle-folder" type="folder" label="30621" default="special://userdata/addon_data/plugin.video.blamo/Subtitles" enable="eq(-2,true)+eq(-7,true)"/>
         <setting id="subtitle-show" type="bool" label="30622" default="false" enable="eq(-3,true)+eq(-8,true)"/>
     </category>
     
@@ -584,21 +578,21 @@
         <setting id="machine_speed" type="enum" label="30676" lvalues="30677|30678|30679|30680|30681|30682" default="0"
         enable="eq(-7,false)" visible="eq(-7,false)"/>
         <setting id="flush_cache" type="action" label="30630" enable="true"
-            action="RunPlugin(plugin://plugin.video.rocksalttv/?mode=flush_cache)"/>
+            action="RunPlugin(plugin://plugin.video.blamo/?mode=flush_cache)"/>
         <setting id="flush_images" type="action" label="30716" enable="true"
-            action="RunPlugin(plugin://plugin.video.rocksalttv/?mode=flush_images)"/>
+            action="RunPlugin(plugin://plugin.video.blamo/?mode=flush_images)"/>
         <setting id="reset_db" type="action" label="30631" enable="true"
-            action="RunPlugin(plugin://plugin.video.rocksalttv/?mode=reset_db)"/>
+            action="RunPlugin(plugin://plugin.video.blamo/?mode=reset_db)"/>
          <setting id="db_export" type="action" label="30632" enable="true" 
-             action="RunPlugin(plugin://plugin.video.rocksalttv/?mode=export_db)"/>
+             action="RunPlugin(plugin://plugin.video.blamo/?mode=export_db)"/>
          <setting id="db_import" type="action" label="30633" enable="true"
-             action="RunPlugin(plugin://plugin.video.rocksalttv/?mode=import_db)"/>
+             action="RunPlugin(plugin://plugin.video.blamo/?mode=import_db)"/>
          <setting id="show_prune" type="bool" label="Show Prune Settings" default="false" visible="false"/>
          <setting id="auto-prune_cache" type="bool" label="Prune Cache Enabled" visible="eq(-1,true)" default="true"/>
          <setting id="prune_cache-interval" type="slider" range="8,8,48" option="int" label="    Prune Interval" default="8" visible="eq(-2,true)+eq(-1,true)"/>         
          <setting id="prune_cache-during-playback" label="    During Playback?" type="bool" default="false" visible="eq(-3,true)+eq(-2,true)" />
          <setting id="prune_cache-during-startup" label="    During Startup?" type="bool" default="false" visible="eq(-4,true)+eq(-3,true)" />
          <setting id="prune_cache" type="action" label="    Prune Cache Now..." enable="true"
-             action="RunPlugin(plugin://plugin.video.rocksalttv/?mode=prune_cache)" visible="eq(-5,true)+eq(-4,true)"/>
+             action="RunPlugin(plugin://plugin.video.blamo/?mode=prune_cache)" visible="eq(-5,true)+eq(-4,true)"/>
     </category>
 </settings>

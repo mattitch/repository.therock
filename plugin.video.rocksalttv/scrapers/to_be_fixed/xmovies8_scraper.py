@@ -1,5 +1,5 @@
 """
-    SALTS XBMC Addon
+    Death Streams Addon
     Copyright (C) 2014 tknorris
 
     This program is free software: you can redistribute it and/or modify
@@ -21,11 +21,11 @@ import kodi
 import log_utils  # @UnusedImport
 import dom_parser2
 import client
-from salts_lib import scraper_utils
-from salts_lib import cfscrape
-from salts_lib.constants import FORCE_NO_MATCH
-from salts_lib.constants import VIDEO_TYPES
-from salts_lib.constants import XHR
+from deaths_lib import scraper_utils
+from deaths_lib import cfscrape
+from deaths_lib.constants import FORCE_NO_MATCH
+from deaths_lib.constants import VIDEO_TYPES
+from deaths_lib.constants import XHR
 import scraper
 
 VIDEO_URL = '/video_info/iframe'

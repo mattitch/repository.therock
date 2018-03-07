@@ -1,6 +1,6 @@
 # Addon Name: Death Streams
 # Addon id: plugin.video.blamo
-# Addon Provider: TV Addons
+# Addon Provider: Mr Blamo
 # Translators:
 # Achaw Gomez, 2015-2016
 # Achaw Gomez, 2016
@@ -11,7 +11,7 @@ msgstr ""
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: 2017-04-07 17:24+0000\n"
 "Last-Translator: Irene Royster\n"
-"Language-Team: Spanish (http://www.transifex.com/tv-addons/salts/language/es/)\n"
+"Language-Team: Spanish (http://www.transifex.com/mrblamo/deathstreams/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"

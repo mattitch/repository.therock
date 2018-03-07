@@ -22,7 +22,7 @@ __all__ = ['PyJsParser', 'Node', 'WrappingNode', 'node_to_dict', 'parse', 'trans
            'DEFAULT_HEADER']
 __author__ = 'Piotr Dabkowski'
 __version__ = '2.2.0'
-from salts_lib.pyjsparser import PyJsParser
+from deaths_lib.pyjsparser import PyJsParser
 from .translator import translate_js, trasnlate, syntax_tree_translate, DEFAULT_HEADER
 
 

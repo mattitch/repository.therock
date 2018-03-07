@@ -1,5 +1,5 @@
 """
-    SALTS XBMC Addon
+    Rock Salt TV Addon
     Copyright (C) 2014 tknorris
 
     This program is free software: you can redistribute it and/or modify
@@ -33,17 +33,17 @@ import utils
 import httplib
 import cookielib
 from url_dispatcher import URL_Dispatcher
-from salts_lib.db_utils import DB_Connection, DatabaseRecoveryError
-from salts_lib.srt_scraper import SRT_Scraper
-from salts_lib.trakt_api import Trakt_API, TransientTraktError, TraktNotFoundError, TraktError, TraktAuthError
-from salts_lib import salts_utils
-from salts_lib import utils2
-from salts_lib import gui_utils
-from salts_lib import strings
-from salts_lib import worker_pool
-from salts_lib import image_scraper
-from salts_lib.constants import *  # @UnusedWildImport
-from salts_lib.utils2 import i18n
+from deaths_lib.db_utils import DB_Connection, DatabaseRecoveryError
+from deaths_lib.srt_scraper import SRT_Scraper
+from deaths_lib.trakt_api import Trakt_API, TransientTraktError, TraktNotFoundError, TraktError, TraktAuthError
+from deaths_lib import salts_utils
+from deaths_lib import utils2
+from deaths_lib import gui_utils
+from deaths_lib import strings
+from deaths_lib import worker_pool
+from deaths_lib import image_scraper
+from deaths_lib.constants import *  # @UnusedWildImport
+from deaths_lib.utils2 import i18n
 from scrapers import *  # import all scrapers into this namespace @UnusedWildImport
 from scrapers import ScraperVideo
 
@@ -2110,7 +2110,7 @@ def prune_cache():
                 logger.log('Prune Completed Successfully @ %s' % (now), log_utils.LOGDEBUG)
                 break
         else:
-            logger.log('SALTS Active... Busy... Postponing [%s]' % (MODES.PRUNE_CACHE), log_utils.LOGDEBUG)
+            logger.log('Rock Salt TV Active... Busy... Postponing [%s]' % (MODES.PRUNE_CACHE), log_utils.LOGDEBUG)
             if monitor.waitForAbort(30000):
                 break
 

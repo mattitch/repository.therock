@@ -1,6 +1,6 @@
 # Addon Name: Death Streams
 # Addon id: plugin.video.blamo
-# Addon Provider: TV Addons
+# Addon Provider: Mr Blamo
 # Translators:
 # Eyal Zfira, 2017
 # Itzik Bereby, 2016
