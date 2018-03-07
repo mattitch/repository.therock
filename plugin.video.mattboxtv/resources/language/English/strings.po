@@ -1,6 +1,6 @@
-# Addon Name: Jen
-# Addon id: plugin.video.jen
-# Addon Provider: Jen
+# Addon Name: Mattbox TV
+# Addon id: plugin.video.mattboxtv
+# Addon Provider: Mattitch
 msgid ""
 msgstr ""
 "Project-Id-Version: Jen\n"
@@ -504,7 +504,7 @@ msgid "Resume"
 msgstr ""
 
 msgctxt "#32504"
-msgid "EIMify Your Jen"
+msgid "EIMify Your Mattbox TV"
 msgstr ""
 
 msgctxt "#32505"
@@ -536,7 +536,7 @@ msgid "Select Link"
 msgstr ""
 
 msgctxt "#32512"
-msgid "Choose Jen Theme"
+msgid "Choose Mattbox TV Theme"
 msgstr ""
 
 msgctxt "#32513"
