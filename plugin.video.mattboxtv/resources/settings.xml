@@ -24,16 +24,16 @@
     <category label="Scraper Settings">
       <setting label="30718" type="lsep"/>
       <setting label="30719" type="action" option="close"
-               action="RunPlugin(plugin://plugin.video.jen/?mode=clearCache)"/>
+               action="RunPlugin(plugin://plugin.video.mattboxtv/?mode=clearCache)"/>
       <setting label="30733" type="lsep"/>
       <!-- scraper settings -->
       <setting label="Scraper Settings" type="action" option="close"
-               action="RunPlugin(plugin://plugin.video.jen/?mode=ScraperSettings)"/>
+               action="RunPlugin(plugin://plugin.video.mattboxtv/?mode=ScraperSettings)"/>
       <setting id="use_link_dialog" label="30744" type="bool" default="true" visible="false"/>
       <setting id="link_fallthrough" label="30745" type="bool"	default="true" visible="eq(-1,false)"/>
       <setting label="30741" type="lsep" visible="false"/>
       <setting label="Resolver Settings" type="action" option="close"
-               action="RunPlugin(plugin://plugin.video.jen/?mode=ResolverSettings)"/>
+               action="RunPlugin(plugin://plugin.video.mattboxtv/?mode=ResolverSettings)"/>
       <!-- filtering settings -->
       <setting label="30735" type="lsep" visible="false"/>
       <setting id="allow_openload" label="30736" type="bool" default="false" visible="false"/>
@@ -64,7 +64,7 @@
 	  <setting id="dlimage" type="bool" label="Enable Image Downloader" default="false" visible="false"/>
       <setting id="debug" type="bool" label="API's" default="false" visible="true"/>
       <setting id="first_run" label="first run" type="bool" default="false" visible="false"/>
-      <setting label="Cache Location" id="cache_folder" type="folder" default="special://profile/addon_data/plugin.video.jen/" visible="false"/>
+      <setting label="Cache Location" id="cache_folder" type="folder" default="special://profile/addon_data/plugin.video.mattboxtv/" visible="false"/>
       <setting label="TVDB API Key" type="text" id="tvdb_api_key" option="hidden" default="" visible="eq(-3,true)"/>
       <setting label="TMDB API Key" type="text" id="tmdb_api_key" option="hidden" default="" visible="eq(-4,true)"/>
       <setting label="Trakt Client ID" type="text" id="trakt_api_client_id" option="hidden" default="" visible="eq(-5,true)"/>
