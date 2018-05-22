@@ -7,10 +7,10 @@ ADDON_ID       = xbmcaddon.Addon().getAddonInfo('id')
 ADDONTITLE     = 'Mattbox Wizard'
 EXCLUDES       = [ADDON_ID]
 # Text File with build info in it.
-BUILDFILE      = 'http://mattbox.heliohost.org/Wizard/build.txt'
+BUILDFILE      = 'https://pastebin.com/Wf88Nue0'
 # How often you would list it to check for build updates in days
 # 0 being every startup of kodi
-UPDATECHECK    = 0
+UPDATECHECK    = 3
 # Text File with apk info in it.
 APKFILE        = 'http://'
 # Text File with Youtube Videos urls.  Leave as 'http://' to ignore
@@ -71,7 +71,7 @@ HIDECONTACT    = 'No'
 # You can add \n to do line breaks
 CONTACT        = 'Thank you for choosing Mattbox Wizard.\r\n\r\nContact me at mattitch@gmail.com'
 #Images used for the contact window.  http:// for default icon and fanart
-CONTACTICON    = 'http://mattbox.heliohost.org/Wizard/icon2.png'
+CONTACTICON    = 'http://'
 CONTACTFANART  = 'http://'
 #########################################################
 
@@ -81,7 +81,7 @@ CONTACTFANART  = 'http://'
 # Enable Auto Update 'Yes' or 'No'
 AUTOUPDATE     = 'Yes'
 # Url to wizard version
-WIZARDFILE     = 'http://mattbox.heliohost.org/Wizard/build.txt'
+WIZARDFILE     = 'https://pastebin.com/Wf88Nue0'
 #########################################################
 
 #########################################################
@@ -103,12 +103,12 @@ REPOZIPURL     = ''
 # Enable Notification screen Yes or No
 ENABLE         = 'Yes'
 # Url to notification file
-NOTIFICATION   = 'http://mattbox.heliohost.org/Wizard/notify.txt'
+NOTIFICATION   = ''
 # Use either 'Text' or 'Image'
 HEADERTYPE     = 'Text'
 HEADERMESSAGE  = 'MATTBOX WIZARD'
 # url to image if using Image 424x180
 HEADERIMAGE    = ''
 # Background for Notification Window
-BACKGROUND     = 'http://mattbox.heliohost.org/Wizard/fanart.jpg'
+BACKGROUND     = ''
 #########################################################
