@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.program.mattboxwizard" name="Mattbox Wizard" version="0.0.2" provider-name="Mattitch">
+<addon id="plugin.program.mattboxwizard" name="Mattbox Wizard" version="0.0.3" provider-name="Mattitch">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -10,7 +10,7 @@
   <extension point="xbmc.service" library="startup.py" start="startup" />
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Mattbox Wizard</summary>
-    <description lang="en">Aftermath Wizard allows you to get access to the latest Aftermath Custom Builds.</description>
+    <description lang="en">Mattbox Wizard - automatic update of your custom build</description>
     <platform>all</platform>
   </extension>
 </addon>
