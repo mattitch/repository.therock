@@ -17,16 +17,20 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 import __builtin__
+import xbmcaddon
 
 # CONFIGURATION VARIABLES
 # -----------------------
-# change these to suit your addons
-root_xml_url = "https://pastebin.com/raw/RuMhtPe8"  # url of the root xml file
-__builtin__.tvdb_api_key = "D388C1879316DA0A"  # tvdb api key
-__builtin__.tmdb_api_key = "e8158b0611117165085058b322a4e83d"  # tmdb api key
-__builtin__.trakt_client_id = "a255553fc96b818c72f3150b8c70d00cb335c8dbfacf1b951c6a4369edd9c2bd"  # trakt client id
-__builtin__.trakt_client_secret = "db744e3560721bb4b2b79de1105388d6f03140a1543a2e8092faea7f97179505"  # trakt client secret
-__builtin__.search_db_location = ""  # location of search db
+addon_id = xbmcaddon.Addon().getAddonInfo('id')
+ownAddon = xbmcaddon.Addon(id=addon_id)
+enable_installa = ownAddon.getSetting('dlimage')
+enable_newswin = ownAddon.getSetting('news_win')
+root_xml_url = ownAddon.getSetting('root_xml')
+__builtin__.tvdb_api_key = ownAddon.getSetting('tvdb_api_key')
+__builtin__.tmdb_api_key = ownAddon.getSetting('tmdb_api_key')
+__builtin__.trakt_client_id = ownAddon.getSetting('trakt_api_client_id')
+__builtin__.trakt_client_secret = ownAddon.getSetting('trakt_api_client_secret')
+__builtin__.search_db_location = ownAddon.getSetting('search_db_location')
 
 import os
 import sys
@@ -40,7 +44,6 @@ import resources.lib.sources
 import resources.lib.testings
 import resources.lib.util.info
 import xbmc
-import xbmcaddon
 import xbmcplugin
 from koding import route
 from resources.lib.util.xml import JenList, display_list
@@ -50,15 +53,11 @@ from language import get_string as _
 from resources.lib.plugin import run_hook
 
 
-addon_id = xbmcaddon.Addon().getAddonInfo('id')
 addon_name = xbmcaddon.Addon().getAddonInfo('name')
 home_folder = xbmc.translatePath('special://home/')
 addon_folder = os.path.join(home_folder, 'addons')
 art_path = os.path.join(addon_folder, addon_id)
 content_type = "files"
-ownAddon = xbmcaddon.Addon(id=addon_id)
-enable_installa = ownAddon.getSetting('dlimage')
-enable_newswin = ownAddon.getSetting('news_win')
 
 @route("main")
 def root():
@@ -92,7 +91,6 @@ def root():
             content_type="")
     if enable_installa =='true':
         koding.Add_Dir(name='Download Backgrounds', url='{"my_text":"INSTALLA[CR]!!!","my_desc":""}', mode='dialog_specific', folder=False, icon=os.path.join(art_path,'icon.png'), fanart=os.path.join(art_path,'fanart.jpg'))
-
 
 @route(mode='get_list_uncached', args=["url"])
 def get_list_uncached(url):

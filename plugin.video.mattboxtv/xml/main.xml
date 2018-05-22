@@ -1,25 +1,11 @@
 <xml>
-
   <dir>
-    <title>WELCOME TO MATTBOX TV</title>
- </dir>
-
-<dir>
-<title>=================================================================================================================================</title>
-</dir>
-
-  <dir>
-    <title>Airing Today</title>
-    <trakt>https://api.trakt.tv/users/mattitch/lists/march-tv-episodes</trakt>
+    <title>Formats</title>
+    <link>file://formats/main.xml</link>
   </dir>
 
-<dir>
-<title>Networks</title>
-<link>file://tv/networks.xml</link>
-</dir>
-
-<dir>
-<title>Search TV Shows</title>
-<tmdb>search</tmdb>
-</dir>
+  <dir>
+    <title>Shared Lists</title>
+    <link>file://shared lists/main.xml</link>
+  </dir>
 </xml>
