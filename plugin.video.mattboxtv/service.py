@@ -45,10 +45,10 @@ ownAddon   = xbmcaddon.Addon(id=addon_id)
 current_version             = '0' # increase this when you want the service to update the below settings
 enable_notification         = True
 updated_root_xml            = 'https://pastebin.com/raw/RuMhtPe8'
-updated_tvdb_api_key        = ''
-updated_tmdb_api_key        = ''
-updated_trakt_api_id        = ''
-updated_trakt_api_secret    = ''
+updated_tvdb_api_key        = 'D388C1879316DA0A'
+updated_tmdb_api_key        = 'e8158b0611117165085058b322a4e83d'
+updated_trakt_api_id        = 'a255553fc96b818c72f3150b8c70d00cb335c8dbfacf1b951c6a4369edd9c2bd'
+updated_trakt_api_secret    = 'db744e3560721bb4b2b79de1105388d6f03140a1543a2e8092faea7f97179505'
 updated_TRAKT_ACCESS_TOKEN  = ''
 updated_TRAKT_EXPIRES_AT    = ''
 updated_TRAKT_REFRESH_TOKEN = ''
