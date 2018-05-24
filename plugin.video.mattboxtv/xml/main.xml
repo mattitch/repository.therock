@@ -1,11 +1,69 @@
 <xml>
-  <dir>
-    <title>Formats</title>
-    <link>file://formats/main.xml</link>
-  </dir>
-
-  <dir>
-    <title>Shared Lists</title>
-    <link>file://shared lists/main.xml</link>
-  </dir>
+ 
+    <item>
+        <title>WELCOME TO MATTBOX TV</title>
+    </item>
+ 
+    <item>
+        <title>================================</title>
+    </item>
+   
+    <dir>
+        <title>Trending Movies</title>
+        <trakt>https://api.trakt.tv/movies/trending</trakt>
+    </dir>
+   
+    <dir>
+        <title>Movie Collection</title>
+        <trakt>https://api.trakt.tv/sync/collection/movies</trakt>
+    </dir>
+ 
+    <dir>
+        <title>Latest Episodes</title>
+        <link>http://supremacy.org.uk/tombraider/dogsbollocks/latesttv.txt</link>
+    </dir>
+ 
+    <dir>
+        <title>TV Collection</title>
+        <trakt>https://api.trakt.tv/sync/collection/shows</trakt>
+    </dir>
+ 
+    <dir>
+      <title>My lists</title>
+      <trakt>https://api.trakt.tv/users/me/lists/</trakt>
+    </dir>
+ 
+    <dir>
+        <title>US Networks</title>
+        <tvmaze>country/United States/1</tvmaze>
+    </dir>
+ 
+    <dir>
+        <title>UK Networks</title>
+        <tvmaze>country/United Kingdom/1</tvmaze>
+    </dir>
+   
+    <dir>
+        <title>Kids Networks</title>
+        <link>https://pastebin.com/raw/8xkXuQ0u</link>
+    </dir>
+ 
+    <dir>
+        <title>Search Movies & TV Shows</title>
+        <trakt>search</trakt>
+    </dir>
+ 
+    <dir>
+        <title>1 click Movie links</title>
+        <link>https://pastebin.com/raw/wazdzZ1t</link>
+    </dir>
+ 
+    <dir>
+        <title>Test</title>
+        <trakt>https://api.trakt.tv/sync/watchlist/episodes</trakt>
+   
+    </dir>
+ 
+   
+ 
 </xml>
