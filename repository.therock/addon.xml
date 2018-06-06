@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.therock" name="The Rock" version="0.0.2" provider-name="Mattitch">
+<addon id="repository.therock" name="The Rock" version="0.0.3" provider-name="Mattitch">
 	<extension point="xbmc.addon.repository" name="The Rock">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
