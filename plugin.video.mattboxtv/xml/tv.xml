@@ -1,0 +1,21 @@
+<xml>
+<dir>
+        <title>Latest Episodes</title>
+        <link>http://gen-tec.co/gentecwiz/PLEASE%20SUBSCRIBE%20TO%20CHARLIE%20TEC%20YOUTUBE/star/tvshows/catchupmenu.xml</link>
+    </dir>
+ 
+    <dir>
+        <title>TV Collection</title>
+        <trakt>https://api.trakt.tv/sync/collection/shows</trakt>
+    </dir>
+ 
+    <dir>
+      <title>My lists</title>
+      <trakt>https://api.trakt.tv/users/me/lists/</trakt>
+    </dir>
+ 
+<dir>
+<title>Networks</title>
+<link>https://pastebin.com/raw/Vtpy5pbj</link>
+</dir>
+</xml>

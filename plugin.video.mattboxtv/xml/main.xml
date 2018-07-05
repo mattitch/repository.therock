@@ -1,34 +1,72 @@
 <xml>
-  <plugin>
-<title>Reddit Soccer Streams</title>
-<link>plugin://plugin.video.reddit_viewer/?mode=listSubReddit&amp;type=soccerstreams&amp;url=https%3a%2f%2fwww.reddit.com%2fr%2fsoccerstreams%2f.json%3f%26limit%3d50</link>
-<thumbnail></thumbnail>
-<fanart></fanart>
-<content></content>
+ 
+    <dir>
+        <title>WELCOME TO MATTBOX TV [COLOR=red] ver 1.0[/COLOR]</title>
+		<link>plugin://plugin.video.mattboxtv/xml/main.xml</link>
+    </dir>
+ 
+    <item>
+        <title>================================</title>
+    </item>
+    <dir>
+    <title>Movies</title>
+    <link>file://movies.xml</link>
+	<animated_thumbnail>https://media.giphy.com/media/RkLqJNiVuvwVonEfcU/giphy.gif</animated_thumbnail>	
+    </dir>
+ 
+    <dir>
+        <title>TV Shows</title>
+        <link>file://tv.xml</link>
+		<animated_thumbnail>https://media.giphy.com/media/Nmi1BkAx5Fz6Aostgv/giphy.gif</animated_thumbnail>
+    </dir>
+ 
+    <dir>
+        <title>Sports</title>
+        <link>https://pastebin.com/raw/RBJDrwNC</link>
+		<animated_thumbnail>https://media.giphy.com/media/LZ3HUGB4kMyHzVsJAt/giphy.gif</animated_thumbnail>
+    </dir>
+   
+    <dir>
+        <title>Kids</title>
+        <link>https://pastebin.com/raw/1tN7hByi</link>
+		<animated_thumbnail>https://media.giphy.com/media/YkuvtsoZ5mwMKhqN9x/giphy.gif</animated_thumbnail>
+		</dir>
+ 
+    <dir>
+        <title>Live TV</title>
+        <link>https://pastebin.com/raw/wazdzZ1t</link>
+		<animated_thumbnail>https://media.giphy.com/media/SJWgyRwq8RLP9ch60Y/giphy.gif</animated_thumbnail>
+    </dir>
+ 
+ 
+<dir>
+<title>Music</title>
+<link>https://pastebin.com/raw/Dx1Z0bdr</link>
+<animated_thumbnail>https://media.giphy.com/media/7NG9kWZwoLKmT1wNte/giphy.gif</animated_thumbnail>
+</dir>
+ 
+   
+ 
+    <dir>
+        <title>Search Movies & TV Shows</title>
+        <trakt>search</trakt>
+		<animated_thumbnail>https://media.giphy.com/media/7SR22KorGIvqHciHIn/giphy.gif</animated_thumbnail>
+    </dir>
+ 
+   
+ <dir>
+    <plugin>
+  <name>Settings</name>
+  <link>plugin://plugin.video.mattboxtv/?action=openSettings</link>
+  <animated_thumbnail>https://media.giphy.com/media/fWfF1Iizs5kG52Yutm/giphy.gif</animated_thumbnail>
 </plugin>
-
-<plugin>
-<title>Reddit UK Panel Shows</title>
-<link>plugin://plugin.video.reddit_viewer/?mode=listSubReddit&amp;type=UKPanelShowsOnly&amp;url=https%3a%2f%2fwww.reddit.com%2fr%2fUKPanelShowsOnly%2f.json%3f%26limit%3d50</link>
-<thumbnail></thumbnail>
-<fanart></fanart>
-<content></content>
-</plugin>
-
-<plugin>
-<title>Reddit UK Entertainment Shows</title>
-<link>plugin://plugin.video.reddit_viewer/?mode=listSubReddit&amp;type=notapanelshow&amp;url=https%3a%2f%2fwww.reddit.com%2fr%2fnotapanelshow%2f.json%3f%26limit%3d50</link>
-<thumbnail></thumbnail>
-<fanart></fanart>
-<content></content>
-</plugin>
-
-<plugin>
-<title>Reddit Movies</title>
-<link>plugin://plugin.video.reddit_viewer/?mode=listSubReddit&amp;type=megalinks&amp;url=https%3a%2f%2fwww.reddit.com%2fr%2fmegalinks%2f.json%3f%26limit%3d50</link>
-<thumbnail></thumbnail>
-<fanart></fanart>
-<content></content>
-</plugin>
-
+ </dir>
+<dir>
+<title>Other Addons</title>
+<link>https://pastebin.com/raw/31CQEM7D</link>
+<animated_thumbnail>https://media.giphy.com/media/3OqqNQYUPZBrhug89l/giphy.gif</animated_thumbnail>
+</dir>
+ 
+ 
 </xml>
+RAW Paste Data

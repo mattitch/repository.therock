@@ -9,7 +9,7 @@
         <setting label="32510" type="lsep" visible="false"/>
         <setting label="32511" type="select" values="BOTH|SD|HD" id="default_link" default="BOTH" visible="false"/>
         <setting label="32514" type="lsep" visible="false"/>
-        <setting label="32515" type="bool" id="enable_gifs" default="false" visible="false"/>
+        <setting label="32515" type="bool" id="enable_gifs" default="true" visible="true"/>
         <setting label="Cool Choices" type="lsep"/>
         <setting id="news_win" type="bool" label="Enable News Dialog" default="false" visible="true"/>
         <setting id="dlimage" type="bool" label="Enable Image Downloader" default="false" visible="true"/>
@@ -76,7 +76,7 @@
     <!-- Dev mode - future features for playlisters and developers -->
     <category label="30770">
         <setting id="debug" type="bool" label="30758" default="false" visible="true"/>
-        <setting id="root_xml" type="text" label="30060" option="hidden" default="https://pastebin.com/raw/RuMhtPe8" visible="false"/>
+        <setting id="root_xml" type="text" label="30060" option="hidden" default="file://main.xml" visible="false"/>
         <setting id="message_xml_url" type="text" label="News File Location" option="hidden" default="file://news.xml" visible="false"/>
         <setting label="Current API Set Version" id="current_version" type="text" option="hidden" default="0" visible="false"/>
         <setting label="Enable Service Notification" id="enable_notification" type="bool" option="hidden" default="true" visible="false"/>

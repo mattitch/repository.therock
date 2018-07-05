@@ -1,0 +1,34 @@
+<xml>
+  <plugin>
+<title>Reddit Soccer Streams</title>
+<link>plugin://plugin.video.reddit_viewer/?mode=listSubReddit&amp;type=soccerstreams&amp;url=https%3a%2f%2fwww.reddit.com%2fr%2fsoccerstreams%2f.json%3f%26limit%3d50</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<content></content>
+</plugin>
+
+<plugin>
+<title>Reddit UK Panel Shows</title>
+<link>plugin://plugin.video.reddit_viewer/?mode=listSubReddit&amp;type=UKPanelShowsOnly&amp;url=https%3a%2f%2fwww.reddit.com%2fr%2fUKPanelShowsOnly%2f.json%3f%26limit%3d50</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<content></content>
+</plugin>
+
+<plugin>
+<title>Reddit UK Entertainment Shows</title>
+<link>plugin://plugin.video.reddit_viewer/?mode=listSubReddit&amp;type=notapanelshow&amp;url=https%3a%2f%2fwww.reddit.com%2fr%2fnotapanelshow%2f.json%3f%26limit%3d50</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<content></content>
+</plugin>
+
+<plugin>
+<title>Reddit Movies</title>
+<link>plugin://plugin.video.reddit_viewer/?mode=listSubReddit&amp;type=cinebloom&amp;url=https%3a%2f%2fwww.reddit.com%2fr%2fcinebloom%2f.json%3f%26limit%3d50</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<content></content>
+</plugin>
+
+</xml>
