@@ -53,14 +53,13 @@
 		<animated_thumbnail>https://media.giphy.com/media/7SR22KorGIvqHciHIn/giphy.gif</animated_thumbnail>
     </dir>
  
-   
- <dir>
+
     <plugin>
   <name>Settings</name>
   <link>plugin://plugin.video.mattboxtv/?action=openSettings</link>
   <animated_thumbnail>https://media.giphy.com/media/fWfF1Iizs5kG52Yutm/giphy.gif</animated_thumbnail>
 </plugin>
- </dir>
+ 
 <dir>
 <title>Other Addons</title>
 <link>https://pastebin.com/raw/31CQEM7D</link>
