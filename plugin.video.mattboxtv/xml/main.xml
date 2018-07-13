@@ -1,8 +1,9 @@
 <xml>
  
     <dir>
-        <title>WELCOME TO MATTBOX TV [COLOR=red] ver 1.0[/COLOR]</title>
+        <title>WELCOME TO MATTBOX TV [COLOR=red] ver 1.1[/COLOR]</title>
 		<link>plugin://plugin.video.mattboxtv/xml/main.xml</link>
+	<animated_thumbnail>https://media.giphy.com/media/9JgiqFzdfDW7PHftQT/giphy.gif</animated_thumbnail>
     </dir>
  
     <item>
@@ -45,6 +46,15 @@
 <animated_thumbnail>https://media.giphy.com/media/7NG9kWZwoLKmT1wNte/giphy.gif</animated_thumbnail>
 </dir>
  
+<dir>
+<title>Documentarys</title>
+<link>https://pastebin.com/raw/MphSMxra</link>
+</dir>
+
+<dir>
+<title>Podcasts</title>
+<link>https://pastebin.com/raw/b6PgzGdh</link>
+</dir>
    
  
     <dir>
