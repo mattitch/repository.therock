@@ -4,13 +4,13 @@
     <category label="Customization">
         <setting label="32507" type="lsep"/>
         <setting label="30717" type="bool" id="metadata" default="true"/>
-        <setting label="Disable Metadata Dialog" type="bool" id="disable_metadata_dialog" default="false"/>
+        <setting label="Disable Metadata Dialog" type="bool" id="disable_metadata_dialog" default="true"/>
         <setting label="32508" type="select" values="Trakt|TMDB" id="movie_metadata_provider" default="Trakt"/>
         <setting label="32509" type="select" values="Trakt|TVDB" id="tv_metadata_provider" default="Trakt"/>
         <setting label="32510" type="lsep" visible="false"/>
         <setting label="32511" type="select" values="BOTH|SD|HD" id="default_link" default="BOTH" visible="false"/>
         <setting label="32514" type="lsep" visible="false"/>
-        <setting label="32515" type="bool" id="enable_gifs" default="false" visible="false"/>
+        <setting label="32515" type="bool" id="enable_gifs" default="true" visible="true"/>
         <setting label="Cool Choices" type="lsep"/>
         <setting id="news_win" type="bool" label="Enable News Dialog" default="false" visible="true"/>
         <setting id="dlimage" type="bool" label="Enable Image Downloader" default="false" visible="true"/>
