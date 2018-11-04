@@ -15,7 +15,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.mattboxtv" name="Mattbox TV" version="1.4" provider-name="Mattitch">
+<addon id="plugin.video.mattboxtv" name="Mattbox TV" version="1.5" provider-name="Mattitch">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.universalscrapers" version="1.0.0" />
