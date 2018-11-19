@@ -1,7 +1,7 @@
 <xml>
  
     <dir>
-        <title>WELCOME TO MATTBOX TV [COLOR=red] ver 1.5[/COLOR]</title>
+        <title>WELCOME TO MATTBOX TV [COLOR=red] ver 1.6[/COLOR]</title>
 		<link>plugin://plugin.video.mattboxtv/xml/main.xml</link>
 	<animated_thumbnail>https://media.giphy.com/media/9JgiqFzdfDW7PHftQT/giphy.gif</animated_thumbnail>
     </dir>
