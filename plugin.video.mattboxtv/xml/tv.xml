@@ -1,6 +1,11 @@
 <xml>
 	<dir>
-        	<title>TV Catch Up</title>
+        	<title>Daily TV Updates</title>
+        	<link>https://mattbox.000webhostapp.com/mattboxtv/days/tvmenu.xml</link>
+    	</dir>
+
+	<dir>
+        	<title>TV Catch Up Menu</title>
         	<link>http://gen-tec.co/gentecwiz/PLEASE%20SUBSCRIBE%20TO%20CHARLIE%20TEC%20YOUTUBE/star/tvshows/catchupmenu.xml</link>
     	</dir>
 

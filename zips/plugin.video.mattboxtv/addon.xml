@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.mattboxtv" name="Mattbox TV" version="1.6" provider-name="Mattitch">
+<addon id="plugin.video.mattboxtv" name="Mattbox TV" version="1.7" provider-name="Mattitch">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.universalscrapers" version="1.0.0" />
@@ -10,6 +10,7 @@
         <import addon="script.module.xmltodict" version="0.9.0" />
         <import addon="script.module.dateutil" />
         <!--<import addon="script.module.web-pdb" version="1.0"/>-->
+		<import addon="script.module.httplib2" />
         <import addon="script.module.resolveurl" />
         <!--<import addon="script.module.urlresolver" />-->
     </requires>
