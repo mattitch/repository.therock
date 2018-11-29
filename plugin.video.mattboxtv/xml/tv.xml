@@ -1,7 +1,7 @@
 <xml>
 	<dir>
         	<title>Daily TV Updates</title>
-        	<link>https://mattbox.000webhostapp.com/mattboxtv/days/tvmenu.xml</link>
+        	<link>https://github.com/mattitch/images/raw/master/dtv/tvmenu.xml</link>
     	</dir>
 
 	<dir>
