@@ -36,7 +36,7 @@
 
 	<category label="Maintenance">
 		<setting type="lsep" label="Upload Log: "/>
-		<setting id="email" type="text" label="mattitch@gmail.com" />
+		<setting id="email" type="text" label="E-Mail Address" />
 		<setting id="oldlog" type="bool" label="Include Kodi.Old.Log" default="false"/>
 		<setting id="wizlog" type="bool" label="Include Wizard Logs" default="false"/>
 		<setting id="crashlog" type="bool" label="Include Kodi Crash Logs" default="false"/>

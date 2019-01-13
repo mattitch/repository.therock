@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.mattboxwizard" name="Mattbox Wizard" version="0.0.3" provider-name="Mattitch">
+<addon id="plugin.program.mattboxwizard" name="Mattbox Wizard" version="0.1" provider-name="Mattitch">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -9,7 +9,7 @@
   <extension point="xbmc.service" library="startup.py" start="startup" />
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Mattbox Wizard</summary>
-    <description lang="en">Mattbox Wizard - automatic update of your custom build</description>
+    <description lang="en">Mattbox Wizard allows you to get access to the latest Mattbox Custom Builds.</description>
     <platform>all</platform>
   </extension>
 </addon>

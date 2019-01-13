@@ -7,7 +7,7 @@ ADDON_ID       = xbmcaddon.Addon().getAddonInfo('id')
 ADDONTITLE     = 'Mattbox Wizard'
 EXCLUDES       = [ADDON_ID]
 # Text File with build info in it.
-BUILDFILE      = 'https://pastebin.com/Wf88Nue0'
+BUILDFILE      = 'https://pastebin.com/raw/Wf88Nue0'
 # How often you would list it to check for build updates in days
 # 0 being every startup of kodi
 UPDATECHECK    = 3
@@ -32,7 +32,7 @@ ART            = os.path.join(PATH, 'resources', 'art')
 # folder of the wizard then use os.path.join(ART, 'imagename.png')
 # do not place quotes around os.path.join
 # Example:  ICONMAINT     = os.path.join(ART, 'mainticon.png')
-#           ICONSETTINGS  = 'http://Mattboxwizard.net/repo/wizard/settings.png'
+#           ICONSETTINGS  = 'http://aftermathwizard.net/repo/wizard/settings.png'
 # Leave as http:// for default icon
 ICONBUILDS     = 'http://'
 ICONMAINT      = 'http://'
@@ -52,10 +52,10 @@ SPACER         = '='
 
 # You can edit these however you want, just make sure that you have a %s in each of the
 # THEME's so it grabs the text from the menu item
-COLOR1         = 'dodgerblue'
-COLOR2         = 'white'
+COLOR1         = 'midnightblue'
+COLOR2         = 'antiquewhite'
 # Primary menu items   / %s is the menu item and is required
-THEME1         = '[COLOR '+COLOR1+'][B][I]([COLOR '+COLOR2+']Mattbox[/COLOR])[/B][/COLOR] [COLOR '+COLOR2+']%s[/COLOR][/I]'
+THEME1         = '[COLOR '+COLOR1+'][B][I]([COLOR '+COLOR2+']Aftermath[/COLOR])[/B][/COLOR] [COLOR '+COLOR2+']%s[/COLOR][/I]'
 # Build Names          / %s is the menu item and is required
 THEME2         = '[COLOR '+COLOR2+']%s[/COLOR]'
 # Alternate items      / %s is the menu item and is required
@@ -69,7 +69,7 @@ THEME5         = '[COLOR '+COLOR1+']Current Theme:[/COLOR] [COLOR '+COLOR2+']%s[
 # Enable 'Contact' menu item 'Yes' hide or 'No' dont hide
 HIDECONTACT    = 'No'
 # You can add \n to do line breaks
-CONTACT        = 'Thank you for choosing Mattbox Wizard.\r\n\r\nContact me at mattitch@gmail.com'
+CONTACT        = 'Thank you for choosing Mattbox Wizard.\r\n'
 #Images used for the contact window.  http:// for default icon and fanart
 CONTACTICON    = 'http://'
 CONTACTFANART  = 'http://'
@@ -79,9 +79,9 @@ CONTACTFANART  = 'http://'
 ### AUTO UPDATE #########################################
 ########## FOR THOSE WITH NO REPO #######################
 # Enable Auto Update 'Yes' or 'No'
-AUTOUPDATE     = 'Yes'
+AUTOUPDATE     = 'No'
 # Url to wizard version
-WIZARDFILE     = 'https://pastebin.com/Wf88Nue0'
+WIZARDFILE     = ''
 #########################################################
 
 #########################################################
@@ -101,12 +101,12 @@ REPOZIPURL     = ''
 ### NOTIFICATION WINDOW##################################
 #########################################################
 # Enable Notification screen Yes or No
-ENABLE         = 'Yes'
+ENABLE         = 'No'
 # Url to notification file
 NOTIFICATION   = ''
 # Use either 'Text' or 'Image'
-HEADERTYPE     = 'Text'
-HEADERMESSAGE  = 'MATTBOX WIZARD'
+HEADERTYPE     = ''
+HEADERMESSAGE  = ''
 # url to image if using Image 424x180
 HEADERIMAGE    = ''
 # Background for Notification Window
