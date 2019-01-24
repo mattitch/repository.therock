@@ -1,25 +1,25 @@
 <xml>
-<dir> 
-<title>Star Wars Universe</title>
-<link>file://movies/deathstar.xml</link>
-</dir>
-<dir>
-    <title>New Releases</title>
-    <Airtable>new_releases/page1</Airtable>
-    </dir>
-<dir>
-    <title>Newest Releases</title>
-    <Airtable>newest_releases/page1</Airtable>
-    </dir>
-
-<dir>
-        <title>Movie Collection</title>
-        <trakt>https://api.trakt.tv/sync/collection/movies</trakt>
-    </dir>
-<dir>
+	<dir>
         <title>Latest Movies</title>
         <link>http://gen-tec.co/gentecwiz/PLEASE%20SUBSCRIBE%20TO%20CHARLIE%20TEC%20YOUTUBE/star/movies/LastestReleases.xml</link>
     </dir>
+	<dir>
+		<title>New Releases</title>
+		<Airtable>new_releases2</Airtable>
+    </dir>
+	<dir> 
+		<title>Mattbox Movies</title>
+		<link>file://movies/mtort.xml</link>
+	</dir>
+	<dir> 
+		<title>Star Wars Universe</title>
+		<link>file://movies/deathstar.xml</link>
+	</dir>
+	<dir>
+        <title>Movie Collection</title>
+        <trakt>https://api.trakt.tv/sync/collection/movies</trakt>
+    </dir>
+
 	<dir>
       <title>My lists</title>
       <link>https://pastebin.com/raw/7H7KEfUj</link>
