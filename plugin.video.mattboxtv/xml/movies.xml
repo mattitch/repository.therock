@@ -1,4 +1,8 @@
 <xml>
+<dir> 
+<title>Star Wars Universe</title>
+<link>file://movies/deathstar.xml</link>
+</dir>
 <dir>
     <title>New Releases</title>
     <Airtable>new_releases/page1</Airtable>

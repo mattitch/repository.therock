@@ -1,0 +1,34 @@
+<xml>
+<dir>
+    <title>Star Wars Movies</title>
+    <temp4_movie>genre/Movie</temp4_movie>
+	<fanart>http://ukodi1.com/images/G4xUAWx.jpg</fanart>
+	<thumbnail>http://uk1.site/images/movie.png</thumbnail>
+	<summary>All Star Wars Movies</summary>
+    </dir>
+
+    <dir>
+    <title>Star Wars Documentaries</title>
+    <temp4_movie>genre/Documentary</temp4_movie>
+	<fanart>http://ukodi1.com/images/G4xUAWx.jpg</fanart>
+	<thumbnail>http://uk1.site/images/doc's.png</thumbnail>
+	<summary>Star Wars Docs</summary>
+    </dir>    
+	
+	<dir>
+    <title>Star Wars Extras</title>
+    <temp4_movie>genre/Extras</temp4_movie>
+	<fanart>http://ukodi1.com/images/G4xUAWx.jpg</fanart>
+	<thumbnail>http://uk1.site/images/EXTRA.png</thumbnail>
+	<summary>Extras & Fan Made</summary>
+    </dir> 
+	
+	<dir>
+    <title>Star Wars Audio Books</title>
+    <temp4_movie>genre/Audio Books</temp4_movie>
+	<fanart>http://ukodi1.com/images/G4xUAWx.jpg</fanart>
+	<thumbnail>http://uk1.site/images/AUDIO.png</thumbnail>
+	<summary>Audio Books</summary>
+    </dir> 
+	
+</xml>
