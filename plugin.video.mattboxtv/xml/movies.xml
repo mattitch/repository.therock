@@ -15,6 +15,11 @@
 		<title>Star Wars Universe</title>
 		<link>file://movies/deathstar.xml</link>
 	</dir>
+<dir> 
+		<title>Marvel Universe</title>
+		<link>https://mattbox.000webhostapp.com/mattboxtv/marvel.xml</link>
+	</dir>
+
 	<dir>
         <title>Movie Collection</title>
         <trakt>https://api.trakt.tv/sync/collection/movies</trakt>
