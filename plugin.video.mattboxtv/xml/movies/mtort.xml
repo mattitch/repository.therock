@@ -1,9 +1,6 @@
 <xml>
 
-<dir>
-<title>Full List</title>
-<mtorture></mtorture>
-</dir>
+
 <dir>
             <title>Movies</title>
             <mtorture>category/movies/1</mtorture>

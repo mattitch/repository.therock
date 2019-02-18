@@ -3,23 +3,45 @@
         <title>Latest Movies</title>
         <link>http://gen-tec.co/gentecwiz/PLEASE%20SUBSCRIBE%20TO%20CHARLIE%20TEC%20YOUTUBE/star/movies/LastestReleases.xml</link>
     </dir>
+	
 	<dir>
 		<title>New Releases</title>
 		<Airtable>new_releases2</Airtable>
     </dir>
+	
 	<dir> 
 		<title>Mattbox Movies</title>
 		<link>file://movies/mtort.xml</link>
 	</dir>
+	
 	<dir> 
 		<title>Star Wars Universe</title>
 		<link>file://movies/deathstar.xml</link>
+		<thumbnail>file://img/swthumb.jpg</thumbnail>
+		<fanart>file://img/SW.jpg</fanart>
 	</dir>
-<dir> 
+	
+	<dir> 
 		<title>Marvel Universe</title>
 		<link>https://mattbox.000webhostapp.com/mattboxtv/marvel.xml</link>
 	</dir>
-
+	
+	<dir>
+		<title>Harry Potter</title>
+		<link>file://movies/HP.xml</link>
+	</dir>
+	
+	 <dir>
+    <title>DC Comics</title>
+    <dccomics>all</dccomics>
+    </dir>
+	
+	<dir>
+    <title>OTB Trekkie</title>
+    <trekkie>all</trekkie>
+	<thumbnail>file://img/stthumb.jpg</thumbnail>
+    </dir>
+	
 	<dir>
         <title>Movie Collection</title>
         <trakt>https://api.trakt.tv/sync/collection/movies</trakt>
@@ -29,6 +51,7 @@
       <title>My lists</title>
       <link>https://pastebin.com/raw/7H7KEfUj</link>
     </dir>
+	
 <dir>
 <title>Requests</title>
 <link>https://pastebin.com/raw/cjYLsN9f</link>

@@ -1,0 +1,31 @@
+ <dir>
+    <title>Harry Potter Movies</title>
+    <temp5_movie>genre/Movie</temp5_movie>
+	<fanart></fanart>
+	<thumbnail></thumbnail>
+	<summary>All Harry Potter Movies</summary>
+    </dir>
+
+    <dir>
+    <title>Harry Potter Documentaries</title>
+    <temp5_movie>genre/Documentary</temp5_movie>
+	<fanart></fanart>
+	<thumbnail></thumbnail>
+	<summary>Harry Potter Docs</summary>
+    </dir>    
+	
+	<dir>
+    <title>Harry Potter Extras</title>
+    <temp5_movie>genre/Extras</temp5_movie>
+	<fanart></fanart>
+	<thumbnail></thumbnail>
+	<summary>Extras & Fan Made</summary>
+    </dir> 
+	
+	<dir>
+    <title>Harry Potter Audio Books</title>
+    <temp5_movie>genre/Audio Books</temp5_movie>
+	<fanart></fanart>
+	<thumbnail></thumbnail>
+	<summary>Audio Books</summary>
+    </dir> 

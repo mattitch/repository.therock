@@ -1,0 +1,71 @@
+<xml>
+<dir>
+<title>Barbie Movies</title>
+<link>file://kids/barbie.xml</link>
+</dir>
+<dir>
+    <title>Today's Picks</title>
+    <wctoon>main/today</wctoon>
+</dir>
+
+<dir>
+    <title>50 Latest Releases</title>
+    <wctoon>topfifty/last-50-recent-release</wctoon>
+</dir>
+
+<dir>
+    <title>Most Popular Series</title>
+    <wctoon>main/popular</wctoon>
+</dir>
+
+<dir>
+    <title>Latest Series Added</title>
+    <wctoon>main/recent-release-main/1</wctoon>
+</dir>
+
+<dir>
+    <title>Cartoons</title>
+    <wctoon>category/cartoon-list</wctoon>
+</dir>
+
+<dir>
+    <title>Movies</title>
+    <wctoon>wcgenre/74</wctoon>
+</dir>
+
+<dir>
+    <title>Ova Series</title>
+    <wctoon>category/ova-list</wctoon>
+</dir>
+
+<dir>
+    <title>Search Site</title>
+    <wctoon>wcsearch</wctoon>
+</dir>
+
+<dir>
+    <title>Fantasy</title>
+    <wctoon>wcgenre/8</wctoon>
+</dir>
+
+<dir>
+    <title>Adventure</title>
+    <wctoon>wcgenre/4</wctoon>
+</dir>
+
+<dir>
+    <title>Comedy</title>
+    <wctoon>wcgenre/6</wctoon>
+</dir>
+
+<dir>
+    <title>Genre List</title>
+    <wctoon>wcgenre/1</wctoon>
+</dir>
+
+<dir>
+<title>Angry Birds Toons</title>
+<wctoon>wcsearch/angry birds</wctoon>
+</dir>
+
+</xml>
