@@ -1,0 +1,72 @@
+<plugin>
+	<title>[COLOR=white]Sam & Cat[/COLOR]</title>
+	<meta>
+	<imdb>tt2487090</imdb>
+	<content>tv</content>
+	<title>Sam & Cat</title>
+	<year>2013</year>
+	</meta>
+	<link>plugin://plugin.video.mattboxtv/?description=No%20information%20available&amp;fanart=https%3a%2f%2fimage.tmdb.org%2ft%2fp%2fw1280%2fxSdsvFqc2NaLbWvlT0fP2WEmFEy.jpg&amp;iconimage=https%3a%2f%2fimage.tmdb.org%2ft%2fp%2fw1280%2f%2fgtHTWJWXDdnEGLoNYWTpez0cbkH.jpg&amp;mode=trakt_tv_show&amp;name=%5bCOLOR%20FFffffffff%5dSam%20%26%20Cat%5b%2fCOLOR%5d&amp;url=trakt_id45414%2c%202013%2c%20Sam%20%26%20Cat%2c%2045666%2c%20tt2487090&quot;,return</link>
+	<thumbnail>https://image.tmdb.org/t/p/w1280/gtHTWJWXDdnEGLoNYWTpez0cbkH.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/w1280/xSdsvFqc2NaLbWvlT0fP2WEmFEy.jpg</fanart>
+</plugin>
+<plugin>
+	<title>[COLOR=white]Girl Meets World[/COLOR]</title>
+	<meta>
+	<imdb>tt2543796</imdb>
+	<content>tv</content>
+	<title>Girl Meets World</title>
+	<year>2014</year>
+	</meta>
+	<link>plugin://plugin.video.mattboxtv/?description=No%20information%20available&amp;fanart=https%3a%2f%2fimage.tmdb.org%2ft%2fp%2fw1280%2fm7UpS9xjmZ7IkgnSMVL1kNiMOYl.jpg&amp;iconimage=https%3a%2f%2fimage.tmdb.org%2ft%2fp%2fw1280%2f%2fyeRT4hAVoCz6RjLUiwdZ8Of34Th.jpg&amp;mode=trakt_tv_show&amp;name=%5bCOLOR%20FFffffffff%5dGirl%20Meets%20World%5b%2fCOLOR%5d&amp;url=trakt_id45773%2c%202014%2c%20Girl%20Meets%20World%2c%2046028%2c%20tt2543796&quot;,return</link>
+	<thumbnail>https://image.tmdb.org/t/p/w1280/yeRT4hAVoCz6RjLUiwdZ8Of34Th.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/w1280/m7UpS9xjmZ7IkgnSMVL1kNiMOYl.jpg</fanart>
+</plugin>
+<plugin>
+	<title>[COLOR=white]K.C. Undercover[/COLOR]</title>
+	<meta>
+	<imdb>tt3598030</imdb>
+	<content>tv</content>
+	<title>K.C. Undercover</title>
+	<year>2015</year>
+	</meta>
+	<link>plugin://plugin.video.mattboxtv/?description=No%20information%20available&amp;fanart=https%3a%2f%2fimage.tmdb.org%2ft%2fp%2fw1280%2f31GZblRVe1DPZXbxTL5aVWTPJ9f.jpg&amp;iconimage=https%3a%2f%2fimage.tmdb.org%2ft%2fp%2fw1280%2f%2f1tq8ao1v28f6DpNfUVMKyiruBwl.jpg&amp;mode=trakt_tv_show&amp;name=%5bCOLOR%20FFffffffff%5dK.C.%20Undercover%5b%2fCOLOR%5d&amp;url=trakt_id82068%2c%202015%2c%20K.C.%20Undercover%2c%2061915%2c%20tt3598030&quot;,return</link>
+	<thumbnail>https://image.tmdb.org/t/p/w1280/1tq8ao1v28f6DpNfUVMKyiruBwl.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/w1280/31GZblRVe1DPZXbxTL5aVWTPJ9f.jpg</fanart>
+</plugin>
+<dir>
+	<title>[COLOR=white]H2O: Mermaid Adventures[/COLOR]</title>
+	<meta>
+	<imdb>tt4610750</imdb>
+	<content>tv</content>
+	<title>H2O: Mermaid Adventures</title>
+	<year>2015</year>
+	</meta>
+	<wctoon>wcsearch/H2O: Mermaid Adventures</wctoon>
+	<thumbnail>https://image.tmdb.org/t/p/w1280/BF3H0AIDooZTee42m4saaGdpn0.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/w1280/6KtO6k8mABpvaijX4a6knzFzChl.jpg</fanart>
+</dir>
+<dir>
+	<title>[COLOR=white]World of Winx[/COLOR]</title>
+	<meta>
+	<imdb>tt5874596</imdb>
+	<content>tv</content>
+	<title>World of Winx</title>
+	<year>2016</year>
+	</meta>
+	<wctoon>wcsearch/winx</wctoon>
+	<thumbnail>https://image.tmdb.org/t/p/w1280/ib9wFR69Ns77EFyYZ82Ng0vY9bX.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/w1280/ksuHWxQxvkVLlrz8IeO7Y7TxKmc.jpg</fanart>
+</dir>
+<plugin>
+	<title>[COLOR=white]A Series of Unfortunate Events[/COLOR]</title>
+	<meta>
+	<imdb>tt4834206</imdb>
+	<content>tv</content>
+	<title>A Series of Unfortunate Events</title>
+	<year>2017</year>
+	</meta>
+	<link>plugin://plugin.video.mattboxtv/?description=No%20information%20available&amp;fanart=https%3a%2f%2fimage.tmdb.org%2ft%2fp%2fw1280%2f9XgVqYPY7gDuCpymmTwwpXA1IB5.jpg&amp;iconimage=https%3a%2f%2fimage.tmdb.org%2ft%2fp%2fw1280%2f%2fchLSPHjb1dAZRKstpx17lnDbZU9.jpg&amp;mode=trakt_tv_show&amp;name=%5bCOLOR%20FFffffffff%5dA%20Series%20of%20Unfortunate%20Events%5b%2fCOLOR%5d&amp;url=trakt_id104926%2c%202017%2c%20A%20Series%20of%20Unfortunate%20Events%2c%2065294%2c%20tt4834206&quot;,return</link>
+	<thumbnail>https://image.tmdb.org/t/p/w1280/chLSPHjb1dAZRKstpx17lnDbZU9.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/w1280/9XgVqYPY7gDuCpymmTwwpXA1IB5.jpg</fanart>
+</plugin>

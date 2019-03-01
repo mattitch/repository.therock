@@ -1,8 +1,26 @@
 <xml>
+
+<dir>
+<title>Rosie Time</title>
+<link>file://kids/Rosie-TV.xml</link>
+</dir>
+
+<dir>
+<title>Poppys Place</title>
+<link>file://kids/Poppys-TV.xml</link>
+</dir>
+
+<dir>
+<title>Lilys Pad</title>
+<link>file://kids/Lily-TV.xml</link>
+</dir>
+
+
 <dir>
 <title>Barbie Movies</title>
 <link>file://kids/barbie.xml</link>
 </dir>
+
 <dir>
     <title>Today's Picks</title>
     <wctoon>main/today</wctoon>
