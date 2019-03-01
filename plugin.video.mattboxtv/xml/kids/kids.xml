@@ -3,16 +3,20 @@
 <dir>
 <title>Rosie Time</title>
 <link>file://kids/Rosie-TV.xml</link>
+<thumbnail>https://raw.githubusercontent.com/mattitch/images/master/kids/rosie.png</thumbnail>
 </dir>
 
 <dir>
 <title>Poppys Place</title>
 <link>file://kids/Poppys-TV.xml</link>
+<thumbnail>https://raw.githubusercontent.com/mattitch/images/master/kids/pops.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/mattitch/images/master/kids/pops.jpg</fanart>
 </dir>
 
 <dir>
 <title>Lilys Pad</title>
 <link>file://kids/Lily-TV.xml</link>
+<thumbnail>https://raw.githubusercontent.com/mattitch/images/master/kids/lily.png</thumbnail>
 </dir>
 
 
