@@ -4,10 +4,10 @@
         <link>http://gen-tec.co/gentecwiz/PLEASE%20SUBSCRIBE%20TO%20CHARLIE%20TEC%20YOUTUBE/star/movies/LastestReleases.xml</link>
     </dir>
 	
-	<dir>
-		<title>New Releases</title>
-		<Airtable>new_releases2</Airtable>
-    </dir>
+	<plugin>
+		<title>Magic Dragon New Releases</title>
+		<link>plugin://plugin.video.themagicdragon/?fanart=http%3a%2f%2fsupremacy.org.uk%2ftombraider%2fdogsbollocks%2fIcons%2ffanart.jpg&amp;mode=1&amp;name=%5bB%5d%5bI%5d%5bCOLORlime%5dNew%20Movie%20Releases%5b%2fB%5d%5b%2fI%5d%5b%2fCOLOR%5d&amp;url=http%3a%2f%2fsupremacy.org.uk%2ftombraider%2fdogsbollocks%2fnewreleases.txt&quot;,return</link>
+    </plugin>
 	
 	<dir> 
 		<title>Mattbox Movies</title>
