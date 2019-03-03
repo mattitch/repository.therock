@@ -174,7 +174,7 @@
 	<title>Ever After High</title>
 	<year>2013</year>
 	</meta>
-	<link>plugin://plugin.video.mattboxtv/?description=No%20information%20available&amp;fanart=C%3a%5cUsers%5cMattitch%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.mattboxtv%5cfanart.jpg&amp;iconimage=C%3a%5cUsers%5cMattitch%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.mattboxtv%5cicon.png&amp;mode=WCEpisodes&amp;name=%5bCOLOR%20FFffffffff%5dEver%20After%20High%5b%2fCOLOR%5d&amp;url=wcepisode%2fhttps%3a%2f%2fwww.watchcartoononline.io%2fanime%2fever-after-high&quot;,return</link>
+	<link>plugin://plugin.video.mattboxtv/?description=No%20information%20available&amp;fanart=special://home/addons%5cplugin.video.mattboxtv%5cfanart.jpg&amp;iconimage=special://home/addons%5cplugin.video.mattboxtv%5cicon.png&amp;mode=WCEpisodes&amp;name=%5bCOLOR%20FFffffffff%5dEver%20After%20High%5b%2fCOLOR%5d&amp;url=wcepisode%2fhttps%3a%2f%2fwww.watchcartoononline.io%2fanime%2fever-after-high&quot;,return</link>
 	<thumbnail>https://image.tmdb.org/t/p/w1280/1Qj933RnqJCO33zisH4XO1hQObB.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/w1280/Kt4cV6rUBKLkKljLFeHs7BKeJR.jpg</fanart>
 </plugin>
@@ -262,3 +262,16 @@
 	<thumbnail>https://image.tmdb.org/t/p/w1280/hLaK7YPB4VofyDyBcztee8CbnHH.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/w1280/tV5pAtzZHKZCltnywHp0WGgxLZF.jpg</fanart>
 </dir>
+
+<plugin>
+	<title>[COLOR=white]Horrible Histories[/COLOR]</title>
+	<meta>
+	<imdb>tt1400819</imdb>
+	<content>tv</content>
+	<title>Horrible Histories</title>
+	<year>2009</year>
+	</meta>
+	<link>plugin://plugin.video.mattboxtv/?description=No%20information%20available&amp;fanart=https%3a%2f%2fimage.tmdb.org%2ft%2fp%2fw1280%2fg8CSrtORDSoKMpzDAgLk4fTZaZb.jpg&amp;iconimage=https%3a%2f%2fimage.tmdb.org%2ft%2fp%2fw1280%2f%2f4goFR4JK6UOJ2yus3WvJunC9pmZ.jpg&amp;mode=trakt_tv_show&amp;name=%5bCOLOR%20FFffffffff%5dHorrible%20Histories%5b%2fCOLOR%5d&amp;url=trakt_id32279%2c%202009%2c%20Horrible%20Histories%2c%2032419%2c%20tt1400819</link>
+	<thumbnail>https://image.tmdb.org/t/p/w1280/4goFR4JK6UOJ2yus3WvJunC9pmZ.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/w1280/g8CSrtORDSoKMpzDAgLk4fTZaZb.jpg</fanart>
+</plugin>
