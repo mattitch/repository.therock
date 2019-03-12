@@ -212,6 +212,7 @@ class WatchCartoon(Plugin):
 
 @route(mode='PBCats', args=["url"])
 def get_pbcats(url):
+    pins = ""
     url = url.replace('pbcategory/', '') # Strip our category tag off.
     url = urlparse.urljoin(pbcats_link, url)
 
@@ -245,11 +246,12 @@ def get_pbcats(url):
         save_to_db(xml, url)
 
     jenlist = JenList(xml)
-    display_list(jenlist.get_list(), jenlist.get_content_type())
+    display_list(jenlist.get_list(), jenlist.get_content_type(), pins)
 
 
 @route(mode='PBShow', args=["url"])
 def get_pbshow(url):
+    pins = ""
     url = url.replace('pbshow/', '') # Strip our show tag off.
     url = urlparse.urljoin(pbshow_link, url)
 
@@ -279,7 +281,7 @@ def get_pbshow(url):
         save_to_db(xml, url)
 
     jenlist = JenList(xml)
-    display_list(jenlist.get_list(), jenlist.get_content_type())
+    display_list(jenlist.get_list(), jenlist.get_content_type(), pins)
 
 
 @route(mode='PBEpisode', args=["url"])

@@ -266,6 +266,7 @@ class MovieTorture(Plugin):
 
 @route(mode='MTortureByCat', args=["url"])
 def get_MTortureByCat(url):
+    pins = ""
     category = url.split('/')[1]
     page_id = url.split('/')[2]
 
@@ -329,11 +330,12 @@ def get_MTortureByCat(url):
             pass
 
     jenlist = JenList(xml)
-    display_list(jenlist.get_list(), jenlist.get_content_type())
+    display_list(jenlist.get_list(), jenlist.get_content_type(), pins)
 
 
 @route(mode='MTortureByTag', args=["url"])
 def get_MTortureByTag(url):
+    pins = ""
     tag_id = url.split('/')[1]
     page_id = url.split('/')[2]
 
@@ -392,7 +394,7 @@ def get_MTortureByTag(url):
             pass
 
     jenlist = JenList(xml)
-    display_list(jenlist.get_list(), jenlist.get_content_type())
+    display_list(jenlist.get_list(), jenlist.get_content_type(), pins)
 
 
 @route(mode='PlayMTorture', args=["url"])

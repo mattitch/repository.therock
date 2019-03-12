@@ -35,31 +35,26 @@
 
 
 
-from __future__ import absolute_import
-import requests
-import re
-import os
-import xbmc
-import xbmcaddon
-import json
+import requests,re,os,xbmc,xbmcaddon
+import base64,pickle,koding,time,sqlite3
 from koding import route
 from ..plugin import Plugin
-from resources.lib.external.airtable.airtable import Airtable
 from resources.lib.util.context import get_context_items
-from resources.lib.util.xml import JenItem, JenList, display_list
-from requests.exceptions import HTTPError
-import posixpath
-import time
-from six.moves.urllib.parse import unquote
-from six.moves.urllib.parse import quote
+from resources.lib.util.xml import JenItem, JenList, display_list, display_data, clean_url
+from resources.lib.external.airtable.airtable import Airtable
 from unidecode import unidecode
 
-CACHE_TIME = 3600  # change to wanted cache time in seconds
+CACHE_TIME = 86400  # change to wanted cache time in seconds
 
+addon_id = xbmcaddon.Addon().getAddonInfo('id')
 addon_fanart = xbmcaddon.Addon().getAddonInfo('fanart')
 addon_icon = xbmcaddon.Addon().getAddonInfo('icon')
 AddonName = xbmc.getInfoLabel('Container.PluginName')
-AddonName = xbmcaddon.Addon(AddonName).getAddonInfo('id')
+home_folder = xbmc.translatePath('special://home/')
+user_data_folder = os.path.join(home_folder, 'userdata')
+addon_data_folder = os.path.join(user_data_folder, 'addon_data')
+database_path = os.path.join(addon_data_folder, addon_id)
+database_loc = os.path.join(database_path, 'database.db')
 
 
 class DC_comics(Plugin):
@@ -177,46 +172,176 @@ class DC_comics(Plugin):
 
 @route(mode='open_dccomics_list')
 def open_list():
-    xml = ""
-    at = Airtable('appUUMKBACjsL4fmx', 'DC Comics', api_key='keyem86gyhcLFSLqh')
-    match = at.get_all(maxRecords=1200, view='Grid view') 
-    for field in match: 
-        try:
-            res = field['fields']   
-            name = res['name']
-            name = remove_non_ascii(name)
-            link1 = res['link1']
-            thumbnail = res['thumbnail']
-            fanart = res['fanart']
-            summary = res ['summary']
-            summary = remove_non_ascii(summary) 
-            print link1                                                           
-            xml += "<item>"\
-                   "<title>%s</title>"\
-                   "<meta>"\
-                   "<content>movie</content>"\
-                   "<imdb></imdb>"\
-                   "<title></title>"\
-                   "<year></year>"\
-                   "<thumbnail>%s</thumbnail>"\
-                   "<fanart>%s</fanart>"\
-                   "<summary>%s</summary>"\
-                   "</meta>"\
-                   "<dccomics>open|%s</dccomics>"\
-                   "</item>" % (name,thumbnail,fanart,summary,link1)
-        except:
-            pass                                                                     
-    jenlist = JenList(xml)
-    display_list(jenlist.get_list(), jenlist.get_content_type())
+    pins = "PLugindccomicslist"
+    Items = fetch_from_db2(pins)
+    if Items:
+        display_data(Items)  
+    else:    
+        xml = ""
+        at = Airtable('appUUMKBACjsL4fmx', 'DC Comics', api_key='keyem86gyhcLFSLqh')
+        match = at.get_all(maxRecords=1200, view='Grid view') 
+        for field in match: 
+            try:
+                res = field['fields']   
+                name = res['name']
+                name = remove_non_ascii(name)
+                link1 = res['link1']
+                thumbnail = res['thumbnail']
+                fanart = res['fanart']
+                summary = res ['summary']
+                summary = remove_non_ascii(summary) 
+                print link1                                                           
+                xml += "<item>"\
+                       "<title>%s</title>"\
+                       "<meta>"\
+                       "<content>movie</content>"\
+                       "<imdb></imdb>"\
+                       "<title></title>"\
+                       "<year></year>"\
+                       "<thumbnail>%s</thumbnail>"\
+                       "<fanart>%s</fanart>"\
+                       "<summary>%s</summary>"\
+                       "</meta>"\
+                       "<dccomics>open|%s</dccomics>"\
+                       "</item>" % (name,thumbnail,fanart,summary,link1)
+            except:
+                pass                                                                     
+        jenlist = JenList(xml)
+        display_list(jenlist.get_list(), jenlist.get_content_type(), pins)
 
 @route(mode='open_dccomics_items',args=["url"])
+def open_items(url):    
+        xml = ""
+        title = url.split("|")[-2]
+        key = url.split("|")[-1]
+        at = Airtable(key, title, api_key='keyem86gyhcLFSLqh')
+        match = at.get_all(maxRecords=1200, view='Grid view')
+        if title == "DC Movies":
+            pins = "PLugindccomicsmovies"
+            Items = fetch_from_db2(pins)
+            if Items:
+                display_data(Items)  
+            else:            
+                for field in match:
+                    try:
+                        res = field['fields']   
+                        thumbnail = res['thumbnail']
+                        fanart = res['fanart']
+                        summary = res['summary']
+                        summary = remove_non_ascii(summary)                   
+                        name = res['name']
+                        name = remove_non_ascii(name)
+                        link1 = res['link1']
+                        link2 = res['link2']
+                        link3 = res['link3']
+                        link4 = res['link4']                                                 
+                        xml += "<item>"\
+                               "<title>%s</title>"\
+                               "<meta>"\
+                               "<content>movie</content>"\
+                               "<imdb></imdb>"\
+                               "<title></title>"\
+                               "<year></year>"\
+                               "<thumbnail>%s</thumbnail>"\
+                               "<fanart>%s</fanart>"\
+                               "<summary>%s</summary>"\
+                               "</meta>"\
+                               "<link>"\
+                               "<sublink>%s</sublink>"\
+                               "<sublink>%s</sublink>"\
+                               "<sublink>%s</sublink>"\
+                               "<sublink>%s</sublink>"\
+                               "</link>"\
+                               "</item>" % (name,thumbnail,fanart,summary,link1,link2,link3,link4) 
+                    except:
+                        pass                                                                     
+                jenlist = JenList(xml)
+                display_list(jenlist.get_list(), jenlist.get_content_type(), pins)
+        elif title == "DC Shows":
+            pins = "PLugindccomicsshows"
+            Items = fetch_from_db2(pins)
+            if Items:
+                display_data(Items)  
+            else:            
+                for field in match:
+                    try:
+                        res = field['fields']   
+                        thumbnail = res['thumbnail']
+                        fanart = res['fanart']
+                        summary = res['summary']
+                        summary = remove_non_ascii(summary)                   
+                        name = res['name']
+                        name = remove_non_ascii(name)
+                        link1 = res['link1']                                                 
+                        xml += "<item>"\
+                               "<title>%s</title>"\
+                               "<meta>"\
+                               "<content>movie</content>"\
+                               "<imdb></imdb>"\
+                               "<title></title>"\
+                               "<year></year>"\
+                               "<thumbnail>%s</thumbnail>"\
+                               "<fanart>%s</fanart>"\
+                               "<summary>%s</summary>"\
+                               "</meta>"\
+                               "<link>"\
+                               "<dccomics>shows|%s</dccomics>"\
+                               "</link>"\
+                               "</item>" % (name,thumbnail,fanart,summary,link1)
+                    except:
+                        pass                                                                     
+                jenlist = JenList(xml)
+                display_list(jenlist.get_list(), jenlist.get_content_type(), pins)
+        elif title == "DC Animated Series":
+            pins = "PLugindccomicsseries"
+            Items = fetch_from_db2(pins)
+            if Items:
+                display_data(Items)  
+            else:            
+                for field in match:
+                    try:
+                        res = field['fields']   
+                        thumbnail = res['thumbnail']
+                        fanart = res['fanart']
+                        summary = res['summary']
+                        summary = remove_non_ascii(summary)                   
+                        name = res['name']
+                        name = remove_non_ascii(name)
+                        link1 = res['link1']                                                 
+                        xml += "<item>"\
+                               "<title>%s</title>"\
+                               "<meta>"\
+                               "<content>movie</content>"\
+                               "<imdb></imdb>"\
+                               "<title></title>"\
+                               "<year></year>"\
+                               "<thumbnail>%s</thumbnail>"\
+                               "<fanart>%s</fanart>"\
+                               "<summary>%s</summary>"\
+                               "</meta>"\
+                               "<link>"\
+                               "<dccomics>shows|%s</dccomics>"\
+                               "</link>"\
+                               "</item>" % (name,thumbnail,fanart,summary,link1)
+                    except:
+                        pass                                                                     
+                jenlist = JenList(xml)
+                display_list(jenlist.get_list(), jenlist.get_content_type(), pins)
+
+
+@route(mode='open_dccomics_shows',args=["url"])
 def open_items(url):
-    xml = ""
-    title = url.split("|")[-2]
-    key = url.split("|")[-1]
-    at = Airtable(key, title, api_key='keyem86gyhcLFSLqh')
-    match = at.get_all(maxRecords=1200, view='Grid view')
-    if title == "DC Movies":
+    pins = "PLugindccomics"+url
+    Items = fetch_from_db2(pins)
+    if Items:
+        display_data(Items)  
+    else:    
+        xml = ""
+        title = url.split("|")[-2]
+        key = url.split("|")[-1]
+        result = title+"_season"
+        at = Airtable(key, title, api_key='keyem86gyhcLFSLqh')
+        match = at.search('category', result,view='Grid view')
         for field in match:
             try:
                 res = field['fields']   
@@ -227,9 +352,7 @@ def open_items(url):
                 name = res['name']
                 name = remove_non_ascii(name)
                 link1 = res['link1']
-                link2 = res['link2']
-                link3 = res['link3']
-                link4 = res['link4']                                                 
+                url2 = title+"|"+key+"|"+name                                                 
                 xml += "<item>"\
                        "<title>%s</title>"\
                        "<meta>"\
@@ -242,160 +365,89 @@ def open_items(url):
                        "<summary>%s</summary>"\
                        "</meta>"\
                        "<link>"\
-                       "<sublink>%s</sublink>"\
-                       "<sublink>%s</sublink>"\
-                       "<sublink>%s</sublink>"\
-                       "<sublink>%s</sublink>"\
+                       "<dccomics>season|%s</dccomics>"\
                        "</link>"\
-                       "</item>" % (name,thumbnail,fanart,summary,link1,link2,link3,link4) 
+                       "</item>" % (name,thumbnail,fanart,summary,url2)
             except:
                 pass                                                                     
         jenlist = JenList(xml)
-        display_list(jenlist.get_list(), jenlist.get_content_type())
-    elif title == "DC Shows":
-        for field in match:
-            try:
-                res = field['fields']   
-                thumbnail = res['thumbnail']
-                fanart = res['fanart']
-                summary = res['summary']
-                summary = remove_non_ascii(summary)                   
-                name = res['name']
-                name = remove_non_ascii(name)
-                link1 = res['link1']                                                 
-                xml += "<item>"\
-                       "<title>%s</title>"\
-                       "<meta>"\
-                       "<content>movie</content>"\
-                       "<imdb></imdb>"\
-                       "<title></title>"\
-                       "<year></year>"\
-                       "<thumbnail>%s</thumbnail>"\
-                       "<fanart>%s</fanart>"\
-                       "<summary>%s</summary>"\
-                       "</meta>"\
-                       "<link>"\
-                       "<dccomics>shows|%s</dccomics>"\
-                       "</link>"\
-                       "</item>" % (name,thumbnail,fanart,summary,link1)
-            except:
-                pass                                                                     
-        jenlist = JenList(xml)
-        display_list(jenlist.get_list(), jenlist.get_content_type())
-    elif title == "DC Animated Series":
-        for field in match:
-            try:
-                res = field['fields']   
-                thumbnail = res['thumbnail']
-                fanart = res['fanart']
-                summary = res['summary']
-                summary = remove_non_ascii(summary)                   
-                name = res['name']
-                name = remove_non_ascii(name)
-                link1 = res['link1']                                                 
-                xml += "<item>"\
-                       "<title>%s</title>"\
-                       "<meta>"\
-                       "<content>movie</content>"\
-                       "<imdb></imdb>"\
-                       "<title></title>"\
-                       "<year></year>"\
-                       "<thumbnail>%s</thumbnail>"\
-                       "<fanart>%s</fanart>"\
-                       "<summary>%s</summary>"\
-                       "</meta>"\
-                       "<link>"\
-                       "<dccomics>shows|%s</dccomics>"\
-                       "</link>"\
-                       "</item>" % (name,thumbnail,fanart,summary,link1)
-            except:
-                pass                                                                     
-        jenlist = JenList(xml)
-        display_list(jenlist.get_list(), jenlist.get_content_type())
-
-
-@route(mode='open_dccomics_shows',args=["url"])
-def open_items(url):
-    xml = ""
-    title = url.split("|")[-2]
-    key = url.split("|")[-1]
-    result = title+"_season"
-    at = Airtable(key, title, api_key='keyem86gyhcLFSLqh')
-    match = at.search('category', result,view='Grid view')
-    for field in match:
-        try:
-            res = field['fields']   
-            thumbnail = res['thumbnail']
-            fanart = res['fanart']
-            summary = res['summary']
-            summary = remove_non_ascii(summary)                   
-            name = res['name']
-            name = remove_non_ascii(name)
-            link1 = res['link1']
-            url2 = title+"|"+key+"|"+name                                                 
-            xml += "<item>"\
-                   "<title>%s</title>"\
-                   "<meta>"\
-                   "<content>movie</content>"\
-                   "<imdb></imdb>"\
-                   "<title></title>"\
-                   "<year></year>"\
-                   "<thumbnail>%s</thumbnail>"\
-                   "<fanart>%s</fanart>"\
-                   "<summary>%s</summary>"\
-                   "</meta>"\
-                   "<link>"\
-                   "<dccomics>season|%s</dccomics>"\
-                   "</link>"\
-                   "</item>" % (name,thumbnail,fanart,summary,url2)
-        except:
-            pass                                                                     
-    jenlist = JenList(xml)
-    display_list(jenlist.get_list(), jenlist.get_content_type())    
+        display_list(jenlist.get_list(), jenlist.get_content_type(), pins)    
 
 @route(mode='open_dccomics_season',args=["url"])
 def open_items(url):
-    xml = ""
-    title = url.split("|")[-3]
-    key = url.split("|")[-2]
-    sea_name = url.split("|")[-1]
-    result = title+"_"+sea_name
-    at = Airtable(key, title, api_key='keyem86gyhcLFSLqh')
-    match = at.search('category', result,view='Grid view')
-    for field in match:
-        try:
-            res = field['fields']
-            thumbnail = res['thumbnail']
-            fanart = res['fanart']
-            summary = res['summary']
-            summary = remove_non_ascii(summary)                   
-            name = res['name']
-            name = remove_non_ascii(name)
-            link1 = res['link1']
-            link2 = res['link2']
-            link3 = res['link3']
-            xml += "<item>"\
-                   "<title>%s</title>"\
-                   "<meta>"\
-                   "<content>movie</content>"\
-                   "<imdb></imdb>"\
-                   "<title></title>"\
-                   "<year></year>"\
-                   "<thumbnail>%s</thumbnail>"\
-                   "<fanart>%s</fanart>"\
-                   "<summary>%s</summary>"\
-                   "</meta>"\
-                   "<link>"\
-                   "<sublink>%s</sublink>"\
-                   "<sublink>%s</sublink>"\
-                   "<sublink>%s</sublink>"\
-                   "</link>"\
-                   "</item>" % (name,thumbnail,fanart,summary,link1,link2,link3)                                                               
-        except:
-            pass                  
-    jenlist = JenList(xml)
-    display_list(jenlist.get_list(), jenlist.get_content_type())    
+    pins = "PLugindccomics"+url
+    Items = fetch_from_db2(pins)
+    if Items:
+        display_data(Items)  
+    else:    
+        xml = ""
+        title = url.split("|")[-3]
+        key = url.split("|")[-2]
+        sea_name = url.split("|")[-1]
+        result = title+"_"+sea_name
+        at = Airtable(key, title, api_key='keyem86gyhcLFSLqh')
+        match = at.search('category', result,view='Grid view')
+        for field in match:
+            try:
+                res = field['fields']
+                thumbnail = res['thumbnail']
+                fanart = res['fanart']
+                summary = res['summary']
+                summary = remove_non_ascii(summary)                   
+                name = res['name']
+                name = remove_non_ascii(name)
+                link1 = res['link1']
+                link2 = res['link2']
+                link3 = res['link3']
+                xml += "<item>"\
+                       "<title>%s</title>"\
+                       "<meta>"\
+                       "<content>movie</content>"\
+                       "<imdb></imdb>"\
+                       "<title></title>"\
+                       "<year></year>"\
+                       "<thumbnail>%s</thumbnail>"\
+                       "<fanart>%s</fanart>"\
+                       "<summary>%s</summary>"\
+                       "</meta>"\
+                       "<link>"\
+                       "<sublink>%s</sublink>"\
+                       "<sublink>%s</sublink>"\
+                       "<sublink>%s</sublink>"\
+                       "</link>"\
+                       "</item>" % (name,thumbnail,fanart,summary,link1,link2,link3)                                                               
+            except:
+                pass                  
+        jenlist = JenList(xml)
+        display_list(jenlist.get_list(), jenlist.get_content_type(), pins)    
 
+def fetch_from_db2(url):
+    koding.reset_db()
+    url2 = clean_url(url)
+    match = koding.Get_All_From_Table(url2)
+    if match:
+        match = match[0]
+        if not match["value"]:
+            return None   
+        match_item = match["value"]
+        try:
+                result = pickle.loads(base64.b64decode(match_item))
+        except:
+                return None
+        created_time = match["created"]
+        if float(created_time) + CACHE_TIME <= time.time():
+            koding.Remove_Table(url2)
+            db = sqlite3.connect('%s' % (database_loc))        
+            cursor = db.cursor()
+            db.execute("vacuum")
+            db.commit()
+            db.close()
+            return result
+        else:
+            pass                     
+        return result
+    else:
+        return []
 
 def remove_non_ascii(text):
     return unidecode(text)

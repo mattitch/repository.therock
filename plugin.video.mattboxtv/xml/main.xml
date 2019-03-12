@@ -1,80 +1,72 @@
 <xml>
  
     <dir>
-        <title>WELCOME TO MATTBOX TV [COLOR=red] ver 1.9[/COLOR]</title>
+        <title>WELCOME TO MATTBOX TV [COLOR=red] ver 2[/COLOR]</title>
 		<link>plugin://plugin.video.mattboxtv/xml/main.xml</link>
-	<animated_thumbnail>https://media.giphy.com/media/9JgiqFzdfDW7PHftQT/giphy.gif</animated_thumbnail>
+		<thumbnail>https://mattbox.000webhostapp.com/mattboxtv/img/welcome.png</thumbnail>
     </dir>
  
     <item>
         <title>================================</title>
+<thumbnail>https://mattbox.000webhostapp.com/mattboxtv/img/plain.PNG</thumbnail>
     </item>
     <dir>
     <title>Movies</title>
     <link>file://movies.xml</link>
-	<animated_thumbnail>https://media.giphy.com/media/RkLqJNiVuvwVonEfcU/giphy.gif</animated_thumbnail>	
+	<thumbnail>https://mattbox.000webhostapp.com/mattboxtv/img/mov.png</thumbnail>	
     </dir>
  
     <dir>
         <title>TV Shows</title>
         <link>file://tv.xml</link>
-		<animated_thumbnail>https://media.giphy.com/media/Nmi1BkAx5Fz6Aostgv/giphy.gif</animated_thumbnail>
+		<thumbnail>https://mattbox.000webhostapp.com/mattboxtv/img/tvshows.png</thumbnail>
     </dir>
  
     <dir>
         <title>Sports</title>
         <link>https://pastebin.com/raw/RBJDrwNC</link>
-		<animated_thumbnail>https://media.giphy.com/media/LZ3HUGB4kMyHzVsJAt/giphy.gif</animated_thumbnail>
+		<thumbnail>https://mattbox.000webhostapp.com/mattboxtv/img/sports.png</thumbnail>
     </dir>
    
     <dir>
         <title>Kids</title>
         <link>file://kids/kids.xml</link>
-		<animated_thumbnail>https://media.giphy.com/media/YkuvtsoZ5mwMKhqN9x/giphy.gif</animated_thumbnail>
+		<thumbnail>https://mattbox.000webhostapp.com/mattboxtv/img/kids.png</thumbnail>
 		</dir>
  
     <dir>
         <title>Live TV</title>
         <link>https://pastebin.com/raw/wazdzZ1t</link>
-		<animated_thumbnail>https://media.giphy.com/media/SJWgyRwq8RLP9ch60Y/giphy.gif</animated_thumbnail>
+		<thumbnail>https://mattbox.000webhostapp.com/mattboxtv/img/livetv.png</thumbnail>
     </dir>
  
  
 <dir>
 <title>Music</title>
 <link>https://pastebin.com/raw/Dx1Z0bdr</link>
-<animated_thumbnail>https://media.giphy.com/media/7NG9kWZwoLKmT1wNte/giphy.gif</animated_thumbnail>
+<thumbnail>https://mattbox.000webhostapp.com/mattboxtv/img/music.png</thumbnail>
 </dir>
  
 <dir>
 <title>Documentarys</title>
 <link>https://pastebin.com/raw/MphSMxra</link>
+<thumbnail>https://mattbox.000webhostapp.com/mattboxtv/img/docs.png</thumbnail>
 </dir>
 
 <dir>
 <title>Podcasts</title>
 <link>https://pastebin.com/raw/b6PgzGdh</link>
+<thumbnail>https://mattbox.000webhostapp.com/mattboxtv/img/pods.png</thumbnail>
 </dir>
    
  
     <dir>
         <title>Search Movies & TV Shows</title>
         <trakt>search</trakt>
-		<animated_thumbnail>https://media.giphy.com/media/7SR22KorGIvqHciHIn/giphy.gif</animated_thumbnail>
+	<thumbnail>https://mattbox.000webhostapp.com/mattboxtv/img/search.png</thumbnail>
     </dir>
  
 
-    <plugin>
-  <name>Settings</name>
-  <link>plugin://plugin.video.mattboxtv/?action=openSettings</link>
-  <animated_thumbnail>https://media.giphy.com/media/fWfF1Iizs5kG52Yutm/giphy.gif</animated_thumbnail>
-</plugin>
- 
-<dir>
-<title>Other Addons</title>
-<link>https://pastebin.com/raw/31CQEM7D</link>
-<animated_thumbnail>https://media.giphy.com/media/3OqqNQYUPZBrhug89l/giphy.gif</animated_thumbnail>
-</dir>
  
  
 </xml>

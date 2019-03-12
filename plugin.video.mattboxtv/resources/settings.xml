@@ -31,6 +31,8 @@
         <setting label="30719" type="action" option="close"
                action="RunPlugin(plugin://plugin.video.mattboxtv/?mode=clearCache)"/>
         <setting label="Clear Cache Without Prompts" type="bool" id="quiet_cache" default="true" visible="true"/>
+		<setting label="Enable Main Cache" type="bool" id="enable_cache" default="true" visible="true"/>
+		<setting label="Main Cache Time in minutes" type="text" id="main_cache_time" default="1440" visible="true"/>	
     </category>
 
     <!-- custom login settings -->
@@ -67,12 +69,12 @@
 
         <!-- filtering settings -->
         <setting label="30735" type="lsep"/>
-        <setting id="allow_debrid" label="30743" type="bool" default="false"/>
+        <setting id="allow_debrid" label="30743" type="bool" default="true"/>
         <setting id="allow_openload" label="30736" type="bool" default="false"/>
         <setting id="allow_the_video_me" label="30737" type="bool" default="false"/>
         <setting id="allow_vidup_me" label="30738" type="bool" default="false"/>
         <setting label="30760" type="lsep" visible="false"/>
-        <setting id="disable_messages" label="30767" type="bool" default="false" visible="false"/>
+        <setting id="disable_messages" label="30767" type="bool" default="true" visible="false"/>
         <setting id="enable_offensive" label="30761" type="bool" default="false" enable="eq(-1,false)" visible="false"/>
         <setting label="Queueing Options" type="lsep" visible="false"/>
         <setting id="include_watched_queue" label="Include Watched In Collection Queueing" type="bool" default="false" visible="false"/>

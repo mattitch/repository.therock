@@ -213,6 +213,7 @@ class WatchCartoon(Plugin):
 
 @route(mode='PCOCats', args=["url"])
 def get_pcocats(url):
+    pins = ""
     url = url.replace('pcocategory/', '') # Strip our category tag off.
     url = urlparse.urljoin(pcobase_link, url)
 
@@ -247,11 +248,12 @@ def get_pcocats(url):
         save_to_db(xml, url)
 
     jenlist = JenList(xml)
-    display_list(jenlist.get_list(), jenlist.get_content_type())
+    display_list(jenlist.get_list(), jenlist.get_content_type(), pins)
 
 
 @route(mode='PCOShow', args=["url"])
 def get_pcoshow(url):
+    pins = ""
     url = url.replace('pcoshow/', '') # Strip our show tag off.
     url = urlparse.urljoin(pcobase_link, url)
     url = url + '?showAllEpisodes=true'
@@ -286,7 +288,7 @@ def get_pcoshow(url):
         save_to_db(xml, url)
 
     jenlist = JenList(xml)
-    display_list(jenlist.get_list(), jenlist.get_content_type())
+    display_list(jenlist.get_list(), jenlist.get_content_type(), pins)
 
 
 @route(mode='PCOEpisode', args=["url"])

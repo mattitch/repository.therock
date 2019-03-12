@@ -1,11 +1,13 @@
-v1.9.1
-    - Added new readme.html- Rewrote section 4 - Upgrading your Jen - thanks T
-    - Added new sources.py for help playing links - thanks B
-    - Added new trakt.py - thanks K            
-	    - Added customizable settings for 2 colors (COLOR1 for Movie/Show titles; COLOR2 for Season/Episode numbers as well as for "Next Page >>")
-            - Updated the display for seasons (added ":" between season and season number) as well as for episodes (added season & episode number to title)
-            - Updated so that season and episode numbers less than 10 are displayed as double digits with a leading "0" (example: Season 1, Episode 9 ==> S01E09).
-            - Added thumbnail for "Next Page >>" (same as tmdb.py)
+v2.0
+    - Added main cache and plugins cache.
+    - Main cache is for any xml's outside of plugins including menu xml's.
+    - The plugins cache is for any plugin that does not already have its own cache set up.
+    - Tmdb and Trakt are not included in the plugins cache.
+    - Added enable cache to settings. This effects the main cache only, not plugins.
+    - Added main_cache_time to settings. Default is set to 1440 minutes or 24 hours.
+    - Known issue. The clear scraper cache is not working in Kodi 18.1. Hopefully future versions
+          of Kodi will fix this issue. 
+
 v1.9
     - Added airtable wrapper to the Jen template. No user action is required.
 
