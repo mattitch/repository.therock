@@ -14,9 +14,8 @@
     Changelog:
         2018.7.11:
             - Added cache clearing
-            - Indentation fix (Digital)
 
-        2018.6.21:
+        2018.6.20:
             - Added caching to primary menus (Cache time is 3 hours)
 
     Usage Examples:
@@ -38,12 +37,7 @@
 
         <dir>
             <title>Popular Series (Full List)</title>
-            <wctoon>popular-list</wctoon>
-        </dir>
-
-        <dir>
-            <title>Dubbed Anime</title>
-            <wctoon>category/dubbed-anime</wctoon>
+            <wctoon>popular-cartoon</wctoon>
         </dir>
 
         <dir>
@@ -181,7 +175,7 @@ class WatchCartoon(Plugin):
                     'context': get_context_items(item),
                     "summary": item.get("summary", None)
                 }
-            elif "popular-list" in item.get("wctoon", ""):
+            elif "popular-cartoon" in item.get("wctoon", ""):
                 result_item = {
                     'label': item["title"],
                     'icon': item.get("thumbnail", addon_icon),
@@ -240,15 +234,15 @@ class WatchCartoon(Plugin):
 
     def clear_cache(self):
         dialog = xbmcgui.Dialog()
-        if dialog.yesno(xbmcaddon.Addon().getAddonInfo('name'), "Clear AnimeToon Plugin Cache?"):
-            koding.Remove_Table("animetoon_com_plugin")
+        if dialog.yesno(xbmcaddon.Addon().getAddonInfo('name'), "Clear TooNova Plugin Cache?"):
+            koding.Remove_Table("toonova_com_plugin")
 
 
 @route(mode='WatchCartoon', args=["url"])
 def get_wcstream(url):
     pins = ""
     url = url.replace('category/', '') # Strip our category tag off.
-    url = urlparse.urljoin('http://www.animetoon.org/', url)
+    url = urlparse.urljoin('http://www.toonova.net/', url)
 
     xml = fetch_from_db(url)
     if not xml:
@@ -290,7 +284,7 @@ def get_wcmainstream(subid):
     subid = subid.split('/')
 
     try:
-        html = requests.get('http://www.animetoon.org/').content
+        html = requests.get('http://www.toonova.net/').content
         if subid[0] == 'popular_series':
             thedivs = dom_parser.parseDOM(html, 'div', attrs={'id':subid[0]})[int(subid[1])]
             list_items = dom_parser.parseDOM(thedivs, 'li')
@@ -337,7 +331,7 @@ def get_wcmainstream(subid):
 @route(mode='WCPopular', args=["url"])
 def get_wcpopular(url):
     pins = ""
-    url = urlparse.urljoin('http://www.animetoon.org/', url)
+    url = urlparse.urljoin('http://www.toonova.net/', url)
 
     xml = fetch_from_db(url)
     if not xml:
@@ -366,7 +360,7 @@ def get_wcpopular(url):
             if len(pagination) > 0:
                 list_items = dom_parser.parseDOM(pagination, 'li')
                 next_li = list_items[(len(list_items)-1)]
-                next_url = 'popular-list/%s' % (re.compile('href="http://www.animetoon.org/popular-list/(.+?)"',re.DOTALL).findall(next_li)[0])
+                next_url = 'popular-cartoon/%s' % (re.compile('href="http://www.toonova.net/popular-cartoon/(.+?)"',re.DOTALL).findall(next_li)[0])
                 xml += "<dir>"\
                        "    <title>Next Page >></title>"\
                        "    <wctoon>%s</wctoon>"\
@@ -385,7 +379,7 @@ def get_wcpopular(url):
 def get_wcdaily(url):
     pins = ""
     url = url.replace('wcdaily-', '') # Strip our episode tag off.
-    url = urlparse.urljoin('http://www.animetoon.org/', url)
+    url = urlparse.urljoin('http://www.toonova.net/', url)
 
     xml = fetch_from_db(url)
     if not xml:
@@ -414,7 +408,7 @@ def get_wcdaily(url):
             if len(pagination) > 0:
                 list_items = dom_parser.parseDOM(pagination, 'li')
                 next_li = list_items[(len(list_items)-1)]
-                next_url = 'wcdaily-updates/%s' % (re.compile('href="http://www.animetoon.org/updates/(.+?)"',re.DOTALL).findall(next_li)[0])
+                next_url = 'wcdaily-updates/%s' % (re.compile('href="http://www.toonova.net/updates/(.+?)"',re.DOTALL).findall(next_li)[0])
                 xml += "<dir>"\
                        "    <title>Next Page >></title>"\
                        "    <wctoon>%s</wctoon>"\
@@ -433,7 +427,7 @@ def get_wcdaily(url):
 def get_wcepisodes(url):
     pins = ""
     url = url.replace('wcepisode/', '') # Strip our episode tag off.
-    url = urlparse.urljoin('http://www.animetoon.org/', url)
+    url = urlparse.urljoin('http://www.toonova.net/', url)
 
     xml = fetch_from_db(url)
     if not xml:
@@ -487,13 +481,13 @@ def get_wcsearch(url):
                "    <thumbnail>%s</thumbnail>"\
                "</item>" % (addon_icon)
         jenlist = JenList(xml)
-        display_list(jenlist.get_list(), jenlist.get_content_type(), pins)
+        display_list(jenlist.get_list(), jenlist.get_content_type())
         return
 
     total = 0
 
     try:
-        search_url = 'http://www.animetoon.org/toon/search?key=%s' % search.replace(' ', '+')
+        search_url = 'http://www.toonova.net/toon/search?key=%s' % search.replace(' ', '+')
         html = requests.get(search_url).content
         thedivs = dom_parser.parseDOM(html, 'div', attrs={'class':'series_list'})[0]
         list_items = dom_parser.parseDOM(thedivs, 'li')
@@ -518,7 +512,7 @@ def get_wcsearch(url):
         if len(pagination) > 0:
             list_items = dom_parser.parseDOM(pagination, 'li')
             next_li = list_items[(len(list_items)-1)]
-            next_url = 'popular-list/%s' % (re.compile('href="http://www.animetoon.org/popular-list/(.+?)"',re.DOTALL).findall(next_li)[0])
+            next_url = 'popular-cartoon/%s' % (re.compile('href="http://www.toonova.net/popular-cartoon/(.+?)"',re.DOTALL).findall(next_li)[0])
             xml += "<dir>"\
                    "    <title>Next Page >></title>"\
                    "    <wctoon>%s</wctoon>"\
@@ -558,12 +552,13 @@ def get_wclistvideos(url):
                            "    <thumbnail>%s</thumbnail>"\
                            "    <summary>%s</summary>"\
                            "</item>" % (host,str(nurl[0][0]),addon_icon,host)
-            save_to_db(xml, url)
+            save_to_db(xml, nurl)
         except:
             pass
 
     jenlist = JenList(xml)
     display_list(jenlist.get_list(), jenlist.get_content_type(), pins)
+
 
 @route(mode='WCPlayVideo', args=["url"])
 def get_wcplayvideo(url):
@@ -582,12 +577,12 @@ def save_to_db(item, url):
     try:
         koding.reset_db()
         koding.Remove_From_Table(
-            "animetoon_com_plugin",
+            "toonova_com_plugin",
             {
                 "url": url
             })
 
-        koding.Add_To_Table("animetoon_com_plugin",
+        koding.Add_To_Table("toonova_com_plugin",
                             {
                                 "url": url,
                                 "item": base64.b64encode(item),
@@ -599,7 +594,7 @@ def save_to_db(item, url):
 
 def fetch_from_db(url):
     koding.reset_db()
-    animetoon_plugin_spec = {
+    toonova_plugin_spec = {
         "columns": {
             "url": "TEXT",
             "item": "TEXT",
@@ -609,9 +604,9 @@ def fetch_from_db(url):
             "unique": "url"
         }
     }
-    koding.Create_Table("animetoon_com_plugin", animetoon_plugin_spec)
+    koding.Create_Table("toonova_com_plugin", toonova_plugin_spec)
     match = koding.Get_From_Table(
-        "animetoon_com_plugin", {"url": url})
+        "toonova_com_plugin", {"url": url})
     if match:
         match = match[0]
         if not match["item"]:
