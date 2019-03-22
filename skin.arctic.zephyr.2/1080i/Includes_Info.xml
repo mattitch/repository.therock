@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <variable name="Info_Youtube">
+        <value condition="!String.IsEmpty(ListItem.TvShowTitle)">$INFO[ListItem.TvShowTitle,plugin://plugin.video.youtube/search/?q=,]</value>
+        <value condition="!String.IsEmpty(ListItem.Title)">$INFO[ListItem.Title,plugin://plugin.video.youtube/search/?q=,]</value>
+        <value>$INFO[ListItem.Label,plugin://plugin.video.youtube/search/?q=,]</value>
+    </variable>
+
+    <variable name="Info_DirectorMovies">
+        <value condition="!Skin.HasSetting(DisableExtendedInfo)">$INFO[ListItem.Director,plugin://script.extendedinfo?info=personmovies&amp;&amp;person=,]</value>
+        <value>videodb://movies/titles/?xsp=%7b%22rules%22%3a%7b%22and%22%3a%5b%7b%22field%22%3a%22director%22%2c%22operator%22%3a%22is%22%2c%22value%22%3a%5b%22$INFO[ListItem.Director]%22%5d%7d%5d%7d%2c%22type%22%3a%22movies%22%7d</value>
+    </variable>
+
+    <variable name="Info_StudioMovies">
+        <value condition="!Skin.HasSetting(DisableExtendedInfo)">$INFO[ListItem.Studio,plugin://script.extendedinfo?info=studio&amp;&amp;studio=,]</value>
+        <value>videodb://movies/titles/?xsp=%7b%22rules%22%3a%7b%22and%22%3a%5b%7b%22field%22%3a%22studio%22%2c%22operator%22%3a%22is%22%2c%22value%22%3a%5b%22$INFO[ListItem.Studio]%22%5d%7d%5d%7d%2c%22type%22%3a%22movies%22%7d</value>
+    </variable>
+
+    <include name="Info_Gallery_Itemlayout">
+        <control type="group">
+            <left>15</left>
+            <top>15</top>
+            <visible>String.IsEmpty(ListItem.Property(discart))</visible>
+            <include content="View_50_Poster">
+                <param name="height" value="view_poster_height" />
+                <param name="width" value="1790" />
+                <param name="aspectratio" value="scale" />
+                <param name="diffuse" value="diffuse/lovefilm.png" />
+                <param name="icon" value="$PARAM[icon]" />
+            </include>
+            <control type="image">
+                <bottom>60</bottom>
+                <right>60</right>
+                <width>300</width>
+                <height>300</height>
+                <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
+                <aspectratio align="right" aligny="bottom">keep</aspectratio>
+                <visible>!String.IsEmpty(ListItem.Art(clearlogo))</visible>
+            </control>
+            <control type="group">
+                <top>-15</top>
+                <include>View_WatchedOverlay</include>
+            </control>
+        </control>
+        <control type="group">
+            <left>15</left>
+            <top>15</top>
+            <visible>!String.IsEmpty(ListItem.Property(discart))</visible>
+            <control type="image">
+                <texture background="true">$INFO[ListItem.Property(discart)]</texture>
+                <aspectratio align="left">keep</aspectratio>
+            </control>
+            <control type="textbox">
+                <right>0</right>
+                <width>700</width>
+                <height>350</height>
+                <align>right</align>
+                <aligny>center</aligny>
+                <textcolor>main_fg_70</textcolor>
+                <label>$INFO[ListItem.Property(tagline)]</label>
+                <font>font_info_display</font>
+            </control>
+            <control type="image">
+                <top>390</top>
+                <right>0</right>
+                <width>700</width>
+                <height>390</height>
+                <texture background="true">$INFO[ListItem.Property(clearlogo)]</texture>
+                <aspectratio align="right" aligny="center">keep</aspectratio>
+                <visible>!String.IsEmpty(ListItem.Property(clearlogo))</visible>
+            </control>
+        </control>
+    </include>
+
+    <include name="Info_Gallery">
+        <param name="icon" default="$INFO[ListItem.Icon]" />
+        <param name="controltype" default="list" />
+        <definition>
+            <control type="$PARAM[controltype]" id="$PARAM[id]">
+                <orientation>horizontal</orientation>
+                <height>view_height</height>
+                <width>1790</width>
+                <itemlayout width="1790" height="view_height">
+                    <include content="Info_Gallery_Itemlayout">
+                        <param name="icon" value="$PARAM[icon]" />
+                    </include>
+                </itemlayout>
+                <focusedlayout width="1790" height="view_height">
+                    <include content="Info_Gallery_Itemlayout">
+                        <param name="icon" value="$PARAM[icon]" />
+                    </include>
+                </focusedlayout>
+                <nested />
+            </control>
+        </definition>
+    </include>
+</includes>
