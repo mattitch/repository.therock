@@ -15,6 +15,21 @@
   </extension>
 </addon>
 
+<addon id="plugin.program.MattboxWizard2" name="Mattbox Wizard 2" version="0.0.7" provider-name="Mattitch">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Mattbox Wizard 2</summary>
+    <description lang="en">Mattbox Wizard 2 - automatic update of your custom build</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.mattboxtv" name="Mattbox TV" version="2.0" provider-name="Mattitch">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
