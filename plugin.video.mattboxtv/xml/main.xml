@@ -4,6 +4,7 @@
         <title>WELCOME TO MATTBOX TV [COLOR=red] ver 2[/COLOR]</title>
 		<link>plugin://plugin.video.mattboxtv/xml/main.xml</link>
 		<thumbnail>https://mattbox.000webhostapp.com/mattboxtv/img/welcome.png</thumbnail>
+		<info>How can we entertain you today?<info>
     </dir>
  
     <item>
@@ -13,31 +14,36 @@
     <dir>
     <title>Movies</title>
     <link>file://movies.xml</link>
-	<thumbnail>https://mattbox.000webhostapp.com/mattboxtv/img/mov.png</thumbnail>	
+	<thumbnail>https://mattbox.000webhostapp.com/mattboxtv/img/mov.png</thumbnail>
+		<info>Fancy a Movie?</info>
     </dir>
  
     <dir>
         <title>TV Shows</title>
         <link>file://tv.xml</link>
 		<thumbnail>https://mattbox.000webhostapp.com/mattboxtv/img/tvshows.png</thumbnail>
+		<info>Binge watch or Catch Up?</info>
     </dir>
  
     <dir>
         <title>Sports</title>
         <link>https://pastebin.com/raw/RBJDrwNC</link>
 		<thumbnail>https://mattbox.000webhostapp.com/mattboxtv/img/sports.png</thumbnail>
+		<info>And There Off!</info>
     </dir>
    
     <dir>
         <title>Kids</title>
         <link>file://kids/kids.xml</link>
 		<thumbnail>https://mattbox.000webhostapp.com/mattboxtv/img/kids.png</thumbnail>
+		<info>Keep 'em little ones quiet for while</info>
 		</dir>
  
     <dir>
         <title>Live TV</title>
         <link>https://pastebin.com/raw/wazdzZ1t</link>
 		<thumbnail>https://mattbox.000webhostapp.com/mattboxtv/img/livetv.png</thumbnail>
+		<info>IPTV</info>
     </dir>
  
  
@@ -45,18 +51,21 @@
 <title>Music</title>
 <link>https://pastebin.com/raw/Dx1Z0bdr</link>
 <thumbnail>https://mattbox.000webhostapp.com/mattboxtv/img/music.png</thumbnail>
+<info>1....2....3....4!</info>
 </dir>
  
 <dir>
 <title>Documentarys</title>
 <link>https://pastebin.com/raw/MphSMxra</link>
 <thumbnail>https://mattbox.000webhostapp.com/mattboxtv/img/docs.png</thumbnail>
+<info>Feed your thirst for knowledge</info>
 </dir>
 
 <dir>
 <title>Podcasts</title>
 <link>https://pastebin.com/raw/b6PgzGdh</link>
 <thumbnail>https://mattbox.000webhostapp.com/mattboxtv/img/pods.png</thumbnail>
+<info>Sit back & relax</info>
 </dir>
    
  
@@ -64,10 +73,11 @@
         <title>Search Movies & TV Shows</title>
         <trakt>search</trakt>
 	<thumbnail>https://mattbox.000webhostapp.com/mattboxtv/img/search.png</thumbnail>
+	<info>Search Trakt for Movies, TV Shows, Episodes and Actors</info>
     </dir>
  
 
  
  
 </xml>
-RAW Paste Data
+
