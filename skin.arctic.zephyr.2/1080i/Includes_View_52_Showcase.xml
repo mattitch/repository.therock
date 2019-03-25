@@ -90,7 +90,7 @@
                     <height>380</height>
                     <texture background="true">$VAR[Image_ClearLogo]</texture>
                     <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                    <visible>!String.IsEmpty(ListItem.Art(clearlogo)) | [Control.HasFocus(522) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))]</visible>
+                    <visible>!String.IsEmpty(ListItem.Art(clearlogo)) | !String.IsEmpty(ListItem.Art(tvshow.clearlogo))</visible>
                 </control>
                 <control type="grouplist">
                     <top>451.435</top>
@@ -139,7 +139,7 @@
     <include name="View_52_Showcase_Layout">
         <focusposition>3</focusposition>
         <movement>3</movement>
-        <animation effect="slide" end="-122.14" condition="Integer.IsEqual(Container.NumItems,6) | Integer.IsEqual(Container.NumItems,4) | Integer.IsEqual(Container.NumItems,2)">Conditional</animation>
+        <animation effect="slide" end="-122.14" condition="Integer.IsEqual(Container.NumAllItems,6) | Integer.IsEqual(Container.NumAllItems,4) | Integer.IsEqual(Container.NumAllItems,2)">Conditional</animation>
         <include>View_52_Showcase_Layout_Standard</include>
     </include>
 
@@ -303,7 +303,7 @@
                 <param name="itemwidth" value="item_landscape_width" />
                 <param name="itemheight" value="423.75" />
                 <param name="icon" value="$VAR[Image_Fanart]" />
-                <param name="clearlogo" value="String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow)" />
+                <param name="clearlogo" value="!String.IsEmpty(ListItem.Art(clearlogo)) | !String.IsEmpty(ListItem.Art(tvshow.clearlogo))" />
                 <param name="iconheight" value="item_icon_height" />
                 <param name="visible" value="Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(videos)" />
                 <param name="viewtype" value="$LOCALIZE[31361]" />
@@ -329,7 +329,7 @@
                 <param name="itemwidth" value="item_landscape_width" />
                 <param name="itemheight" value="423.75" />
                 <param name="icon" value="$VAR[Image_Fanart]" />
-                <param name="clearlogo" value="String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow)" />
+                <param name="clearlogo" value="!String.IsEmpty(ListItem.Art(clearlogo)) | !String.IsEmpty(ListItem.Art(tvshow.clearlogo))" />
                 <param name="iconheight" value="item_icon_height" />
                 <param name="visible" value="Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(videos)" />
                 <param name="viewtype" value="$LOCALIZE[31361]" />

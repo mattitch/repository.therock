@@ -661,6 +661,7 @@
             <onup condition="!Player.HasVideo | !Skin.HasSetting(global.showvideo)">5600</onup>
             <onup condition="Player.HasVideo + Skin.HasSetting(global.showvideo)">noop</onup>
             <onfocus>SetProperty(SkinHelper.WidgetContainer,5600,Home)</onfocus>
+            <onfocus>ClearProperty(WidgetFocus)</onfocus>
             <orientation>horizontal</orientation>
             <height>10</height>
             <bottom>-100</bottom>
@@ -703,16 +704,16 @@
             <top>view_pad</top>
             <width>300</width>
             <aspectratio align="right" aligny="top">keep</aspectratio>
-            <texture background="true">$INFO[Container(5600).ListItem.Art(clearlogo)]</texture>
+            <texture background="true">$VAR[Image_Home_Clearlogo]</texture>
             <visible>$EXP[Exp_GlobalBackground]</visible>
             <visible>!Control.HasFocus(5610)</visible>
-            <fadetime>600</fadetime>
+            <fadetime>200</fadetime>
         </control>
 
         <control type="group">
             <top>900</top>
             <height>1080</height>
-            <animation effect="slide" start="0" end="0,-615" time="350" tween="quadratic" easing="out" condition="Control.HasFocus(5610) | String.IsEqual(Window(Home).Property(SkinHelper.WidgetContainer),5610)">Conditional</animation>
+            <animation effect="slide" start="0" end="0,-615" time="350" tween="quadratic" easing="out" condition="Control.HasFocus(5610) | String.IsEqual(Window(Home).Property(WidgetFocus),5610)">Conditional</animation>
             <animation effect="slide" start="0" end="0,-285" time="350" tween="quadratic" easing="out" condition="Control.HasFocus(5610) | Control.HasFocus(302)">Conditional</animation>
 
             <animation effect="slide" start="0" end="0,-275" time="250" tween="quadratic" easing="out" condition="Control.HasFocus(5600)">Conditional</animation>
@@ -720,16 +721,16 @@
 
 
             <animation effect="slide" start="0" end="0,-900" time="300" tween="quadratic" condition="![Control.HasFocus(5610) | Control.HasFocus(302) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml) | Window.IsVisible(DialogAddonInfo.xml)] + ![Window.Next(VideoFullScreen.xml) | Window.Next(MusicVisualisation.xml)]">WindowClose</animation>
-            <animation effect="slide" start="0" end="0,-615" time="300" tween="quadratic" condition="Control.HasFocus(302) + !String.IsEqual(Window(Home).Property(SkinHelper.WidgetContainer),5610) + ![Window.Next(VideoFullScreen.xml) | Window.Next(MusicVisualisation.xml)]">WindowClose</animation>
+            <animation effect="slide" start="0" end="0,-615" time="300" tween="quadratic" condition="Control.HasFocus(302) + !String.IsEqual(Window(Home).Property(WidgetFocus),5610) + ![Window.Next(VideoFullScreen.xml) | Window.Next(MusicVisualisation.xml)]">WindowClose</animation>
 
             <animation effect="slide" start="0" end="0,180" time="300" tween="quadratic" condition="![Control.HasFocus(5610) | Control.HasFocus(302) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml) | Window.IsVisible(DialogAddonInfo.xml)] + [Window.Next(VideoFullScreen.xml) | Window.Next(MusicVisualisation.xml)]">WindowClose</animation>
-            <animation effect="slide" start="0" end="0,465" time="300" tween="quadratic" condition="Control.HasFocus(302) + !String.IsEqual(Window(Home).Property(SkinHelper.WidgetContainer),5610) + [Window.Next(VideoFullScreen.xml) | Window.Next(MusicVisualisation.xml)]">WindowClose</animation>
+            <animation effect="slide" start="0" end="0,465" time="300" tween="quadratic" condition="Control.HasFocus(302) + !String.IsEqual(Window(Home).Property(WidgetFocus),5610) + [Window.Next(VideoFullScreen.xml) | Window.Next(MusicVisualisation.xml)]">WindowClose</animation>
 
             <animation effect="slide" end="0" start="0,-900" time="300" tween="quadratic" condition="![Control.HasFocus(5610) | Control.HasFocus(302) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml) | Window.IsVisible(DialogAddonInfo.xml)] + ![Window.Previous(VideoFullScreen.xml) | Window.Previous(MusicVisualisation.xml)]">WindowOpen</animation>
-            <animation effect="slide" end="0" start="0,-615" time="300" tween="quadratic" condition="Control.HasFocus(302) + !String.IsEqual(Window(Home).Property(SkinHelper.WidgetContainer),5610) + ![Window.Previous(VideoFullScreen.xml) | Window.Previous(MusicVisualisation.xml)]">WindowOpen</animation>
+            <animation effect="slide" end="0" start="0,-615" time="300" tween="quadratic" condition="Control.HasFocus(302) + !String.IsEqual(Window(Home).Property(WidgetFocus),5610) + ![Window.Previous(VideoFullScreen.xml) | Window.Previous(MusicVisualisation.xml)]">WindowOpen</animation>
 
             <animation effect="slide" end="0" start="0,180" time="300" tween="quadratic" condition="![Control.HasFocus(5610) | Control.HasFocus(302) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml) | Window.IsVisible(DialogAddonInfo.xml)] + [Window.Previous(VideoFullScreen.xml) | Window.Previous(MusicVisualisation.xml)]">WindowOpen</animation>
-            <animation effect="slide" end="0" start="0,465" time="300" tween="quadratic" condition="Control.HasFocus(302) + !String.IsEqual(Window(Home).Property(SkinHelper.WidgetContainer),5610) + [Window.Previous(VideoFullScreen.xml) | Window.Previous(MusicVisualisation.xml)]">WindowOpen</animation>
+            <animation effect="slide" end="0" start="0,465" time="300" tween="quadratic" condition="Control.HasFocus(302) + !String.IsEqual(Window(Home).Property(WidgetFocus),5610) + [Window.Previous(VideoFullScreen.xml) | Window.Previous(MusicVisualisation.xml)]">WindowOpen</animation>
             <!-- Back Panel -->
             <control type="image">
                 <texture colordiffuse="HomePanel">common/bg.jpg</texture>
@@ -820,11 +821,11 @@
                 
                     <include content="Home_Hub_Widget">
                         <param name="widget" value="true" />
-                        <param name="widgetvisibility" value="String.IsEqual(Window(Home).Property(SkinHelper.WidgetContainer),5610)" />
+                        <param name="widgetvisibility" value="String.IsEqual(Window(Home).Property(WidgetFocus),5610)" />
                         <onback>301</onback>
                         <onup>301</onup>
-                        <ondown condition="!String.IsEqual(Window(Home).Property(SkinHelper.WidgetContainer),5610) + Integer.IsGreater(Container(5610).NumItems,0)">SetProperty(SkinHelper.WidgetContainer,5610,Home)</ondown>
-                        <ondown condition="String.IsEqual(Window(Home).Property(SkinHelper.WidgetContainer),5610) + Integer.IsGreater(Container(5610).NumItems,0)">5610</ondown>
+                        <ondown condition="!String.IsEqual(Window(Home).Property(WidgetFocus),5610) + Integer.IsGreater(Container(5610).NumItems,0)">SetProperty(WidgetFocus,5610,Home)</ondown>
+                        <ondown condition="String.IsEqual(Window(Home).Property(WidgetFocus),5610) + Integer.IsGreater(Container(5610).NumItems,0)">5610</ondown>
                     </include>
 
                 </control>
@@ -864,7 +865,9 @@
 
     <include name="Home_Multi_Vertical">
         <include>Global_Background</include>
-        <include>Topbar</include>
+        <include content="Topbar">
+            <param name="visible" value="ControlGroup(3000).HasFocus()" />
+        </include>
         <control type="group">
             <animation effect="slide" start="0" end="-257.14" time="200" condition="ControlGroup(3000).HasFocus()">Conditional</animation>
             <control type="group">

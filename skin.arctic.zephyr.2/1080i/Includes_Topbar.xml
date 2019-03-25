@@ -6,6 +6,7 @@
     
 
     <include name="Topbar">
+        <param name="visible" default="true" />
         <param name="info_hide" default="true" />
         <param name="fgcolor" default="main_fg" />
         <definition>
@@ -20,6 +21,7 @@
                         <param name="fgcolor" value="$PARAM[fgcolor]" />
                     </include>
                     <include content="Topbar_Center">
+                        <param name="visible" value="$PARAM[visible]" />
                         <param name="fgcolor" value="$PARAM[fgcolor]" />
                     </include>
                     <include content="Topbar_Right">
@@ -61,6 +63,7 @@
 
     <include name="Topbar_Center">
         <control type="label">
+            <visible>$PARAM[visible]</visible>
             <visible>!Skin.HasSetting(DisableCenter)</visible>
             <aligny>center</aligny>
             <align>center</align>
@@ -90,7 +93,7 @@
                     <texture colordiffuse="$PARAM[fgcolor]_100">$INFO[Weather.FanartCode,resource://resource.images.weathericons.white/,.png]</texture>
                 </control>
                 <visible>Weather.IsFetched</visible>
-                <visible>!Control.HasFocus(60)</visible>
+                <visible>![Control.HasFocus(60) | Control.HasFocus(62)]</visible>
             </control>
             <control type="label">
                 <width>auto</width>
@@ -98,10 +101,10 @@
                 <textcolor>$PARAM[fgcolor]_100</textcolor>
                 <label>$INFO[Weather.Temperature]</label>
                 <visible>Weather.IsFetched</visible>
-                <visible>!Control.HasFocus(60)</visible>
+                <visible>![Control.HasFocus(60) | Control.HasFocus(62)]</visible>
             </control>
             <control type="label">
-                <visible>!Control.HasFocus(60)</visible>
+                <visible>![Control.HasFocus(60) | Control.HasFocus(62)]</visible>
                 <width>auto</width>
                 <font>font_small</font>
                 <textcolor>$VAR[ColorHighlight]</textcolor>
@@ -114,24 +117,24 @@
                 <font>font_small</font>
                 <textcolor>$PARAM[fgcolor]_100</textcolor>
                 <label>$INFO[System.Time]</label>
-                <visible>!Control.HasFocus(60)</visible>
+                <visible>![Control.HasFocus(60) | Control.HasFocus(62)]</visible>
             </control>
             <control type="label">
-                <visible>Control.HasFocus(60)</visible>
+                <visible>[Control.HasFocus(60) | Control.HasFocus(62)]</visible>
                 <width>auto</width>
                 <font>font_small</font>
                 <textcolor>$PARAM[fgcolor]_100</textcolor>
                 <label>$INFO[Container.NumItems,, $LOCALIZE[31101]]</label>
             </control>
             <control type="label">
-                <visible>Control.HasFocus(60)</visible>
+                <visible>[Control.HasFocus(60) | Control.HasFocus(62)]</visible>
                 <width>auto</width>
                 <font>font_small</font>
                 <textcolor>$VAR[ColorHighlight]</textcolor>
                 <label>  |  </label>
             </control>
             <control type="label">
-                <visible>Control.HasFocus(60)</visible>
+                <visible>[Control.HasFocus(60) | Control.HasFocus(62)]</visible>
                 <width>auto</width>
                 <font>font_small</font>
                 <textcolor>$PARAM[fgcolor]_100</textcolor>
