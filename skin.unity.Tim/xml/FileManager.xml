@@ -3,15 +3,12 @@
 	<defaultcontrol>20</defaultcontrol>
 	<controls>
 		<include>CommonBackground</include>
-		<control type="image">
-			<left>0</left>
-			<top>100r</top>
-			<width>1280</width>
-			<height>100</height>
-			<texture>floor.png</texture>
-			<animation effect="slide" start="0,10" end="0,0" time="150" condition="Window.Previous(Home)">WindowOpen</animation>
-			<animation effect="slide" start="0,0" end="0,10" time="150" condition="Window.Next(Home)">WindowClose</animation>
-		</control>
+		<include>Clock</include>
+		<include>CommonNowPlaying</include>
+		<!--breadcrumbs-->
+		<include content="DynamicLeftBreadcrumb">
+			<param name="breadcrumb1-label" value="$LOCALIZE[7]" />
+		</include>
 		<control type="group">
 			<centerleft>26%</centerleft>
 			<centertop>54%</centertop>

@@ -47,7 +47,7 @@
 					<animation effect="rotate" start="0" end="180" center="auto" time="200" condition="Control.HasFocus(9901) | Control.HasFocus(9902) | Control.HasFocus(9904) | Control.HasFocus(89001) | Control.HasFocus(89002)">Conditional</animation>
 				</control>
 				<!--side blade tab arrow-->
-				<!--control type="image">
+				<control type="image">
 					<left>15</left>
 					<top>48</top>
 					<width>32</width>

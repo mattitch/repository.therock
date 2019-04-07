@@ -27,12 +27,7 @@
 			<thumb />
 			<property name="labelID">mattboxtv</property>
 			<property name="defaultID">mattboxtv</property>
-			<property name="widget">Addon</property>
-			<property name="widgetName">Mattbox TV - [COLOR FFffffffff]Daily TV Updates[/COLOR]</property>
-			<property name="widgetType">tvshows</property>
-			<property name="widgetTarget">videos</property>
-			<property name="widgetPath">plugin://plugin.video.mattboxtv/?mode=get_list&amp;url=https%3A%2F%2Fgithub.com%2Fmattitch%2Fimages%2Fraw%2Fmaster%2Fdtv%2Ftvmenu.xml&amp;name=%5BCOLOR+FFffffffff%5DDaily+TV+Updates%5B%2FCOLOR%5D&amp;iconimage=H%3A%5CKODI%5Cportable_data%5Caddons%5Cplugin.video.mattboxtv%5Cicon.png&amp;fanart=H%3A%5CKODI%5Cportable_data%5Caddons%5Cplugin.video.mattboxtv%5Cfanart.jpg&amp;description=No+information+available&amp;reload=$INFO[Window(Home).Property(widgetreload)]$INFO[Window(Home).Property(widgetreload2)]</property>
-			<property name="widgetLayout">Poster</property>
+			<property name="widgetLayout">Square</property>
 			<onclick>ActivateWindow(10025,plugin://plugin.video.mattboxtv/?content_type=video,return)</onclick>
 			<property name="path">ActivateWindow(10025,plugin://plugin.video.mattboxtv/?content_type=video,return)</property>
 			<property name="list">plugin://plugin.video.mattboxtv/?content_type=video</property>
@@ -1649,23 +1644,6 @@
 			<property name="path">ActivateWindow(Weather)</property>
 			<property name="list">Weather</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">24001</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="10">
-			<property name="id">$NUMBER[10]</property>
-			<property name="mainmenuid">9</property>
-			<label>$LOCALIZE[7]</label>
-			<label2>Common menu item</label2>
-			<icon>DefaultFolder.png</icon>
-			<thumb />
-			<property name="labelID">7</property>
-			<property name="defaultID">7</property>
-			<property name="translatedPath">ActivateWindow(FileManager)</property>
-			<onclick>ActivateWindow(FileManager)</onclick>
-			<property name="path">ActivateWindow(FileManager)</property>
-			<property name="list">FileManager</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-24001)</visible>
 			<property name="group">24001</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -3834,22 +3812,6 @@
 					<property name="group">24001</property>
 					<property name="isSubmenu">True</property>
 				</item>
-				<item id="10">
-					<property name="id">$NUMBER[10]</property>
-					<property name="mainmenuid">9</property>
-					<label>$LOCALIZE[7]</label>
-					<label2>Common menu item</label2>
-					<icon>DefaultFolder.png</icon>
-					<thumb />
-					<property name="labelID">7</property>
-					<property name="defaultID">7</property>
-					<property name="translatedPath">ActivateWindow(FileManager)</property>
-					<onclick>ActivateWindow(FileManager)</onclick>
-					<property name="path">ActivateWindow(FileManager)</property>
-					<property name="list">FileManager</property>
-					<property name="group">24001</property>
-					<property name="isSubmenu">True</property>
-				</item>
 			</content>
 		</control>
 		<control type="group">
@@ -4141,21 +4103,6 @@
 			<animation delay="250" effect="slide" end="0,0" start="0,-97" time="200" tween="quadratic">Visible</animation>
 			<animation easing="out" effect="slide" end="0,-97" start="0,0" time="200" tween="quadratic">Hidden</animation>
 			<include>HomeSubMenuArrows</include>
-		</control>
-	</include>
-	<include name="skinshortcuts-template-widget">
-		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-widget-Master user</include>
-	</include>
-	<include name="skinshortcuts-template-widget-Master user">
-		<control type="group">
-			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),mattboxtv)</visible>
-			<include content="PosterWidget">
-				<param name="content" value="plugin://plugin.video.mattboxtv/?mode=get_list&amp;url=https%3A%2F%2Fgithub.com%2Fmattitch%2Fimages%2Fraw%2Fmaster%2Fdtv%2Ftvmenu.xml&amp;name=%5BCOLOR+FFffffffff%5DDaily+TV+Updates%5B%2FCOLOR%5D&amp;iconimage=H%3A%5CKODI%5Cportable_data%5Caddons%5Cplugin.video.mattboxtv%5Cicon.png&amp;fanart=H%3A%5CKODI%5Cportable_data%5Caddons%5Cplugin.video.mattboxtv%5Cfanart.jpg&amp;description=No+information+available&amp;reload=$INFO[Window(Home).Property(widgetreload)]$INFO[Window(Home).Property(widgetreload2)]" />
-				<param name="target" value="videos" />
-				<param name="contentInclude" value="WidgetContent" />
-				<param name="list_id" value="80112" />
-				<param name="artwork" value="$VAR[HomeWidgetPosterVar]" />
-			</include>
 		</control>
 	</include>
 </includes>

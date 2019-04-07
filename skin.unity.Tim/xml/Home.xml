@@ -21,7 +21,7 @@
 					<width>735</width>
 					<height>135</height>
 					<texture colordiffuse="tertiary3">backgrounds/white.png</texture>
-					<colordiffuse>5C64FF</colordiffuse>	
+					<colordiffuse>BBFFFFFF</colordiffuse>	
 				</control>
 				<!--background strip-->
 				<control type="image">
@@ -30,7 +30,7 @@
 					<width>4</width>
 					<height>135</height>
 					<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
-					<colordiffuse>5C64FF</colordiffuse>
+					<colordiffuse>BBFFFFFF</colordiffuse>
 				</control>
 				<control type="image">
 					<left>600</left>
@@ -39,7 +39,7 @@
 					<height>120</height>
 					<aspectratio>keep</aspectratio>
 					<texture background="true" fallback="DefaultVideoCover.png">$INFO[PVR.NextRecordingChannelIcon]</texture>
-					<colordiffuse>5C64FF</colordiffuse>
+					<colordiffuse>BBFFFFFF</colordiffuse>
 				</control>
 				<control type="image">
 					<left>548</left>
@@ -48,7 +48,7 @@
 					<height>38</height>
 					<aspectratio>keep</aspectratio>
 					<texture colordiffuse="$VAR[Colour.500]">PVR-HasTimer.png</texture>
-					<colordiffuse>5C64FF</colordiffuse>					
+					<colordiffuse>BBFFFFFF</colordiffuse>					
 				</control>
 				<control type="label">
 					<description>Next Timer Header label</description>
@@ -93,7 +93,7 @@
 					<width>735</width>
 					<height>135</height>
 					<texture colordiffuse="tertiary3">backgrounds/white.png</texture>
-					<colordiffuse>5C64FF</colordiffuse>
+					<colordiffuse>BBFFFFFF</colordiffuse>
 				</control>
 				<!--background strip-->
 				<control type="image">
@@ -102,7 +102,7 @@
 					<width>4</width>
 					<height>135</height>
 					<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
-					<colordiffuse>5C64FF</colordiffuse>
+					<colordiffuse>BBFFFFFF</colordiffuse>
 				</control>
 				<control type="image">
 					<left>600</left>
@@ -111,7 +111,7 @@
 					<height>120</height>
 					<aspectratio>keep</aspectratio>
 					<texture background="true" fallback="DefaultVideoCover.png">$INFO[PVR.NowRecordingChannelIcon]</texture>
-					<colordiffuse>5C64FF</colordiffuse>
+					<colordiffuse>BBFFFFFF</colordiffuse>
 				</control>
 				<control type="image">
 					<left>545</left>
@@ -120,7 +120,7 @@
 					<height>45</height>
 					<aspectratio>keep</aspectratio>
 					<texture colordiffuse="$VAR[Colour.500]">PVR-IsRecording.png</texture>
-					<colordiffuse>5C64FF</colordiffuse>
+					<colordiffuse>BBFFFFFF</colordiffuse>
 				</control>
 				<control type="label">
 					<description>Is Recording Header label</description>
@@ -132,7 +132,7 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<textcolor>$VAR[Colour.500]</textcolor>
-					<colordiffuse>5C64FF</colordiffuse>
+					<colordiffuse>BBFFFFFF</colordiffuse>
 				</control>
 				<control type="label">
 					<description>NextRecordingDateTime</description>
@@ -141,7 +141,7 @@
 					<height>38</height>
 					<width>570</width>
 					<label>$INFO[PVR.NowRecordingDateTime,$LOCALIZE[19126] - ]</label>
-					<colordiffuse>5C64FF</colordiffuse>
+					<colordiffuse>BBFFFFFF</colordiffuse>
 					<align>right</align>
 					<aligny>center</aligny>
 					<scroll>true</scroll>

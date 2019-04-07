@@ -50,7 +50,7 @@
 				<label>$LOCALIZE[15107] $INFO[Player.CacheLevel]% • $INFO[player.chapter,$LOCALIZE[21396]  ]$INFO[player.chaptercount, / ]</label>
 				<visible>[Player.Paused + Player.Caching] + !Player.Seeking</visible>
 			</control>
-			<!--chapter (seeking)-->
+			<!--chapter (seeking)
 			<control type="label" id="1">
 				<visible>!VideoPlayer.Content(LiveTV)</visible>
 				<left>30</left>
@@ -63,7 +63,7 @@
 				<label>$LOCALIZE[31046] • $INFO[player.chapter,$LOCALIZE[21396]  ]$INFO[player.chaptercount, / ]</label>
 				<visible>Player.Seeking</visible>
 			</control>
-			
+			-->
 			<!--chapter (final seek amount)-->
 			<control type="label" id="1">
 				<visible>!VideoPlayer.Content(LiveTV)</visible>

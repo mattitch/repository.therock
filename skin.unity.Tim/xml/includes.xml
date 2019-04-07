@@ -74,26 +74,26 @@
 		<value condition="Player.Rewinding32x">$LOCALIZE[31045] 32x</value>
 	</variable>
 	<variable name="Colour.500">
-		<value condition="String.IsEqual(Skin.String(Colour.Theme),Red)">FFe51c23</value>
-		<value condition="String.IsEqual(Skin.String(Colour.Theme),Pink)">FFe91e63</value>
-		<value condition="String.IsEqual(Skin.String(Colour.Theme),Purple)">FF9c27b0</value>
-		<value condition="String.IsEqual(Skin.String(Colour.Theme),Deep Purple)">FF673ab7</value>
-		<value condition="String.IsEqual(Skin.String(Colour.Theme),Indigo)">FF3f51b5</value>
-		<value condition="String.IsEqual(Skin.String(Colour.Theme),Blue)">FF5677fc</value>
-		<value condition="String.IsEqual(Skin.String(Colour.Theme),Light Blue)">FF03a9f4</value>
-		<value condition="String.IsEqual(Skin.String(Colour.Theme),Cyan)">FF00bcd4</value>
-		<value condition="String.IsEqual(Skin.String(Colour.Theme),Teal)">FF009688</value>
-		<value condition="String.IsEqual(Skin.String(Colour.Theme),Green)">FF259b24</value>
-		<value condition="String.IsEqual(Skin.String(Colour.Theme),Light Green)">FF8bc34a</value>
-		<value condition="String.IsEqual(Skin.String(Colour.Theme),Lime)">FFcddc39</value>
-		<value condition="String.IsEqual(Skin.String(Colour.Theme),Yellow)">FFf6e233</value>
-		<value condition="String.IsEqual(Skin.String(Colour.Theme),Amber)">FFf6b904</value>
-		<value condition="String.IsEqual(Skin.String(Colour.Theme),Orange)">FFff9800</value>
-		<value condition="String.IsEqual(Skin.String(Colour.Theme),Deep Orange)">FFff5722</value>
-		<value condition="String.IsEqual(Skin.String(Colour.Theme),Brown)">FF795548</value>
-		<value condition="String.IsEqual(Skin.String(Colour.Theme),Blue Grey)">FF587482</value>
-		<value condition="String.IsEqual(Skin.String(Colour.Theme),Grey)">FF908e8e</value>
-		<value>FFe51c23</value>
+		<value condition="String.IsEqual(Skin.String(Colour.Theme),Red)">77e51c23</value>
+		<value condition="String.IsEqual(Skin.String(Colour.Theme),Pink)">77e51c23</value>
+		<value condition="String.IsEqual(Skin.String(Colour.Theme),Purple)">77e51c23</value>
+		<value condition="String.IsEqual(Skin.String(Colour.Theme),Deep Purple)">77e51c23</value>
+		<value condition="String.IsEqual(Skin.String(Colour.Theme),Indigo)">77e51c23</value>
+		<value condition="String.IsEqual(Skin.String(Colour.Theme),Blue)">77e51c23</value>
+		<value condition="String.IsEqual(Skin.String(Colour.Theme),Light Blue)">77e51c23</value>
+		<value condition="String.IsEqual(Skin.String(Colour.Theme),Cyan)">77e51c23</value>
+		<value condition="String.IsEqual(Skin.String(Colour.Theme),Teal)">77e51c23</value>
+		<value condition="String.IsEqual(Skin.String(Colour.Theme),Green)">77e51c23</value>
+		<value condition="String.IsEqual(Skin.String(Colour.Theme),Light Green)">77e51c23</value>
+		<value condition="String.IsEqual(Skin.String(Colour.Theme),Lime)">77e51c23</value>
+		<value condition="String.IsEqual(Skin.String(Colour.Theme),Yellow)">77e51c23</value>
+		<value condition="String.IsEqual(Skin.String(Colour.Theme),Amber)">77e51c23</value>
+		<value condition="String.IsEqual(Skin.String(Colour.Theme),Orange)">77e51c23</value>
+		<value condition="String.IsEqual(Skin.String(Colour.Theme),Deep Orange)">77e51c23</value>
+		<value condition="String.IsEqual(Skin.String(Colour.Theme),Brown)">77e51c23</value>
+		<value condition="String.IsEqual(Skin.String(Colour.Theme),Blue Grey)">77e51c23</value>
+		<value condition="String.IsEqual(Skin.String(Colour.Theme),Grey)">77e51c23</value>
+		<value>77e51c23</value>
 	</variable>
 	<variable name="Colour.900">
 		<value condition="String.IsEqual(Skin.String(Colour.Theme),Red)">FF850a04</value>
@@ -236,13 +236,32 @@
 		<textoffsetx>15</textoffsetx>
 		<textwidth>325</textwidth>
 		<aligny>center</aligny>
-		<font>button</font>
+		<font>button.bold</font>
 		<texturefocus colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texturefocus>
 		<texturenofocus colordiffuse="button.border">-</texturenofocus>
 		<alttexturefocus colordiffuse="$VAR[Colour.500]">backgrounds/white.png</alttexturefocus>
 		<alttexturenofocus colordiffuse="button.border">-</alttexturenofocus>
 		<pulseonselect>false</pulseonselect>
-		<textcolor>text.primary</textcolor>
+		<textcolor>text.primary</textcolor>   <!--SOL MENUDEKI YAZI FONT RENGI-->
+		<shadowcolor>black</shadowcolor>
+		<selectedcolor>white</selectedcolor>
+		<focusedcolor>white</focusedcolor>
+		<disabledcolor>disabled</disabledcolor>
+	</include>
+	
+	<include name="ButtonCommonValuesALTYAZIDOWN">
+		<height>60</height>
+		<width>355</width>
+		<textoffsetx>15</textoffsetx>
+		<textwidth>325</textwidth>
+		<aligny>center</aligny>
+		<font>button.bold</font>
+		<texturefocus colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texturefocus>
+		<texturenofocus colordiffuse="button.border">-</texturenofocus>
+		<alttexturefocus colordiffuse="$VAR[Colour.500]">backgrounds/white.png</alttexturefocus>
+		<alttexturenofocus colordiffuse="button.border">-</alttexturenofocus>
+		<pulseonselect>false</pulseonselect>
+		<textcolor>text.primary</textcolor>   <!--ALT YAZI DONWLOAD FONT RENGI-->
 		<selectedcolor>white</selectedcolor>
 		<focusedcolor>white</focusedcolor>
 		<disabledcolor>disabled</disabledcolor>
@@ -274,7 +293,7 @@
 		<textcolor>text.primary</textcolor>
 		<focusedcolor>white</focusedcolor>
 		<texturefocus colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texturefocus>
-		<texturenofocus colordiffuse="tertiary">backgrounds/white.png</texturenofocus>
+		<texturenofocus colordiffuse="tertiary3">backgrounds/white.png</texturenofocus>
 		<pulseonselect>false</pulseonselect>
 	</include>
 	<include name="HomeSubMenuCommonValues">
@@ -305,7 +324,7 @@
 	</include>
 	<include name="ButtonDisabledCommonValues">
 		<enable>false</enable>
-		<texturenofocus colordiffuse="tertiary">backgrounds/white.png</texturenofocus>
+		<texturenofocus colordiffuse="tertiary3">backgrounds/white.png</texturenofocus>
 		<disabledcolor>text.primary</disabledcolor>
 		<textoffsetx>10</textoffsetx>
 	</include>
@@ -429,7 +448,7 @@
 				<control type="image" id="1">
 					<width>20</width>
 					<height>$PARAM[breadcrumb-height]</height>
-					<texture colordiffuse="tertiary">backgrounds/white.png</texture>
+					<texture colordiffuse="tertiary3">backgrounds/white.png</texture>
 				</control>
 				<!--background strip-->
 				<control type="image" id="1">
@@ -476,7 +495,7 @@
 					<top>0</top>
 					<width>$PARAM[dialog-width]</width>
 					<height>$PARAM[dialog-height]</height>
-					<texture background="true" colordiffuse="tertiary">backgrounds/white.png</texture>
+					<texture background="true" colordiffuse="tertiary7">backgrounds/white.png</texture>  <!--SETTINGS GRI FON-->
 				</control>
 				<!--background image-->
 				<control type="image">
@@ -507,7 +526,7 @@
 						<top>0</top>
 						<width>$PARAM[sidebar-width]</width>
 						<height>$PARAM[dialog-height]</height>
-						<texture background="true" colordiffuse="$VAR[Colour.900]">backgrounds/white.png</texture>
+						<texture background="true" colordiffuse="tertiary">backgrounds/white.png</texture>     <!--SETTINGS SEFAF FON-->
 					</control>
 					<!--side blade shadow-->
 					<control type="image">
@@ -528,7 +547,7 @@
 						<top>0</top>
 						<width>$PARAM[dialog-width]</width>
 						<height>$PARAM[subtitle-height]</height>
-						<texture background="true" colordiffuse="$VAR[Colour.900]">backgrounds/white.png</texture>
+						<texture background="true" colordiffuse="tertiary">backgrounds/white.png</texture>   <!--SETTINGS SEFAF FON-->
 					</control>
 					<!--subtitle shadow-->
 					<control type="image">
@@ -546,7 +565,7 @@
 					<top>0</top>
 					<width>$PARAM[dialog-width]</width>
 					<height>$PARAM[title-height]</height>
-					<texture background="true" colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
+					<texture background="true" colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>  <!--SETTINGS BASLIk KIRMIZI FON-->
 				</control>
 				<!--title shadow-->
 				<control type="image">
@@ -565,7 +584,7 @@
 						<top>$PARAM[buttonbar-top]</top>
 						<width>$PARAM[dialog-width]</width>
 						<height>$PARAM[buttonbar-height]</height>
-						<texture background="true" colordiffuse="primary">backgrounds/white.png</texture>
+						<texture background="true" colordiffuse="tertiary8">backgrounds/white.png</texture>  <!--VIDEO SETTINGS ALT BAR-->
 					</control>
 					<!--buttons shadow-->
 					<control type="image">
@@ -730,8 +749,8 @@
 			<width>60</width>
 			<height>128</height>
 			<font>-</font>
-			<texturefocus colordiffuse="black">hassubbg.png</texturefocus>
-			<texturenofocus colordiffuse="black">hassubbg.png</texturenofocus>
+			<texturefocus colordiffuse="tertiary6">hassubbg.png</texturefocus>
+			<texturenofocus colordiffuse="tertiary6">hassubbg.png</texturenofocus>
 		</control>
 		<!--side blade tab-->
 		<control type="button" id="9001">
@@ -740,8 +759,8 @@
 			<width>60</width>
 			<height>128</height>
 			<font>-</font>
-			<texturefocus colordiffuse="$VAR[Colour.500]">hassub.png</texturefocus>
-			<texturenofocus colordiffuse="$VAR[Colour.500]">hassub.png</texturenofocus>
+			<texturefocus colordiffuse="tertiary6">hassub.png</texturefocus>
+			<texturenofocus colordiffuse="tertiary6">hassub.png</texturenofocus>
 			<animation effect="fade" start="100" end="70" time="300" condition="Window.IsVisible(movieinformation) | Window.IsVisible(selectdialog) | Window.IsVisible(contentsettings) | Window.IsVisible(filebrowser) | Window.IsVisible(addoninformation) | Window.IsVisible(addonSettings) | Window.IsVisible(mediasource) | Window.IsVisible(shutdownmenu) | Window.IsVisible(contextmenu)">Conditional</animation>
 		</control>
 		<!--side blade tab arrow bg (for fade effect)-->
@@ -769,14 +788,14 @@
 			<top>0</top>
 			<width>390</width>
 			<height>100%</height>
-			<texture colordiffuse="tertiary">backgrounds/white.png</texture>
+			<texture colordiffuse="tertiary3">backgrounds/white.png</texture>		   <!--SOL KENAR  FON-->
 		</control>
 		<control type="image">
 			<left>-15</left>
 			<top>0</top>
 			<width>390</width>
 			<height>90</height>
-			<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
+			<texture colordiffuse="tertiary5">backgrounds/white.png</texture>		<!--SOL KENAR KIRMIZI KENAR FON-->
 		</control>
 		<!--bottom shadow-->
 		<control type="image">
@@ -851,7 +870,7 @@
 				<left>30</left>
 				<width>$PARAM[dialog-glowwidth]</width>
 				<height>$PARAM[title-height]</height>
-				<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
+				<texture colordiffuse="tertiary5">backgrounds/white.png</texture>     <!--SAG KENAR KIRMIZI BASLIK-->
 			</control>
 			<control type="group">
 				<visible>$PARAM[subtitle-visible]</visible>
@@ -862,7 +881,7 @@
 					<top>0</top>
 					<width>$PARAM[dialog-glowwidth]</width>
 					<height>$PARAM[subtitle-height]</height>
-					<texture colordiffuse="$VAR[Colour.900]">backgrounds/white.png</texture>
+					<texture colordiffuse="tertiary">backgrounds/white.png</texture> 
 				</control>
 				<!--sub title shadow-->
 				<control type="image">
@@ -896,7 +915,7 @@
 		<control type="group" id="1">
 			<width>45</width>
 			<height>45</height>
-			<visible>Window.IsActive(Home) | Window.IsVisible(LoginScreen.xml)</visible>
+			<visible>false | Window.IsVisible(LoginScreen.xml)</visible>
 			<include>dialogeffect</include>
 			<control type="button" id="20">
 				<description>Power push button</description>
@@ -904,11 +923,11 @@
 				<top>0</top>
 				<width>45</width>
 				<height>45</height>
-				<label></label>
+				<label>31003</label>
 				<font>-</font>
 				<onclick>ActivateWindow(ShutdownMenu)</onclick>
 				<texturefocus colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texturefocus>
-				<texturenofocus colordiffuse="tertiary">backgrounds/white.png</texturenofocus>
+				<texturenofocus colordiffuse="tertiary3">backgrounds/white.png</texturenofocus>
 				<onleft>21</onleft>
 				<onright>21</onright>
 				<onup>9002</onup>
@@ -938,7 +957,7 @@
 		<control type="group" id="1">
 			<width>45</width>
 			<height>45</height>
-			<visible>Window.IsActive(Home)</visible>
+			<visible>false</visible>
 			<include>dialogeffect</include>
 			<control type="button" id="21">
 				<description>Favourites push button</description>
@@ -946,11 +965,11 @@
 				<top>0</top>
 				<width>45</width>
 				<height>45</height>
-				<label></label>
+				<label>1036</label>
 				<font>-</font>
 				<onclick>ActivateWindow(Favourites)</onclick>
 				<texturefocus colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texturefocus>
-				<texturenofocus colordiffuse="tertiary">backgrounds/white.png</texturenofocus>
+				<texturenofocus colordiffuse="tertiary3">backgrounds/white.png</texturenofocus>
 				<onleft>20</onleft>
 				<onright>20</onright>
 				<onup>9002</onup>
@@ -974,13 +993,13 @@
 				<height>45</height>
 				<aspectratio>keep</aspectratio>
 				<texture colordiffuse="white">icon_favourites.png</texture>
-				<visible>Control.HasFocus(21)</visible>
+				<visible>false</visible>
 			</control>
 		</control>
 		<control type="group" id="1">
 			<width>45</width>
 			<height>45</height>
-			<visible>![Window.IsActive(Home) | Window.IsVisible(LoginScreen.xml)] + system.getbool(input.enablemouse)</visible>
+			<visible>false</visible>
 			<animation effect="fade" time="250" condition="!Window.IsVisible(DialogVolumeBar.xml) + Window.Previous(Home)">WindowOpen</animation>
 			<animation effect="fade" time="250" condition="!Window.IsVisible(DialogVolumeBar.xml) + Window.Next(Home)">WindowClose</animation>
 			<control type="button" id="122">
@@ -993,7 +1012,7 @@
 				<font>-</font>
 				<onclick>back</onclick>
 				<texturefocus colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texturefocus>
-				<texturenofocus colordiffuse="tertiary">backgrounds/white.png</texturenofocus>
+				<texturenofocus colordiffuse="tertiary3">backgrounds/white.png</texturenofocus>
 				<onleft>50</onleft>
 				<onright>50</onright>
 				<onup>50</onup>
@@ -1023,7 +1042,7 @@
 		<control type="group" id="1">
 			<width>45</width>
 			<height>45</height>
-			<visible>![Window.IsActive(Home) | Window.IsVisible(LoginScreen.xml)] + system.getbool(input.enablemouse)</visible>
+			<visible>false</visible>
 			<animation effect="fade" time="250" condition="!Window.IsVisible(DialogVolumeBar.xml) + Window.Previous(Home)">WindowOpen</animation>
 			<animation effect="fade" time="250" condition="!Window.IsVisible(DialogVolumeBar.xml) + Window.Next(Home)">WindowClose</animation>
 			<control type="button" id="123">
@@ -1036,7 +1055,7 @@
 				<font>-</font>
 				<onclick>ActivateWindow(home)</onclick>
 				<texturefocus colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texturefocus>
-				<texturenofocus colordiffuse="tertiary">backgrounds/white.png</texturenofocus>
+				<texturenofocus colordiffuse="tertiary3">backgrounds/white.png</texturenofocus>
 				<onleft>50</onleft>
 				<onright>50</onright>
 				<onup>50</onup>
@@ -1078,7 +1097,7 @@
 			<control type="image">
 				<width>600</width>
 				<height>73</height>
-				<texture colordiffuse="tertiary">backgrounds/white.png</texture>
+				<texture colordiffuse="tertiary3">backgrounds/white.png</texture>
 			</control>
 			<!--background strip-->
 			<control type="image" id="12345">
@@ -1901,12 +1920,12 @@
 	<include name="KeyboardButton">
 		<width>75</width>
 		<height>75</height>
-		<texturenofocus colordiffuse="text.primary">backgrounds/white.png</texturenofocus>
+		<texturenofocus colordiffuse="grey2">backgrounds/white.png</texturenofocus>
 		<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
 		<align>center</align>
 		<aligny>center</aligny>
-		<font>button</font>
-		<textcolor>tertiary</textcolor>
+		<font>button.bold</font>
+		<textcolor>white</textcolor>
 		<focusedcolor>white</focusedcolor>
 	</include>
 	<include name="backgroundfade">
