@@ -20,7 +20,7 @@
 
   <link crossorigin="anonymous" media="all" integrity="sha512-UDS3MR1FfvqHmqZAs2MWSDCWPwLemVRLqCwld4/zfwH0vhv7I6RYmDnMnNAVQKP1YYvqnccOCH4iOhFaUUyrjw==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-2e9090135c22aad5f56c2f72dcba7880.css" />
   
-    <link crossorigin="anonymous" media="all" integrity="sha512-gnQz8J3BOZ5pdbObP7qqRnbf0eZF+mTcfHqyElD6r3fNvXKr9XDnxqtpNYrIDP7vMxd1ZEcnm1hkAjLpDOG2zA==" rel="stylesheet" href="https://github.githubassets.com/assets/github-33c1a2a75be4a57aff15728e9ac5644f.css" />
+    <link crossorigin="anonymous" media="all" integrity="sha512-yTzgPeu2yFQArz0nyPFK725PKj1KeV8ZPCiS4vkphuA63MAjHEgyj86dXDJxbQqtlkAXOt2A6s9UQafqBJJeow==" rel="stylesheet" href="https://github.githubassets.com/assets/github-fd68e2309e055f9d19809c140d0ec52a.css" />
     
     
     
@@ -28,20 +28,20 @@
 
   <meta name="viewport" content="width=device-width">
   
-  <title>repository.jenrepo/_repo_xml_generator.py at master · jenaddon/repository.jenrepo</title>
-    <meta name="description" content="Repo for the dependencies for your JEN Add-On. Contribute to jenaddon/repository.jenrepo development by creating an account on GitHub.">
+  <title>kodi-repo-bootstrap/generate_repo.py at master · BartOtten/kodi-repo-bootstrap</title>
+    <meta name="description" content="Bootstrap GIT repo for setting up a Kodi repository  For more information visit: http://forums.addons.center/thread/40-tutorial-how-to-create-an-repository/ - BartOtten/kodi-repo-bootstrap">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
   <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
   <meta property="fb:app_id" content="1401488693436528">
 
-    <meta name="twitter:image:src" content="https://avatars3.githubusercontent.com/u/39660917?s=400&amp;v=4" /><meta name="twitter:site" content="@github" /><meta name="twitter:card" content="summary" /><meta name="twitter:title" content="jenaddon/repository.jenrepo" /><meta name="twitter:description" content="Repo for the dependencies for your JEN Add-On. Contribute to jenaddon/repository.jenrepo development by creating an account on GitHub." />
-    <meta property="og:image" content="https://avatars3.githubusercontent.com/u/39660917?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="jenaddon/repository.jenrepo" /><meta property="og:url" content="https://github.com/jenaddon/repository.jenrepo" /><meta property="og:description" content="Repo for the dependencies for your JEN Add-On. Contribute to jenaddon/repository.jenrepo development by creating an account on GitHub." />
+    <meta name="twitter:image:src" content="https://avatars1.githubusercontent.com/u/2607766?s=400&amp;v=4" /><meta name="twitter:site" content="@github" /><meta name="twitter:card" content="summary" /><meta name="twitter:title" content="BartOtten/kodi-repo-bootstrap" /><meta name="twitter:description" content="Bootstrap GIT repo for setting up a Kodi repository  For more information visit: http://forums.addons.center/thread/40-tutorial-how-to-create-an-repository/ - BartOtten/kodi-repo-bootstrap" />
+    <meta property="og:image" content="https://avatars1.githubusercontent.com/u/2607766?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="BartOtten/kodi-repo-bootstrap" /><meta property="og:url" content="https://github.com/BartOtten/kodi-repo-bootstrap" /><meta property="og:description" content="Bootstrap GIT repo for setting up a Kodi repository  For more information visit: http://forums.addons.center/thread/40-tutorial-how-to-create-an-repository/ - BartOtten/kodi-repo-bootstrap" />
 
   <link rel="assets" href="https://github.githubassets.com/">
-  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6NDM2NDgxMDAxOjBhY2IxNGUwMTAwNzRkODFjNjQyM2Y3MzExZTYzOTI1NTEzYjcyMTc3ZTM5Yjc4NDgyNzc1ZGEzNGQxMmNlYjM=--09695dd8794a12bdf1dde89a25389f37172b97c4">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6NDM2NDgxMDAxOjI0ODM3MzE4YjBiMGFhYTlmYzI4YjQ1Y2Y4MWIxYmU0YTczNTQ2MWZlY2MyNmI1YmQ0NzNhZGI1NmUxNmVjMWU=--c3df93c59de6c7aa4239927454fc9957fb1f322a">
   <meta name="pjax-timeout" content="1000">
   <link rel="sudo-modal" href="/sessions/sudo_modal">
-  <meta name="request-id" content="C084:169A7:157827:2095B6:5D5AE710" data-pjax-transient>
+  <meta name="request-id" content="C12F:1467F:3B0265:5B00F7:5D5BBC43" data-pjax-transient>
 
 
   
@@ -52,7 +52,7 @@
     <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
     <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
 
-  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="C084:169A7:157827:2095B6:5D5AE710" /><meta name="octolytics-dimension-region_edge" content="ams" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-actor-id" content="36918922" /><meta name="octolytics-actor-login" content="mattitch" /><meta name="octolytics-actor-hash" content="778bd255a48d82bd8df102b818b24d2e820f25faa4958b78409305d074e30b66" />
+  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="C12F:1467F:3B0265:5B00F7:5D5BBC43" /><meta name="octolytics-dimension-region_edge" content="ams" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-dimension-ga_id" content="" class="js-octo-ga-id" /><meta name="octolytics-dimension-visitor_id" content="4011886196358748422" /><meta name="octolytics-actor-id" content="36918922" /><meta name="octolytics-actor-login" content="mattitch" /><meta name="octolytics-actor-hash" content="778bd255a48d82bd8df102b818b24d2e820f25faa4958b78409305d074e30b66" />
 <meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" />
 
 
@@ -71,23 +71,23 @@
     <meta name="user-login" content="mattitch">
 
       <meta name="expected-hostname" content="github.com">
-    <meta name="js-proxy-site-detection-payload" content="NWE4ZDA0NjhmNmUyNTZjZDgxZmRjMzhjMGY0ZTQzMTRhYjI5YTI4NjVkNWI0ZDc3YTczMzZkODIxZmU4ZmQzMXx7InJlbW90ZV9hZGRyZXNzIjoiODguMTA5LjMwLjI0NSIsInJlcXVlc3RfaWQiOiJDMDg0OjE2OUE3OjE1NzgyNzoyMDk1QjY6NUQ1QUU3MTAiLCJ0aW1lc3RhbXAiOjE1NjYyMzg0ODQsImhvc3QiOiJnaXRodWIuY29tIn0=">
+    <meta name="js-proxy-site-detection-payload" content="YzkyNGMwZjQ4NmFmMzhkMTFmMzJjZTFlZjJlZTRjZGUzNzBjYzNjZDc1NzQ1MTZhZTMyMTQ2YTZiNWRlMDBlZnx7InJlbW90ZV9hZGRyZXNzIjoiODguMTA5LjMwLjI0NSIsInJlcXVlc3RfaWQiOiJDMTJGOjE0NjdGOjNCMDI2NTo1QjAwRjc6NUQ1QkJDNDMiLCJ0aW1lc3RhbXAiOjE1NjYyOTMwNjIsImhvc3QiOiJnaXRodWIuY29tIn0=">
 
     <meta name="enabled-features" content="ACTIONS_V2_ON_MARKETPLACE,MARKETPLACE_FEATURED_BLOG_POSTS,MARKETPLACE_INVOICED_BILLING,MARKETPLACE_SOCIAL_PROOF_CUSTOMERS,MARKETPLACE_TRENDING_SOCIAL_PROOF,MARKETPLACE_RECOMMENDATIONS,MARKETPLACE_PENDING_INSTALLATIONS,NOTIFY_ON_BLOCK,RELATED_ISSUES,GHE_CLOUD_TRIAL">
 
   <meta name="html-safe-nonce" content="0bf8ca1abd0471e6baa4e081d01e723bf68364fc">
 
-  <meta http-equiv="x-pjax-version" content="8d2fed7fca008032aaf876d7c6818d9d">
+  <meta http-equiv="x-pjax-version" content="797ad1d287ad43580c3eb0be0d69e205">
   
 
-      <link href="https://github.com/jenaddon/repository.jenrepo/commits/master.atom" rel="alternate" title="Recent Commits to repository.jenrepo:master" type="application/atom+xml">
+      <link href="https://github.com/BartOtten/kodi-repo-bootstrap/commits/master.atom" rel="alternate" title="Recent Commits to kodi-repo-bootstrap:master" type="application/atom+xml">
 
-  <meta name="go-import" content="github.com/jenaddon/repository.jenrepo git https://github.com/jenaddon/repository.jenrepo.git">
+  <meta name="go-import" content="github.com/BartOtten/kodi-repo-bootstrap git https://github.com/BartOtten/kodi-repo-bootstrap.git">
 
-  <meta name="octolytics-dimension-user_id" content="39660917" /><meta name="octolytics-dimension-user_login" content="jenaddon" /><meta name="octolytics-dimension-repository_id" content="135047335" /><meta name="octolytics-dimension-repository_nwo" content="jenaddon/repository.jenrepo" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="135047335" /><meta name="octolytics-dimension-repository_network_root_nwo" content="jenaddon/repository.jenrepo" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false" />
+  <meta name="octolytics-dimension-user_id" content="2607766" /><meta name="octolytics-dimension-user_login" content="BartOtten" /><meta name="octolytics-dimension-repository_id" content="36458460" /><meta name="octolytics-dimension-repository_nwo" content="BartOtten/kodi-repo-bootstrap" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="36458460" /><meta name="octolytics-dimension-repository_network_root_nwo" content="BartOtten/kodi-repo-bootstrap" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false" />
 
 
-    <link rel="canonical" href="https://github.com/jenaddon/repository.jenrepo/blob/master/_repo_xml_generator.py" data-pjax-transient>
+    <link rel="canonical" href="https://github.com/BartOtten/kodi-repo-bootstrap/blob/master/_tools/generate_repo.py" data-pjax-transient>
 
 
   <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
@@ -144,7 +144,7 @@
   aria-expanded="false"
 >
   <div class="position-relative">
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-site-search-form" role="search" aria-label="Site" data-scope-type="Repository" data-scope-id="135047335" data-scoped-search-url="/jenaddon/repository.jenrepo/search" data-unscoped-search-url="/search" action="/jenaddon/repository.jenrepo/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-site-search-form" role="search" aria-label="Site" data-scope-type="Repository" data-scope-id="36458460" data-scoped-search-url="/BartOtten/kodi-repo-bootstrap/search" data-unscoped-search-url="/search" action="/BartOtten/kodi-repo-bootstrap/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
       <label class="form-control input-sm header-search-wrapper p-0 header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center js-chromeless-input-container">
         <input type="text"
           class="form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
@@ -158,7 +158,7 @@
           aria-autocomplete="list"
           aria-controls="jump-to-results"
           aria-label="Search or jump to…"
-          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=yF9zTK26NAk3w1mZNThz5PCUIEjihWRNeBVeTDifegJCIurCOW1kDvwlfGzHpSsKIArHAqDwotTKN7y+wlovPg=="
+          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=1Qx7T+GDobxbQZNOvXNRIXy4d6cyZW7BFgXl/v873eRfceLBdVTxu5CntrtP7gnPrCaQ7XAQqFikJwcMBf6I2A=="
           spellcheck="false"
           autocomplete="off"
           >
@@ -311,7 +311,7 @@
       <img class="avatar" height="20" width="20" alt="@mattitch" src="https://avatars3.githubusercontent.com/u/36918922?s=60&amp;v=4" />
       mattitch
 </a>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="AEfcr5QpK59Qk4Qox0joAMSTPuNy7sPoiqzZ7rVrPo0egpsjgpoD8IXd5+OyAK0Ytyc9bsSawIuWZOwTaxi80A==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="MZCFDpvxfbdRTKWUi+0Op0PCLFqZIaogm0cXMD60PsYvVcKCjUJV2IQCxl/+pUu/MHYv1y9VqUOHjyLN4Me8mw==" />
       <button type="submit" class="Header-link mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15 d-lg-none btn-link d-block width-full text-left" data-ga-click="Header, sign out, icon:logout" style="padding-left: 2px;">
         <svg class="octicon octicon-sign-out v-align-middle" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 9V7H8V5h4V3l4 3-4 3zm-2 3H6V3L2 1h8v3h1V1c0-.55-.45-1-1-1H1C.45 0 0 .45 0 1v11.38c0 .39.22.73.55.91L6 16.01V13h4c.55 0 1-.45 1-1V8h-1v4z"/></svg>
         Sign out
@@ -323,9 +323,9 @@
     <div class="Header-item Header-item--full flex-justify-center d-lg-none position-relative">
       <div class="css-truncate css-truncate-target width-fit position-absolute left-0 right-0 text-center">
               <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
-    <a class="Header-link" href="/jenaddon">jenaddon</a>
+    <a class="Header-link" href="/BartOtten">BartOtten</a>
     /
-    <a class="Header-link" href="/jenaddon/repository.jenrepo">repository.jenrepo</a>
+    <a class="Header-link" href="/BartOtten/kodi-repo-bootstrap">kodi-repo-bootstrap</a>
 
 </div>
     </div>
@@ -373,9 +373,9 @@
 
   <div role="none" class="dropdown-divider"></div>
   <div class="dropdown-header">
-    <span title="jenaddon/repository.jenrepo">This repository</span>
+    <span title="BartOtten/kodi-repo-bootstrap">This repository</span>
   </div>
-    <a role="menuitem" class="dropdown-item" href="/jenaddon/repository.jenrepo/issues/new" data-ga-click="Header, create new issue" data-skip-pjax>
+    <a role="menuitem" class="dropdown-item" href="/BartOtten/kodi-repo-bootstrap/issues/new" data-ga-click="Header, create new issue" data-skip-pjax>
       New issue
     </a>
 
@@ -405,7 +405,7 @@
     border
   " data-team-hovercards-enabled>
   <details class="js-user-status-details details-reset details-overlay details-overlay-dark">
-    <summary class="btn-link btn-block link-gray no-underline js-toggle-user-status-edit toggle-user-status-edit " aria-haspopup="dialog" role="menuitem" data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:39660917,&quot;target&quot;:&quot;EDIT_USER_STATUS&quot;,&quot;user_id&quot;:36918922,&quot;client_id&quot;:&quot;934090045.1564580102&quot;,&quot;originating_request_id&quot;:&quot;C084:169A7:157827:2095B6:5D5AE710&quot;,&quot;originating_url&quot;:&quot;https://github.com/jenaddon/repository.jenrepo/blob/master/_repo_xml_generator.py&quot;,&quot;referrer&quot;:&quot;https://github.com/jenaddon/repository.jenrepo&quot;}}" data-hydro-click-hmac="a1eb0cdeb52d22472e70bf5f360230de97b02caace30b6298ab70f7fe3d1f773">
+    <summary class="btn-link btn-block link-gray no-underline js-toggle-user-status-edit toggle-user-status-edit " aria-haspopup="dialog" role="menuitem" data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:2607766,&quot;target&quot;:&quot;EDIT_USER_STATUS&quot;,&quot;user_id&quot;:36918922,&quot;client_id&quot;:&quot;934090045.1564580102&quot;,&quot;originating_request_id&quot;:&quot;C12F:1467F:3B0265:5B00F7:5D5BBC43&quot;,&quot;originating_url&quot;:&quot;https://github.com/BartOtten/kodi-repo-bootstrap/blob/master/_tools/generate_repo.py&quot;,&quot;referrer&quot;:&quot;https://github.com/BartOtten/kodi-repo-bootstrap/tree/master/_tools&quot;}}" data-hydro-click-hmac="63e8513bd5d17196587891270a1fb7f690172aff63224e1f6bf7208c46df31e4">
       <div class="d-flex">
         <div class="f6 lh-condensed user-status-header
           d-inline-block v-align-middle
@@ -431,7 +431,7 @@
         </div>
       </div>
 </summary>    <details-dialog class="details-dialog rounded-1 anim-fade-in fast Box Box--overlay" role="dialog" tabindex="-1">
-      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="position-relative flex-auto js-user-status-form" action="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="H7GD33Gb7isNkygIlDIsKDmN9uhbCLckKlWb4Jed9n23RvtdYZ0qBwXzlLS3Gdc0I5so8SzqanZy9l742g6Sew==" />
+      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="position-relative flex-auto js-user-status-form" action="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="21c4v4eYB3RCGb8xWL3bnZcEKJNwtKPhY5zmOL2NqytzoEA9l57DWEp5A417liCBjRL2igdWfrM7PyMg8B7PLQ==" />
         <div class="Box-header bg-gray border-bottom p-3">
           <button class="Box-btn-octicon js-toggle-user-status-edit btn-octicon float-right" type="reset" aria-label="Close dialog" data-close-dialog>
             <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
@@ -551,22 +551,22 @@
       </li>
       <li class="dropdown-divider" role="none"></li>
         <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 30 minutes" value="2019-08-19T19:44:44+01:00">
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 30 minutes" value="2019-08-20T10:54:22+01:00">
             in 30 minutes
           </button>
         </li>
         <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 1 hour" value="2019-08-19T20:14:44+01:00">
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 1 hour" value="2019-08-20T11:24:22+01:00">
             in 1 hour
           </button>
         </li>
         <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 4 hours" value="2019-08-19T23:14:44+01:00">
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 4 hours" value="2019-08-20T14:24:22+01:00">
             in 4 hours
           </button>
         </li>
         <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="today" value="2019-08-19T23:59:59+01:00">
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="today" value="2019-08-20T23:59:59+01:00">
             today
           </button>
         </li>
@@ -613,7 +613,7 @@
     <div role="none" class="dropdown-divider"></div>
     <a role="menuitem" class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help">Help</a>
     <a role="menuitem" class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings">Settings</a>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="gwW18BTshBS+OlN337LQH8bb+rjGzB6GZPEol8AcCzqdwPJ8Al+se2t0MLyq+pUHtW/5NXC4HeV4OR1qHm+JZw==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="BVsES5g2hInwvqGjIGSiT47grVudLBPXI5l7nX+A7isbnkPHjoWs5iXwwmhVLOdX/VSu1itYELQ/UU5gofNsdg==" />
       
       <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout" role="menuitem">
         Sign out
@@ -665,10 +665,10 @@
 
   <li>
     
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="clearfix js-social-form js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="A31WlahlUBwKkIVPI+OsFQB0G8bJg09KWRrav/a2ZqWUP+8GNWoPd23uMb0csj5I/rqWSCGrDIeAaMe4fA5FiA==" />      <input type="hidden" name="repository_id" value="135047335">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="clearfix js-social-form js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="WaARHQzD3eKQRiyAFDVxpjm73N9NBjnzsVJfGQyuRCnO4qiOkcyCifc4mHIrZOP7x3VRUaUuej5oIEIehhZnBA==" />      <input type="hidden" name="repository_id" value="36458460">
 
       <details class="details-reset details-overlay select-menu float-left">
-        <summary class="select-menu-button float-left btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;WATCH_BUTTON&quot;,&quot;repository_id&quot;:135047335,&quot;client_id&quot;:&quot;934090045.1564580102&quot;,&quot;originating_request_id&quot;:&quot;C084:169A7:157827:2095B6:5D5AE710&quot;,&quot;originating_url&quot;:&quot;https://github.com/jenaddon/repository.jenrepo/blob/master/_repo_xml_generator.py&quot;,&quot;referrer&quot;:&quot;https://github.com/jenaddon/repository.jenrepo&quot;,&quot;user_id&quot;:36918922}}" data-hydro-click-hmac="d287a5cd95cc34be1a4b5bd1de154a217521d45493e55f026feced97847f8663" data-ga-click="Repository, click Watch settings, action:blob#show">          <span data-menu-button>
+        <summary class="select-menu-button float-left btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;WATCH_BUTTON&quot;,&quot;repository_id&quot;:36458460,&quot;client_id&quot;:&quot;934090045.1564580102&quot;,&quot;originating_request_id&quot;:&quot;C12F:1467F:3B0265:5B00F7:5D5BBC43&quot;,&quot;originating_url&quot;:&quot;https://github.com/BartOtten/kodi-repo-bootstrap/blob/master/_tools/generate_repo.py&quot;,&quot;referrer&quot;:&quot;https://github.com/BartOtten/kodi-repo-bootstrap/tree/master/_tools&quot;,&quot;user_id&quot;:36918922}}" data-hydro-click-hmac="3f083175c6d7b78c6692277f3eeff155ab8fdc7469044641b0fea6c84ba19a32" data-ga-click="Repository, click Watch settings, action:blob#show">          <span data-menu-button>
               <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
               Watch
           </span>
@@ -730,53 +730,53 @@
         </details-menu>
       </details>
         <a class="social-count js-social-count"
-          href="/jenaddon/repository.jenrepo/watchers"
-          aria-label="2 users are watching this repository">
-          2
+          href="/BartOtten/kodi-repo-bootstrap/watchers"
+          aria-label="4 users are watching this repository">
+          4
         </a>
 </form>
   </li>
 
   <li>
       <div class="js-toggler-container js-social-container starring-container ">
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/jenaddon/repository.jenrepo/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="oqEhq9IAdfAM3M+O+yaPnZnDGEeX03V14YVZJRyPDm6uvv8sf8f1BIdbI6cg96oo8gyQIA8WT7K834PISo2fcw==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/BartOtten/kodi-repo-bootstrap/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="ZgdQlZdUgSt7XtbrvJX7Qq70WxcvQjfH6kNeN8nsCz2nhL+5hD83MVb13rrILwXK8efDmqvFbnxmCnwhfqf+IA==" />
       <input type="hidden" name="context" value="repository"></input>
-      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Unstar jenaddon/repository.jenrepo" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;UNSTAR_BUTTON&quot;,&quot;repository_id&quot;:135047335,&quot;client_id&quot;:&quot;934090045.1564580102&quot;,&quot;originating_request_id&quot;:&quot;C084:169A7:157827:2095B6:5D5AE710&quot;,&quot;originating_url&quot;:&quot;https://github.com/jenaddon/repository.jenrepo/blob/master/_repo_xml_generator.py&quot;,&quot;referrer&quot;:&quot;https://github.com/jenaddon/repository.jenrepo&quot;,&quot;user_id&quot;:36918922}}" data-hydro-click-hmac="e0f3c8ce6ef9d7d2394941913dd684cf75dbb56ea9ce61095cfe42cfd1eb9569" data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Unstar BartOtten/kodi-repo-bootstrap" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;UNSTAR_BUTTON&quot;,&quot;repository_id&quot;:36458460,&quot;client_id&quot;:&quot;934090045.1564580102&quot;,&quot;originating_request_id&quot;:&quot;C12F:1467F:3B0265:5B00F7:5D5BBC43&quot;,&quot;originating_url&quot;:&quot;https://github.com/BartOtten/kodi-repo-bootstrap/blob/master/_tools/generate_repo.py&quot;,&quot;referrer&quot;:&quot;https://github.com/BartOtten/kodi-repo-bootstrap/tree/master/_tools&quot;,&quot;user_id&quot;:36918922}}" data-hydro-click-hmac="bac7c44d5cabca6b1a8ac15423f05964707d1c7ce685f6910d1ee807211abcc6" data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
         Unstar
-</button>        <a class="social-count js-social-count" href="/jenaddon/repository.jenrepo/stargazers"
-           aria-label="0 users starred this repository">
-           0
+</button>        <a class="social-count js-social-count" href="/BartOtten/kodi-repo-bootstrap/stargazers"
+           aria-label="14 users starred this repository">
+           14
         </a>
 </form>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/jenaddon/repository.jenrepo/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="FO8evzbZPfA0MhWoxM3ZNtRpUrACx37xLQRTat6OxgNjahIIHx3Ilw4Dy/EuwaJdxAmfdBgkI5IA3xdF+zlQiw==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/BartOtten/kodi-repo-bootstrap/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="9foXH0Pb59YWwLBNXi7/zwUCvMLd6ioHdkJkirt3LG5MiYCDubxZXNyDQ8VITiuSyocV8J0/NwHEyd6SF91W1w==" />
       <input type="hidden" name="context" value="repository"></input>
-      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Star jenaddon/repository.jenrepo" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;repository_id&quot;:135047335,&quot;client_id&quot;:&quot;934090045.1564580102&quot;,&quot;originating_request_id&quot;:&quot;C084:169A7:157827:2095B6:5D5AE710&quot;,&quot;originating_url&quot;:&quot;https://github.com/jenaddon/repository.jenrepo/blob/master/_repo_xml_generator.py&quot;,&quot;referrer&quot;:&quot;https://github.com/jenaddon/repository.jenrepo&quot;,&quot;user_id&quot;:36918922}}" data-hydro-click-hmac="207084ad87713871ca360a07c2b8da1d1d0cd41f4822ebee86efcd9b0f5f1e6f" data-ga-click="Repository, click star button, action:blob#show; text:Star">        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Star BartOtten/kodi-repo-bootstrap" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;repository_id&quot;:36458460,&quot;client_id&quot;:&quot;934090045.1564580102&quot;,&quot;originating_request_id&quot;:&quot;C12F:1467F:3B0265:5B00F7:5D5BBC43&quot;,&quot;originating_url&quot;:&quot;https://github.com/BartOtten/kodi-repo-bootstrap/blob/master/_tools/generate_repo.py&quot;,&quot;referrer&quot;:&quot;https://github.com/BartOtten/kodi-repo-bootstrap/tree/master/_tools&quot;,&quot;user_id&quot;:36918922}}" data-hydro-click-hmac="de7ed4780f734b05f45d600070d47a543e23b6ea4bb252ed2f4fa4a3479dcd7d" data-ga-click="Repository, click star button, action:blob#show; text:Star">        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
         Star
-</button>        <a class="social-count js-social-count" href="/jenaddon/repository.jenrepo/stargazers"
-           aria-label="0 users starred this repository">
-          0
+</button>        <a class="social-count js-social-count" href="/BartOtten/kodi-repo-bootstrap/stargazers"
+           aria-label="14 users starred this repository">
+          14
         </a>
 </form>  </div>
 
   </li>
 
   <li>
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="btn-with-count" action="/jenaddon/repository.jenrepo/fork" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="xl7IT9SAXU3vkxj+g842C9LZTDaz/YN5Bz3NGFRfUx2diC7PGh5vXC5lXaPeYxbiaXgdwyz0h6+KwSKA3axDXg==" />
-            <button class="btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;FORK_BUTTON&quot;,&quot;repository_id&quot;:135047335,&quot;client_id&quot;:&quot;934090045.1564580102&quot;,&quot;originating_request_id&quot;:&quot;C084:169A7:157827:2095B6:5D5AE710&quot;,&quot;originating_url&quot;:&quot;https://github.com/jenaddon/repository.jenrepo/blob/master/_repo_xml_generator.py&quot;,&quot;referrer&quot;:&quot;https://github.com/jenaddon/repository.jenrepo&quot;,&quot;user_id&quot;:36918922}}" data-hydro-click-hmac="ebc53cc69081c9f34a8559f25e7d080c77740cf046964701f272f215d2ef6b36" data-ga-click="Repository, show fork modal, action:blob#show; text:Fork" type="submit" title="Fork your own copy of jenaddon/repository.jenrepo to your account" aria-label="Fork your own copy of jenaddon/repository.jenrepo to your account">              <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="btn-with-count" action="/BartOtten/kodi-repo-bootstrap/fork" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="/gjsqmQnpVpeupqap4UsbRJnp/5zA+nTo3/EVXIk1qP/f+Q/MKDafoeq8Nx0qBX7T9uJHd0lv8znGmgc3e4SmA==" />
+            <button class="btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;FORK_BUTTON&quot;,&quot;repository_id&quot;:36458460,&quot;client_id&quot;:&quot;934090045.1564580102&quot;,&quot;originating_request_id&quot;:&quot;C12F:1467F:3B0265:5B00F7:5D5BBC43&quot;,&quot;originating_url&quot;:&quot;https://github.com/BartOtten/kodi-repo-bootstrap/blob/master/_tools/generate_repo.py&quot;,&quot;referrer&quot;:&quot;https://github.com/BartOtten/kodi-repo-bootstrap/tree/master/_tools&quot;,&quot;user_id&quot;:36918922}}" data-hydro-click-hmac="158875f195c86a499f3b71e6f474c6e5b9442fae1b259f34f4e2b8dc42ef5aa0" data-ga-click="Repository, show fork modal, action:blob#show; text:Fork" type="submit" title="Fork your own copy of BartOtten/kodi-repo-bootstrap to your account" aria-label="Fork your own copy of BartOtten/kodi-repo-bootstrap to your account">              <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
               Fork
 </button></form>
-    <a href="/jenaddon/repository.jenrepo/network/members" class="social-count"
-       aria-label="2 users forked this repository">
-      2
+    <a href="/BartOtten/kodi-repo-bootstrap/network/members" class="social-count"
+       aria-label="36 users forked this repository">
+      36
     </a>
   </li>
 </ul>
 
       <h1 class="public ">
     <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
-  <span class="author" itemprop="author"><a class="url fn" rel="author" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=39660917" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/jenaddon">jenaddon</a></span><!--
+  <span class="author" itemprop="author"><a class="url fn" rel="author" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=2607766" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/BartOtten">BartOtten</a></span><!--
 --><span class="path-divider">/</span><!--
---><strong itemprop="name"><a data-pjax="#js-repo-pjax-container" href="/jenaddon/repository.jenrepo">repository.jenrepo</a></strong>
+--><strong itemprop="name"><a data-pjax="#js-repo-pjax-container" href="/BartOtten/kodi-repo-bootstrap">kodi-repo-bootstrap</a></strong>
   
 
 </h1>
@@ -790,14 +790,14 @@
      data-pjax="#js-repo-pjax-container">
 
   <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
-    <a class="js-selected-navigation-item selected reponav-item" itemprop="url" data-hotkey="g c" aria-current="page" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /jenaddon/repository.jenrepo" href="/jenaddon/repository.jenrepo">
+    <a class="js-selected-navigation-item selected reponav-item" itemprop="url" data-hotkey="g c" aria-current="page" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /BartOtten/kodi-repo-bootstrap" href="/BartOtten/kodi-repo-bootstrap">
       <svg class="octicon octicon-code" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
       <span itemprop="name">Code</span>
       <meta itemprop="position" content="1">
 </a>  </span>
 
     <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
-      <a itemprop="url" data-hotkey="g i" class="js-selected-navigation-item reponav-item" data-selected-links="repo_issues repo_labels repo_milestones /jenaddon/repository.jenrepo/issues" href="/jenaddon/repository.jenrepo/issues">
+      <a itemprop="url" data-hotkey="g i" class="js-selected-navigation-item reponav-item" data-selected-links="repo_issues repo_labels repo_milestones /BartOtten/kodi-repo-bootstrap/issues" href="/BartOtten/kodi-repo-bootstrap/issues">
         <svg class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
         <span itemprop="name">Issues</span>
         <span class="Counter">0</span>
@@ -805,29 +805,29 @@
 </a>    </span>
 
   <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
-    <a data-hotkey="g p" itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /jenaddon/repository.jenrepo/pulls" href="/jenaddon/repository.jenrepo/pulls">
+    <a data-hotkey="g p" itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /BartOtten/kodi-repo-bootstrap/pulls" href="/BartOtten/kodi-repo-bootstrap/pulls">
       <svg class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
       <span itemprop="name">Pull requests</span>
-      <span class="Counter">0</span>
+      <span class="Counter">2</span>
       <meta itemprop="position" content="3">
 </a>  </span>
 
 
-    <a data-hotkey="g b" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /jenaddon/repository.jenrepo/projects" href="/jenaddon/repository.jenrepo/projects">
+    <a data-hotkey="g b" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /BartOtten/kodi-repo-bootstrap/projects" href="/BartOtten/kodi-repo-bootstrap/projects">
       <svg class="octicon octicon-project" viewBox="0 0 15 16" version="1.1" width="15" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
       Projects
       <span class="Counter" >0</span>
 </a>
 
-    <a class="js-selected-navigation-item reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /jenaddon/repository.jenrepo/wiki" href="/jenaddon/repository.jenrepo/wiki">
+    <a class="js-selected-navigation-item reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /BartOtten/kodi-repo-bootstrap/wiki" href="/BartOtten/kodi-repo-bootstrap/wiki">
       <svg class="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"/></svg>
       Wiki
 </a>
-    <a data-skip-pjax="true" class="js-selected-navigation-item reponav-item" data-selected-links="security alerts policy /jenaddon/repository.jenrepo/security/advisories" href="/jenaddon/repository.jenrepo/security/advisories">
+    <a data-skip-pjax="true" class="js-selected-navigation-item reponav-item" data-selected-links="security alerts policy /BartOtten/kodi-repo-bootstrap/security/advisories" href="/BartOtten/kodi-repo-bootstrap/security/advisories">
       <svg class="octicon octicon-shield" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 2l7-2 7 2v6.02C14 12.69 8.69 16 7 16c-1.69 0-7-3.31-7-7.98V2zm1 .75L7 1l6 1.75v5.268C13 12.104 8.449 15 7 15c-1.449 0-6-2.896-6-6.982V2.75zm1 .75L7 2v12c-1.207 0-5-2.482-5-5.985V3.5z"/></svg>
       Security
 </a>
-    <a class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse people /jenaddon/repository.jenrepo/pulse" href="/jenaddon/repository.jenrepo/pulse">
+    <a class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse people /BartOtten/kodi-repo-bootstrap/pulse" href="/BartOtten/kodi-repo-bootstrap/pulse">
       <svg class="octicon octicon-graph" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
       Insights
 </a>
@@ -840,47 +840,47 @@
        itemtype="http://schema.org/BreadcrumbList">
 
     <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
-      <a class="js-selected-navigation-item selected reponav-item" itemprop="url" aria-current="page" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /jenaddon/repository.jenrepo" href="/jenaddon/repository.jenrepo">
+      <a class="js-selected-navigation-item selected reponav-item" itemprop="url" aria-current="page" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /BartOtten/kodi-repo-bootstrap" href="/BartOtten/kodi-repo-bootstrap">
         <span itemprop="name">Code</span>
         <meta itemprop="position" content="1">
 </a>    </span>
 
       <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
-        <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_issues repo_labels repo_milestones /jenaddon/repository.jenrepo/issues" href="/jenaddon/repository.jenrepo/issues">
+        <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_issues repo_labels repo_milestones /BartOtten/kodi-repo-bootstrap/issues" href="/BartOtten/kodi-repo-bootstrap/issues">
           <span itemprop="name">Issues</span>
           <span class="Counter">0</span>
           <meta itemprop="position" content="2">
 </a>      </span>
 
     <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
-      <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /jenaddon/repository.jenrepo/pulls" href="/jenaddon/repository.jenrepo/pulls">
+      <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /BartOtten/kodi-repo-bootstrap/pulls" href="/BartOtten/kodi-repo-bootstrap/pulls">
         <span itemprop="name">Pull requests</span>
-        <span class="Counter">0</span>
+        <span class="Counter">2</span>
         <meta itemprop="position" content="3">
 </a>    </span>
 
       <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
-        <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /jenaddon/repository.jenrepo/projects" href="/jenaddon/repository.jenrepo/projects">
+        <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /BartOtten/kodi-repo-bootstrap/projects" href="/BartOtten/kodi-repo-bootstrap/projects">
           <span itemprop="name">Projects</span>
           <span class="Counter">0</span>
           <meta itemprop="position" content="4">
 </a>      </span>
 
       <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
-        <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_wiki /jenaddon/repository.jenrepo/wiki" href="/jenaddon/repository.jenrepo/wiki">
+        <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_wiki /BartOtten/kodi-repo-bootstrap/wiki" href="/BartOtten/kodi-repo-bootstrap/wiki">
           <span itemprop="name">Wiki</span>
           <meta itemprop="position" content="5">
 </a>      </span>
 
-      <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="security alerts policy /jenaddon/repository.jenrepo/security/advisories" href="/jenaddon/repository.jenrepo/security/advisories">
+      <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="security alerts policy /BartOtten/kodi-repo-bootstrap/security/advisories" href="/BartOtten/kodi-repo-bootstrap/security/advisories">
         <span itemprop="name">Security</span>
         <meta itemprop="position" content="6">
 </a>
-      <a class="js-selected-navigation-item reponav-item" data-selected-links="pulse /jenaddon/repository.jenrepo/pulse" href="/jenaddon/repository.jenrepo/pulse">
+      <a class="js-selected-navigation-item reponav-item" data-selected-links="pulse /BartOtten/kodi-repo-bootstrap/pulse" href="/BartOtten/kodi-repo-bootstrap/pulse">
         Pulse
 </a>
       <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
-        <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="community /jenaddon/repository.jenrepo/community" href="/jenaddon/repository.jenrepo/community">
+        <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="community /BartOtten/kodi-repo-bootstrap/community" href="/BartOtten/kodi-repo-bootstrap/community">
           Community
 </a>      </span>
 
@@ -899,9 +899,9 @@
   
 
 
-    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/jenaddon/repository.jenrepo/blob/fc66d7e52a3b606f5cefe3f7d0ef7f7b5c892435/_repo_xml_generator.py">Permalink</a>
+    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/BartOtten/kodi-repo-bootstrap/blob/4e5d613e4e986823aeeb33a82954662b3dd02c12/_tools/generate_repo.py">Permalink</a>
 
-    <!-- blob contrib key: blob_contributors:v21:3a22a21f80a68d28a160d79cb8e570b8 -->
+    <!-- blob contrib key: blob_contributors:v21:6130263d57493b5735e1e33c1e80a733 -->
       
 
     <div class="d-flex flex-items-start flex-shrink-0 pb-3 flex-column flex-md-row">
@@ -915,7 +915,7 @@
     <span class="css-truncate-target" data-menu-button>master</span>
   </summary>
 
-  <details-menu class="select-menu-modal hx_rsm-modal position-absolute" style="z-index: 99;" src="/jenaddon/repository.jenrepo/ref-list/master/_repo_xml_generator.py?source_action=show&amp;source_controller=blob" preload>
+  <details-menu class="select-menu-modal hx_rsm-modal position-absolute" style="z-index: 99;" src="/BartOtten/kodi-repo-bootstrap/ref-list/master/_tools/generate_repo.py?source_action=show&amp;source_controller=blob" preload>
     <include-fragment class="select-menu-loading-overlay anim-pulse">
       <svg height="32" class="octicon octicon-octoface" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M14.7 5.34c.13-.32.55-1.59-.13-3.31 0 0-1.05-.33-3.44 1.3-1-.28-2.07-.32-3.13-.32s-2.13.04-3.13.32c-2.39-1.64-3.44-1.3-3.44-1.3-.68 1.72-.26 2.99-.13 3.31C.49 6.21 0 7.33 0 8.69 0 13.84 3.33 15 7.98 15S16 13.84 16 8.69c0-1.36-.49-2.48-1.3-3.35zM8 14.02c-3.3 0-5.98-.15-5.98-3.35 0-.76.38-1.48 1.02-2.07 1.07-.98 2.9-.46 4.96-.46 2.07 0 3.88-.52 4.96.46.65.59 1.02 1.3 1.02 2.07 0 3.19-2.68 3.35-5.98 3.35zM5.49 9.01c-.66 0-1.2.8-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.54-1.78-1.2-1.78zm5.02 0c-.66 0-1.2.79-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.53-1.78-1.2-1.78z"/></svg>
     </include-fragment>
@@ -923,29 +923,29 @@
 </details>
 
         <div class="BtnGroup flex-shrink-0 d-md-none">
-          <a href="/jenaddon/repository.jenrepo/find/master"
+          <a href="/BartOtten/kodi-repo-bootstrap/find/master"
                 class="js-pjax-capture-input btn btn-sm BtnGroup-item"
                 data-pjax
                 data-hotkey="t">
             Find file
           </a>
-          <clipboard-copy value="_repo_xml_generator.py" class="btn btn-sm BtnGroup-item">
+          <clipboard-copy value="_tools/generate_repo.py" class="btn btn-sm BtnGroup-item">
             Copy path
           </clipboard-copy>
         </div>
       </span>
       <h2 id="blob-path" class="breadcrumb flex-auto min-width-0 text-normal flex-md-self-center ml-md-2 mr-md-3 my-2 my-md-0">
-        <span class="js-repo-root text-bold"><span class="js-path-segment"><a data-pjax="true" href="/jenaddon/repository.jenrepo"><span>repository.jenrepo</span></a></span></span><span class="separator">/</span><strong class="final-path">_repo_xml_generator.py</strong>
+        <span class="js-repo-root text-bold"><span class="js-path-segment"><a data-pjax="true" href="/BartOtten/kodi-repo-bootstrap"><span>kodi-repo-bootstrap</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/BartOtten/kodi-repo-bootstrap/tree/master/_tools"><span>_tools</span></a></span><span class="separator">/</span><strong class="final-path">generate_repo.py</strong>
       </h2>
 
       <div class="BtnGroup flex-shrink-0 d-none d-md-inline-block">
-        <a href="/jenaddon/repository.jenrepo/find/master"
+        <a href="/BartOtten/kodi-repo-bootstrap/find/master"
               class="js-pjax-capture-input btn btn-sm BtnGroup-item"
               data-pjax
               data-hotkey="t">
           Find file
         </a>
-        <clipboard-copy value="_repo_xml_generator.py" class="btn btn-sm BtnGroup-item">
+        <clipboard-copy value="_tools/generate_repo.py" class="btn btn-sm BtnGroup-item">
           Copy path
         </clipboard-copy>
       </div>
@@ -957,15 +957,15 @@
   <div class="Box Box--condensed d-flex flex-column flex-shrink-0">
       <div class="Box-body d-flex flex-justify-between bg-blue-light flex-column flex-md-row flex-items-start flex-md-items-center">
         <span class="pr-md-4 f6">
-          <a rel="author" data-skip-pjax="true" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=39660917" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/jenaddon"><img class="avatar" src="https://avatars3.githubusercontent.com/u/39660917?s=40&amp;v=4" width="20" height="20" alt="@jenaddon" /></a>
-          <a class="text-bold link-gray-dark lh-default v-align-middle" rel="author" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=39660917" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/jenaddon">jenaddon</a>
+          <a rel="author" data-skip-pjax="true" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=2607766" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/BartOtten"><img class="avatar" src="https://avatars2.githubusercontent.com/u/2607766?s=40&amp;v=4" width="20" height="20" alt="@BartOtten" /></a>
+          <a class="text-bold link-gray-dark lh-default v-align-middle" rel="author" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=2607766" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/BartOtten">BartOtten</a>
             <span class="lh-default v-align-middle">
-              <a data-pjax="true" title="Old School" class="link-gray" href="/jenaddon/repository.jenrepo/commit/aea8e1e60f0e376da0f2e6eb2bf37b31ef54eead">Old School</a>
+              <a data-pjax="true" title="Added version file / Cleanup Round 2" class="link-gray" href="/BartOtten/kodi-repo-bootstrap/commit/4e5d613e4e986823aeeb33a82954662b3dd02c12">Added version file / Cleanup Round 2</a>
             </span>
         </span>
         <span class="d-inline-block flex-shrink-0 v-align-bottom f6 mt-2 mt-md-0">
-          <a class="pr-2 text-mono link-gray" href="/jenaddon/repository.jenrepo/commit/aea8e1e60f0e376da0f2e6eb2bf37b31ef54eead" data-pjax>aea8e1e</a>
-          <relative-time datetime="2018-05-27T16:55:30Z">May 27, 2018</relative-time>
+          <a class="pr-2 text-mono link-gray" href="/BartOtten/kodi-repo-bootstrap/commit/4e5d613e4e986823aeeb33a82954662b3dd02c12" data-pjax>4e5d613</a>
+          <relative-time datetime="2015-05-30T14:50:45Z">May 30, 2015</relative-time>
         </span>
       </div>
 
@@ -977,7 +977,7 @@
         <details-dialog
           class="Box Box--overlay d-flex flex-column anim-fade-in fast"
           aria-label="Users who have contributed to this file"
-          src="/jenaddon/repository.jenrepo/contributors/master/_repo_xml_generator.py/list" preload>
+          src="/BartOtten/kodi-repo-bootstrap/contributors/master/_tools/generate_repo.py/list" preload>
           <div class="Box-header">
             <button class="Box-btn-octicon btn-octicon float-right" type="button" aria-label="Close dialog" data-close-dialog>
               <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
@@ -1001,35 +1001,35 @@
 <div class="Box-header py-2 d-flex flex-column flex-shrink-0 flex-md-row flex-md-items-center">
 
   <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
-      110 lines (89 sloc)
+      183 lines (152 sloc)
       <span class="file-info-divider"></span>
-    4.16 KB
+    6.9 KB
   </div>
 
   <div class="d-flex py-1 py-md-0 flex-auto flex-order-1 flex-md-order-2 flex-sm-grow-0 flex-justify-between">
 
     <div class="BtnGroup">
-      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/jenaddon/repository.jenrepo/raw/master/_repo_xml_generator.py">Raw</a>
-        <a class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b" href="/jenaddon/repository.jenrepo/blame/master/_repo_xml_generator.py">Blame</a>
-      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/jenaddon/repository.jenrepo/commits/master/_repo_xml_generator.py">History</a>
+      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/BartOtten/kodi-repo-bootstrap/raw/master/_tools/generate_repo.py">Raw</a>
+        <a class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b" href="/BartOtten/kodi-repo-bootstrap/blame/master/_tools/generate_repo.py">Blame</a>
+      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/BartOtten/kodi-repo-bootstrap/commits/master/_tools/generate_repo.py">History</a>
     </div>
 
 
     <div>
             <a class="btn-octicon tooltipped tooltipped-nw hide-sm"
-               href="x-github-client://openRepo/https://github.com/jenaddon/repository.jenrepo?branch=master&amp;filepath=_repo_xml_generator.py"
+               href="x-github-client://openRepo/https://github.com/BartOtten/kodi-repo-bootstrap?branch=master&amp;filepath=_tools%2Fgenerate_repo.py"
                aria-label="Open this file in GitHub Desktop"
                data-ga-click="Repository, open with desktop, type:windows">
                 <svg class="octicon octicon-device-desktop" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
             </a>
 
-            <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/jenaddon/repository.jenrepo/edit/master/_repo_xml_generator.py" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="IktShbIg41YLlpk+oGEnvk02R9XUnV8mflMZeznA2XDRpcWoVo4EmhJ7yzTlJ5IiwC0rOpX6e7T9sJUCu/bguw==" />
+            <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/BartOtten/kodi-repo-bootstrap/edit/master/_tools/generate_repo.py" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="RY1/12DIO9lp+tr6xkKQ5EwRkbyS4edK+T8K/zwSEOw3zhSDzQgpErPMwZZZdbM55W8RPmgxkYrmYdDms4PgVg==" />
               <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
                 aria-label="Fork this project and edit the file" data-hotkey="e" data-disable-with>
                 <svg class="octicon octicon-pencil" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
               </button>
 </form>
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/jenaddon/repository.jenrepo/delete/master/_repo_xml_generator.py" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="jfy2W8YQNqgy3hPHCRu4AYV/YQtzRxIpSnyVybK0eengTSdcIoZKKXxd88PPkX7W+R6ARxn5AYlxasttTcBFAw==" />
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/BartOtten/kodi-repo-bootstrap/delete/master/_tools/generate_repo.py" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="OM2/wmm6+FjmaFcs224t/+8awUVIzFFnLx73TMsNjkAOTOa0SJ6iTN/YO0YNbI2A6h6A1TGWTjBof+JgkdDgcA==" />
             <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
               aria-label="Fork this project and delete the file" data-disable-with>
               <svg class="octicon octicon-trashcan" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
@@ -1048,28 +1048,29 @@
 <table class="highlight tab-size js-file-line-container" data-tab-size="8">
       <tr>
         <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
-        <td id="LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-s"><span class="pl-pds">&quot;&quot;&quot;</span> downloaded from http://xbmc-addons.googlecode.com/svn/addons/ <span class="pl-pds">&quot;&quot;&quot;</span></span></td>
+        <td id="LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-s"><span class="pl-pds">&quot;&quot;&quot;</span> repository files and addons.xml generator <span class="pl-pds">&quot;&quot;&quot;</span></span></td>
       </tr>
       <tr>
         <td id="L2" class="blob-num js-line-number" data-line-number="2"></td>
-        <td id="LC2" class="blob-code blob-code-inner js-file-line"><span class="pl-s"><span class="pl-pds">&quot;&quot;&quot;</span> This is a modded version of the original addons.xml generator <span class="pl-pds">&quot;&quot;&quot;</span></span></td>
-      </tr>
-      <tr>
-        <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
-        <td id="LC3" class="blob-code blob-code-inner js-file-line">
+        <td id="LC2" class="blob-code blob-code-inner js-file-line">
 </td>
       </tr>
       <tr>
+        <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-s"><span class="pl-pds">&quot;&quot;&quot;</span> Modified by Rodrigo@XMBCHUB to zip plugins/repositories to a &quot;zip&quot; folder <span class="pl-pds">&quot;&quot;&quot;</span></span></td>
+      </tr>
+      <tr>
         <td id="L4" class="blob-num js-line-number" data-line-number="4"></td>
-        <td id="LC4" class="blob-code blob-code-inner js-file-line"><span class="pl-s"><span class="pl-pds">&quot;&quot;&quot;</span> Put this version in the root folder of your repo and it will <span class="pl-pds">&quot;&quot;&quot;</span></span></td>
+        <td id="LC4" class="blob-code blob-code-inner js-file-line"><span class="pl-s"><span class="pl-pds">&quot;&quot;&quot;</span> Modified by BartOtten: create a repository addon, skip folders without addon.xml, user config file <span class="pl-pds">&quot;&quot;&quot;</span></span></td>
       </tr>
       <tr>
         <td id="L5" class="blob-num js-line-number" data-line-number="5"></td>
-        <td id="LC5" class="blob-code blob-code-inner js-file-line"><span class="pl-s"><span class="pl-pds">&quot;&quot;&quot;</span> zip up all add-on folders, create a new zip in your zips folder <span class="pl-pds">&quot;&quot;&quot;</span></span></td>
+        <td id="LC5" class="blob-code blob-code-inner js-file-line">
+</td>
       </tr>
       <tr>
         <td id="L6" class="blob-num js-line-number" data-line-number="6"></td>
-        <td id="LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-s"><span class="pl-pds">&quot;&quot;&quot;</span> and then update the md5 and addons.xml file <span class="pl-pds">&quot;&quot;&quot;</span></span></td>
+        <td id="LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-s"><span class="pl-pds">&quot;&quot;&quot;</span> This file is &quot;as is&quot;, without any warranty whatsoever. Use as own risk <span class="pl-pds">&quot;&quot;&quot;</span></span></td>
       </tr>
       <tr>
         <td id="L7" class="blob-num js-line-number" data-line-number="7"></td>
@@ -1078,428 +1079,718 @@
       </tr>
       <tr>
         <td id="L8" class="blob-num js-line-number" data-line-number="8"></td>
-        <td id="LC8" class="blob-code blob-code-inner js-file-line"><span class="pl-s"><span class="pl-pds">&quot;&quot;&quot;</span> Recoded by whufclee (info@totalrevolution.tv) <span class="pl-pds">&quot;&quot;&quot;</span></span></td>
+        <td id="LC8" class="blob-code blob-code-inner js-file-line"><span class="pl-k">import</span> os</td>
       </tr>
       <tr>
         <td id="L9" class="blob-num js-line-number" data-line-number="9"></td>
-        <td id="LC9" class="blob-code blob-code-inner js-file-line">
-</td>
+        <td id="LC9" class="blob-code blob-code-inner js-file-line"><span class="pl-k">import</span> md5</td>
       </tr>
       <tr>
         <td id="L10" class="blob-num js-line-number" data-line-number="10"></td>
-        <td id="LC10" class="blob-code blob-code-inner js-file-line"><span class="pl-k">import</span> re</td>
+        <td id="LC10" class="blob-code blob-code-inner js-file-line"><span class="pl-k">import</span> zipfile</td>
       </tr>
       <tr>
         <td id="L11" class="blob-num js-line-number" data-line-number="11"></td>
-        <td id="LC11" class="blob-code blob-code-inner js-file-line"><span class="pl-k">import</span> os</td>
+        <td id="LC11" class="blob-code blob-code-inner js-file-line"><span class="pl-k">import</span> shutil</td>
       </tr>
       <tr>
         <td id="L12" class="blob-num js-line-number" data-line-number="12"></td>
-        <td id="LC12" class="blob-code blob-code-inner js-file-line"><span class="pl-k">import</span> shutil</td>
+        <td id="LC12" class="blob-code blob-code-inner js-file-line"><span class="pl-k">from</span> xml.dom <span class="pl-k">import</span> minidom</td>
       </tr>
       <tr>
         <td id="L13" class="blob-num js-line-number" data-line-number="13"></td>
-        <td id="LC13" class="blob-code blob-code-inner js-file-line"><span class="pl-k">import</span> md5</td>
+        <td id="LC13" class="blob-code blob-code-inner js-file-line"><span class="pl-k">import</span> glob</td>
       </tr>
       <tr>
         <td id="L14" class="blob-num js-line-number" data-line-number="14"></td>
-        <td id="LC14" class="blob-code blob-code-inner js-file-line"><span class="pl-k">import</span> zipfile</td>
+        <td id="LC14" class="blob-code blob-code-inner js-file-line"><span class="pl-k">import</span> datetime</td>
       </tr>
       <tr>
         <td id="L15" class="blob-num js-line-number" data-line-number="15"></td>
-        <td id="LC15" class="blob-code blob-code-inner js-file-line">
-</td>
+        <td id="LC15" class="blob-code blob-code-inner js-file-line"><span class="pl-k">from</span> ConfigParser <span class="pl-k">import</span> SafeConfigParser</td>
       </tr>
       <tr>
         <td id="L16" class="blob-num js-line-number" data-line-number="16"></td>
-        <td id="LC16" class="blob-code blob-code-inner js-file-line"><span class="pl-k">class</span> <span class="pl-en">Generator</span>:</td>
+        <td id="LC16" class="blob-code blob-code-inner js-file-line">
+</td>
       </tr>
       <tr>
         <td id="L17" class="blob-num js-line-number" data-line-number="17"></td>
-        <td id="LC17" class="blob-code blob-code-inner js-file-line">    <span class="pl-s"><span class="pl-pds">&quot;&quot;&quot;</span></span></td>
+        <td id="LC17" class="blob-code blob-code-inner js-file-line"><span class="pl-k">class</span> <span class="pl-en">Generator</span>:</td>
       </tr>
       <tr>
         <td id="L18" class="blob-num js-line-number" data-line-number="18"></td>
-        <td id="LC18" class="blob-code blob-code-inner js-file-line"><span class="pl-s">        Generates a new addons.xml file from each addons addon.xml file</span></td>
+        <td id="LC18" class="blob-code blob-code-inner js-file-line">    </td>
       </tr>
       <tr>
         <td id="L19" class="blob-num js-line-number" data-line-number="19"></td>
-        <td id="LC19" class="blob-code blob-code-inner js-file-line"><span class="pl-s">        and a new addons.xml.md5 hash file. Must be run from the root of</span></td>
+        <td id="LC19" class="blob-code blob-code-inner js-file-line">    <span class="pl-s"><span class="pl-pds">&quot;&quot;&quot;</span></span></td>
       </tr>
       <tr>
         <td id="L20" class="blob-num js-line-number" data-line-number="20"></td>
-        <td id="LC20" class="blob-code blob-code-inner js-file-line"><span class="pl-s">        the checked-out repo. Only handles single depth folder structure.</span></td>
+        <td id="LC20" class="blob-code blob-code-inner js-file-line"><span class="pl-s">        Generates a new addons.xml file from each addons addon.xml file</span></td>
       </tr>
       <tr>
         <td id="L21" class="blob-num js-line-number" data-line-number="21"></td>
-        <td id="LC21" class="blob-code blob-code-inner js-file-line"><span class="pl-s">    <span class="pl-pds">&quot;&quot;&quot;</span></span></td>
+        <td id="LC21" class="blob-code blob-code-inner js-file-line"><span class="pl-s">        and a new addons.xml.md5 hash file. Must be run from a subdirectory (eg. _tools) of</span></td>
       </tr>
       <tr>
         <td id="L22" class="blob-num js-line-number" data-line-number="22"></td>
-        <td id="LC22" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">def</span> <span class="pl-c1">__init__</span>(<span class="pl-smi"><span class="pl-smi">self</span></span>):</td>
+        <td id="LC22" class="blob-code blob-code-inner js-file-line"><span class="pl-s">        the checked-out repo. Only handles single depth folder structure.</span></td>
       </tr>
       <tr>
         <td id="L23" class="blob-num js-line-number" data-line-number="23"></td>
-        <td id="LC23" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span> Create the zips folder if it doesn&#39;t already exist</span></td>
+        <td id="LC23" class="blob-code blob-code-inner js-file-line"><span class="pl-s">    <span class="pl-pds">&quot;&quot;&quot;</span></span></td>
       </tr>
       <tr>
         <td id="L24" class="blob-num js-line-number" data-line-number="24"></td>
-        <td id="LC24" class="blob-code blob-code-inner js-file-line">        zips_path <span class="pl-k">=</span> (<span class="pl-s"><span class="pl-pds">&#39;</span>zips<span class="pl-pds">&#39;</span></span>)</td>
+        <td id="LC24" class="blob-code blob-code-inner js-file-line">    </td>
       </tr>
       <tr>
         <td id="L25" class="blob-num js-line-number" data-line-number="25"></td>
-        <td id="LC25" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">if</span> <span class="pl-k">not</span> os.path.exists(zips_path):</td>
+        <td id="LC25" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">def</span> <span class="pl-c1">__init__</span>( <span class="pl-smi"><span class="pl-smi">self</span></span> ):</td>
       </tr>
       <tr>
         <td id="L26" class="blob-num js-line-number" data-line-number="26"></td>
-        <td id="LC26" class="blob-code blob-code-inner js-file-line">            os.makedirs(zips_path)</td>
+        <td id="LC26" class="blob-code blob-code-inner js-file-line">       </td>
       </tr>
       <tr>
         <td id="L27" class="blob-num js-line-number" data-line-number="27"></td>
-        <td id="LC27" class="blob-code blob-code-inner js-file-line">
-</td>
+        <td id="LC27" class="blob-code blob-code-inner js-file-line">        <span class="pl-s"><span class="pl-pds">&quot;&quot;&quot;</span></span></td>
       </tr>
       <tr>
         <td id="L28" class="blob-num js-line-number" data-line-number="28"></td>
-        <td id="LC28" class="blob-code blob-code-inner js-file-line">        <span class="pl-c1">self</span>._generate_addons_file()</td>
+        <td id="LC28" class="blob-code blob-code-inner js-file-line"><span class="pl-s">        Load the configuration</span></td>
       </tr>
       <tr>
         <td id="L29" class="blob-num js-line-number" data-line-number="29"></td>
-        <td id="LC29" class="blob-code blob-code-inner js-file-line">        <span class="pl-c1">self</span>._generate_md5_file()</td>
+        <td id="LC29" class="blob-code blob-code-inner js-file-line"><span class="pl-s">        <span class="pl-pds">&quot;&quot;&quot;</span></span></td>
       </tr>
       <tr>
         <td id="L30" class="blob-num js-line-number" data-line-number="30"></td>
-        <td id="LC30" class="blob-code blob-code-inner js-file-line">        <span class="pl-c1">print</span> <span class="pl-s"><span class="pl-pds">&quot;</span>Finished updating addons xml and md5 files<span class="pl-pds">&quot;</span></span></td>
+        <td id="LC30" class="blob-code blob-code-inner js-file-line">        <span class="pl-c1">self</span>.config <span class="pl-k">=</span> SafeConfigParser()</td>
       </tr>
       <tr>
         <td id="L31" class="blob-num js-line-number" data-line-number="31"></td>
-        <td id="LC31" class="blob-code blob-code-inner js-file-line">
-</td>
+        <td id="LC31" class="blob-code blob-code-inner js-file-line">        <span class="pl-c1">self</span>.config.read(<span class="pl-s"><span class="pl-pds">&#39;</span>config.ini<span class="pl-pds">&#39;</span></span>)</td>
       </tr>
       <tr>
         <td id="L32" class="blob-num js-line-number" data-line-number="32"></td>
-        <td id="LC32" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">def</span> <span class="pl-en">Create_Zips</span>(<span class="pl-smi"><span class="pl-smi">self</span></span>,<span class="pl-smi">addon_id</span>,<span class="pl-smi">version</span>):</td>
+        <td id="LC32" class="blob-code blob-code-inner js-file-line">        </td>
       </tr>
       <tr>
         <td id="L33" class="blob-num js-line-number" data-line-number="33"></td>
-        <td id="LC33" class="blob-code blob-code-inner js-file-line">        xml_path     <span class="pl-k">=</span> os.path.join(addon_id,<span class="pl-s"><span class="pl-pds">&#39;</span>addon.xml<span class="pl-pds">&#39;</span></span>)</td>
+        <td id="LC33" class="blob-code blob-code-inner js-file-line">        <span class="pl-c1">self</span>.tools_path<span class="pl-k">=</span>os.path.abspath(os.path.join(os.path.dirname(os.path.realpath(<span class="pl-c1">__file__</span>))))</td>
       </tr>
       <tr>
         <td id="L34" class="blob-num js-line-number" data-line-number="34"></td>
-        <td id="LC34" class="blob-code blob-code-inner js-file-line">        addon_folder <span class="pl-k">=</span> os.path.join(<span class="pl-s"><span class="pl-pds">&#39;</span>zips<span class="pl-pds">&#39;</span></span>,addon_id)</td>
+        <td id="LC34" class="blob-code blob-code-inner js-file-line">        <span class="pl-c1">self</span>.output_path<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&quot;</span>_<span class="pl-pds">&quot;</span></span> <span class="pl-k">+</span> <span class="pl-c1">self</span>.config.get(<span class="pl-s"><span class="pl-pds">&#39;</span>locations<span class="pl-pds">&#39;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span>output_path<span class="pl-pds">&#39;</span></span>)</td>
       </tr>
       <tr>
         <td id="L35" class="blob-num js-line-number" data-line-number="35"></td>
-        <td id="LC35" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">if</span> <span class="pl-k">not</span> os.path.exists(addon_folder):</td>
+        <td id="LC35" class="blob-code blob-code-inner js-file-line">        </td>
       </tr>
       <tr>
         <td id="L36" class="blob-num js-line-number" data-line-number="36"></td>
-        <td id="LC36" class="blob-code blob-code-inner js-file-line">            os.makedirs(addon_folder)</td>
+        <td id="LC36" class="blob-code blob-code-inner js-file-line">        <span class="pl-c"><span class="pl-c">#</span> travel path one up</span></td>
       </tr>
       <tr>
         <td id="L37" class="blob-num js-line-number" data-line-number="37"></td>
-        <td id="LC37" class="blob-code blob-code-inner js-file-line">
-</td>
+        <td id="LC37" class="blob-code blob-code-inner js-file-line">        os.chdir(os.path.abspath(os.path.join(<span class="pl-c1">self</span>.tools_path, os.pardir)))</td>
       </tr>
       <tr>
         <td id="L38" class="blob-num js-line-number" data-line-number="38"></td>
-        <td id="LC38" class="blob-code blob-code-inner js-file-line">        final_zip <span class="pl-k">=</span> os.path.join(<span class="pl-s"><span class="pl-pds">&#39;</span>zips<span class="pl-pds">&#39;</span></span>,addon_id,<span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-c1">%s</span>-<span class="pl-c1">%s</span>.zip<span class="pl-pds">&#39;</span></span> <span class="pl-k">%</span> (addon_id,version))</td>
+        <td id="LC38" class="blob-code blob-code-inner js-file-line">        </td>
       </tr>
       <tr>
         <td id="L39" class="blob-num js-line-number" data-line-number="39"></td>
-        <td id="LC39" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">if</span> <span class="pl-k">not</span> os.path.exists(final_zip):</td>
+        <td id="LC39" class="blob-code blob-code-inner js-file-line">        <span class="pl-c"><span class="pl-c">#</span> generate files</span></td>
       </tr>
       <tr>
         <td id="L40" class="blob-num js-line-number" data-line-number="40"></td>
-        <td id="LC40" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">print</span> <span class="pl-s"><span class="pl-pds">&quot;</span>NEW ADD-ON - Creating zip for: <span class="pl-c1">%s</span> v.<span class="pl-c1">%s</span><span class="pl-pds">&quot;</span></span> <span class="pl-k">%</span> (addon_id,version)</td>
+        <td id="LC40" class="blob-code blob-code-inner js-file-line">        <span class="pl-c1">self</span>._pre_run()</td>
       </tr>
       <tr>
         <td id="L41" class="blob-num js-line-number" data-line-number="41"></td>
-        <td id="LC41" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">zip</span> <span class="pl-k">=</span> zipfile.ZipFile(final_zip, <span class="pl-s"><span class="pl-pds">&#39;</span>w<span class="pl-pds">&#39;</span></span>, <span class="pl-v">compression</span><span class="pl-k">=</span>zipfile.<span class="pl-c1">ZIP_DEFLATED</span> )</td>
+        <td id="LC41" class="blob-code blob-code-inner js-file-line">        <span class="pl-c1">self</span>._generate_repo_files()</td>
       </tr>
       <tr>
         <td id="L42" class="blob-num js-line-number" data-line-number="42"></td>
-        <td id="LC42" class="blob-code blob-code-inner js-file-line">            root_len <span class="pl-k">=</span> <span class="pl-c1">len</span>(os.path.dirname(os.path.abspath(addon_id)))</td>
+        <td id="LC42" class="blob-code blob-code-inner js-file-line">        <span class="pl-c1">self</span>._generate_addons_file()</td>
       </tr>
       <tr>
         <td id="L43" class="blob-num js-line-number" data-line-number="43"></td>
-        <td id="LC43" class="blob-code blob-code-inner js-file-line">            <span class="pl-k">for</span> root, dirs, files <span class="pl-k">in</span> os.walk(addon_id):</td>
+        <td id="LC43" class="blob-code blob-code-inner js-file-line">        <span class="pl-c1">self</span>._generate_md5_file()</td>
       </tr>
       <tr>
         <td id="L44" class="blob-num js-line-number" data-line-number="44"></td>
-        <td id="LC44" class="blob-code blob-code-inner js-file-line">                archive_root <span class="pl-k">=</span> os.path.abspath(root)[root_len:]</td>
+        <td id="LC44" class="blob-code blob-code-inner js-file-line">        <span class="pl-c1">self</span>._generate_zip_files()</td>
       </tr>
       <tr>
         <td id="L45" class="blob-num js-line-number" data-line-number="45"></td>
-        <td id="LC45" class="blob-code blob-code-inner js-file-line">
-</td>
+        <td id="LC45" class="blob-code blob-code-inner js-file-line">        <span class="pl-c"><span class="pl-c">#</span> notify user</span></td>
       </tr>
       <tr>
         <td id="L46" class="blob-num js-line-number" data-line-number="46"></td>
-        <td id="LC46" class="blob-code blob-code-inner js-file-line">                <span class="pl-k">for</span> f <span class="pl-k">in</span> files:</td>
+        <td id="LC46" class="blob-code blob-code-inner js-file-line">        <span class="pl-c1">print</span> <span class="pl-s"><span class="pl-pds">&quot;</span>Finished updating addons xml, md5 files and zipping addons<span class="pl-pds">&quot;</span></span></td>
       </tr>
       <tr>
         <td id="L47" class="blob-num js-line-number" data-line-number="47"></td>
-        <td id="LC47" class="blob-code blob-code-inner js-file-line">                        fullpath <span class="pl-k">=</span> os.path.join( root, f )</td>
+        <td id="LC47" class="blob-code blob-code-inner js-file-line">        </td>
       </tr>
       <tr>
         <td id="L48" class="blob-num js-line-number" data-line-number="48"></td>
-        <td id="LC48" class="blob-code blob-code-inner js-file-line">                        archive_name <span class="pl-k">=</span> os.path.join( archive_root, f )</td>
+        <td id="LC48" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">def</span> <span class="pl-en">_pre_run</span> ( <span class="pl-smi"><span class="pl-smi">self</span></span> ):</td>
       </tr>
       <tr>
         <td id="L49" class="blob-num js-line-number" data-line-number="49"></td>
-        <td id="LC49" class="blob-code blob-code-inner js-file-line">                        <span class="pl-c1">zip</span>.write( fullpath, archive_name, zipfile.<span class="pl-c1">ZIP_DEFLATED</span> )</td>
+        <td id="LC49" class="blob-code blob-code-inner js-file-line">
+</td>
       </tr>
       <tr>
         <td id="L50" class="blob-num js-line-number" data-line-number="50"></td>
-        <td id="LC50" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">zip</span>.close()</td>
+        <td id="LC50" class="blob-code blob-code-inner js-file-line">        <span class="pl-c"><span class="pl-c">#</span> create output  path if it does not exists</span></td>
       </tr>
       <tr>
         <td id="L51" class="blob-num js-line-number" data-line-number="51"></td>
-        <td id="LC51" class="blob-code blob-code-inner js-file-line">            </td>
+        <td id="LC51" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">if</span> <span class="pl-k">not</span> os.path.exists(<span class="pl-c1">self</span>.output_path):</td>
       </tr>
       <tr>
         <td id="L52" class="blob-num js-line-number" data-line-number="52"></td>
-        <td id="LC52" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span> Copy over the icon, fanart and addon.xml to the zip directory</span></td>
+        <td id="LC52" class="blob-code blob-code-inner js-file-line">            os.makedirs(<span class="pl-c1">self</span>.output_path)</td>
       </tr>
       <tr>
         <td id="L53" class="blob-num js-line-number" data-line-number="53"></td>
-        <td id="LC53" class="blob-code blob-code-inner js-file-line">            copyfiles <span class="pl-k">=</span> [<span class="pl-s"><span class="pl-pds">&#39;</span>icon.png<span class="pl-pds">&#39;</span></span>,<span class="pl-s"><span class="pl-pds">&#39;</span>fanart.jpg<span class="pl-pds">&#39;</span></span>,<span class="pl-s"><span class="pl-pds">&#39;</span>addon.xml<span class="pl-pds">&#39;</span></span>]</td>
+        <td id="LC53" class="blob-code blob-code-inner js-file-line">
+</td>
       </tr>
       <tr>
         <td id="L54" class="blob-num js-line-number" data-line-number="54"></td>
-        <td id="LC54" class="blob-code blob-code-inner js-file-line">            files <span class="pl-k">=</span> os.listdir(addon_id)</td>
+        <td id="LC54" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">def</span> <span class="pl-en">_generate_repo_files</span> ( <span class="pl-smi"><span class="pl-smi">self</span></span> ):</td>
       </tr>
       <tr>
         <td id="L55" class="blob-num js-line-number" data-line-number="55"></td>
-        <td id="LC55" class="blob-code blob-code-inner js-file-line">            <span class="pl-k">for</span> <span class="pl-v">file</span> <span class="pl-k">in</span> files:</td>
+        <td id="LC55" class="blob-code blob-code-inner js-file-line">        </td>
       </tr>
       <tr>
         <td id="L56" class="blob-num js-line-number" data-line-number="56"></td>
-        <td id="LC56" class="blob-code blob-code-inner js-file-line">                <span class="pl-k">if</span> <span class="pl-v">file</span> <span class="pl-k">in</span> copyfiles:</td>
+        <td id="LC56" class="blob-code blob-code-inner js-file-line">        addonid<span class="pl-k">=</span><span class="pl-c1">self</span>.config.get(<span class="pl-s"><span class="pl-pds">&#39;</span>addon<span class="pl-pds">&#39;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span>id<span class="pl-pds">&#39;</span></span>)</td>
       </tr>
       <tr>
         <td id="L57" class="blob-num js-line-number" data-line-number="57"></td>
-        <td id="LC57" class="blob-code blob-code-inner js-file-line">                    shutil.copy(os.path.join(addon_id,<span class="pl-v">file</span>),addon_folder)</td>
+        <td id="LC57" class="blob-code blob-code-inner js-file-line">        name<span class="pl-k">=</span><span class="pl-c1">self</span>.config.get(<span class="pl-s"><span class="pl-pds">&#39;</span>addon<span class="pl-pds">&#39;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span>name<span class="pl-pds">&#39;</span></span>)</td>
       </tr>
       <tr>
         <td id="L58" class="blob-num js-line-number" data-line-number="58"></td>
-        <td id="LC58" class="blob-code blob-code-inner js-file-line">
-</td>
+        <td id="LC58" class="blob-code blob-code-inner js-file-line">        version<span class="pl-k">=</span><span class="pl-c1">self</span>.config.get(<span class="pl-s"><span class="pl-pds">&#39;</span>addon<span class="pl-pds">&#39;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span>version<span class="pl-pds">&#39;</span></span>)</td>
       </tr>
       <tr>
         <td id="L59" class="blob-num js-line-number" data-line-number="59"></td>
-        <td id="LC59" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">def</span> <span class="pl-en">_generate_addons_file</span>(<span class="pl-smi"><span class="pl-smi">self</span></span>):</td>
+        <td id="LC59" class="blob-code blob-code-inner js-file-line">        author<span class="pl-k">=</span><span class="pl-c1">self</span>.config.get(<span class="pl-s"><span class="pl-pds">&#39;</span>addon<span class="pl-pds">&#39;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span>author<span class="pl-pds">&#39;</span></span>)</td>
       </tr>
       <tr>
         <td id="L60" class="blob-num js-line-number" data-line-number="60"></td>
-        <td id="LC60" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span> addon list</span></td>
+        <td id="LC60" class="blob-code blob-code-inner js-file-line">        summary<span class="pl-k">=</span><span class="pl-c1">self</span>.config.get(<span class="pl-s"><span class="pl-pds">&#39;</span>addon<span class="pl-pds">&#39;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span>summary<span class="pl-pds">&#39;</span></span>) </td>
       </tr>
       <tr>
         <td id="L61" class="blob-num js-line-number" data-line-number="61"></td>
-        <td id="LC61" class="blob-code blob-code-inner js-file-line">        addons <span class="pl-k">=</span> os.listdir(<span class="pl-s"><span class="pl-pds">&#39;</span>.<span class="pl-pds">&#39;</span></span>)</td>
+        <td id="LC61" class="blob-code blob-code-inner js-file-line">        description<span class="pl-k">=</span><span class="pl-c1">self</span>.config.get(<span class="pl-s"><span class="pl-pds">&#39;</span>addon<span class="pl-pds">&#39;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span>description<span class="pl-pds">&#39;</span></span>)</td>
       </tr>
       <tr>
         <td id="L62" class="blob-num js-line-number" data-line-number="62"></td>
-        <td id="LC62" class="blob-code blob-code-inner js-file-line">
-</td>
+        <td id="LC62" class="blob-code blob-code-inner js-file-line">        url<span class="pl-k">=</span><span class="pl-c1">self</span>.config.get(<span class="pl-s"><span class="pl-pds">&#39;</span>locations<span class="pl-pds">&#39;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span>url<span class="pl-pds">&#39;</span></span>)      </td>
       </tr>
       <tr>
         <td id="L63" class="blob-num js-line-number" data-line-number="63"></td>
-        <td id="LC63" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span> final addons text</span></td>
+        <td id="LC63" class="blob-code blob-code-inner js-file-line">
+</td>
       </tr>
       <tr>
         <td id="L64" class="blob-num js-line-number" data-line-number="64"></td>
-        <td id="LC64" class="blob-code blob-code-inner js-file-line">        addons_xml <span class="pl-k">=</span> <span class="pl-s"><span class="pl-k">u</span><span class="pl-pds">&quot;</span>&lt;?xml version=<span class="pl-cce">\&quot;</span>1.0<span class="pl-cce">\&quot;</span> encoding=<span class="pl-cce">\&quot;</span>UTF-8<span class="pl-cce">\&quot;</span>?&gt;<span class="pl-cce">\n</span>&lt;addons&gt;<span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span></td>
+        <td id="LC64" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">if</span> os.path.isfile(addonid <span class="pl-k">+</span> os.path.sep <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">&quot;</span>addon.xml<span class="pl-pds">&quot;</span></span>):<span class="pl-k">return</span></td>
       </tr>
       <tr>
         <td id="L65" class="blob-num js-line-number" data-line-number="65"></td>
-        <td id="LC65" class="blob-code blob-code-inner js-file-line">
-</td>
+        <td id="LC65" class="blob-code blob-code-inner js-file-line">        </td>
       </tr>
       <tr>
         <td id="L66" class="blob-num js-line-number" data-line-number="66"></td>
-        <td id="LC66" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span> loop thru and add each addons addon.xml file</span></td>
+        <td id="LC66" class="blob-code blob-code-inner js-file-line">        <span class="pl-c1">print</span> <span class="pl-s"><span class="pl-pds">&quot;</span>Create repository addon<span class="pl-pds">&quot;</span></span></td>
       </tr>
       <tr>
         <td id="L67" class="blob-num js-line-number" data-line-number="67"></td>
-        <td id="LC67" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">for</span> addon <span class="pl-k">in</span> addons:</td>
+        <td id="LC67" class="blob-code blob-code-inner js-file-line">        </td>
       </tr>
       <tr>
         <td id="L68" class="blob-num js-line-number" data-line-number="68"></td>
-        <td id="LC68" class="blob-code blob-code-inner js-file-line">            <span class="pl-k">try</span>:</td>
+        <td id="LC68" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">with</span> <span class="pl-c1">open</span> (<span class="pl-c1">self</span>.tools_path <span class="pl-k">+</span> os.path.sep <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">&quot;</span>template.xml<span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>r<span class="pl-pds">&quot;</span></span>) <span class="pl-k">as</span> template:</td>
       </tr>
       <tr>
         <td id="L69" class="blob-num js-line-number" data-line-number="69"></td>
-        <td id="LC69" class="blob-code blob-code-inner js-file-line">                <span class="pl-k">if</span> (<span class="pl-k">not</span> os.path.isdir(addon) <span class="pl-k">or</span> addon <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">&quot;</span>zips<span class="pl-pds">&quot;</span></span> <span class="pl-k">or</span> addon.startswith(<span class="pl-s"><span class="pl-pds">&#39;</span>.<span class="pl-pds">&#39;</span></span>)): <span class="pl-k">continue</span></td>
+        <td id="LC69" class="blob-code blob-code-inner js-file-line">            template_xml<span class="pl-k">=</span>template.read()</td>
       </tr>
       <tr>
         <td id="L70" class="blob-num js-line-number" data-line-number="70"></td>
-        <td id="LC70" class="blob-code blob-code-inner js-file-line">                _path <span class="pl-k">=</span> os.path.join( addon, <span class="pl-s"><span class="pl-pds">&quot;</span>addon.xml<span class="pl-pds">&quot;</span></span> )</td>
+        <td id="LC70" class="blob-code blob-code-inner js-file-line">        </td>
       </tr>
       <tr>
         <td id="L71" class="blob-num js-line-number" data-line-number="71"></td>
-        <td id="LC71" class="blob-code blob-code-inner js-file-line">                xml_lines <span class="pl-k">=</span> <span class="pl-c1">open</span>( _path, <span class="pl-s"><span class="pl-pds">&quot;</span>r<span class="pl-pds">&quot;</span></span> ).read().splitlines()</td>
+        <td id="LC71" class="blob-code blob-code-inner js-file-line">        repo_xml <span class="pl-k">=</span> template_xml.format(</td>
       </tr>
       <tr>
         <td id="L72" class="blob-num js-line-number" data-line-number="72"></td>
-        <td id="LC72" class="blob-code blob-code-inner js-file-line">                addon_xml <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span></td>
+        <td id="LC72" class="blob-code blob-code-inner js-file-line">            <span class="pl-v">addonid</span><span class="pl-k">=</span> addonid,</td>
       </tr>
       <tr>
         <td id="L73" class="blob-num js-line-number" data-line-number="73"></td>
-        <td id="LC73" class="blob-code blob-code-inner js-file-line">
-</td>
+        <td id="LC73" class="blob-code blob-code-inner js-file-line">            <span class="pl-v">name</span><span class="pl-k">=</span>name,</td>
       </tr>
       <tr>
         <td id="L74" class="blob-num js-line-number" data-line-number="74"></td>
-        <td id="LC74" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span> loop thru cleaning each line</span></td>
+        <td id="LC74" class="blob-code blob-code-inner js-file-line">            <span class="pl-v">version</span><span class="pl-k">=</span>version,</td>
       </tr>
       <tr>
         <td id="L75" class="blob-num js-line-number" data-line-number="75"></td>
-        <td id="LC75" class="blob-code blob-code-inner js-file-line">                ver_found <span class="pl-k">=</span> <span class="pl-c1">False</span></td>
+        <td id="LC75" class="blob-code blob-code-inner js-file-line">            <span class="pl-v">author</span><span class="pl-k">=</span>author,</td>
       </tr>
       <tr>
         <td id="L76" class="blob-num js-line-number" data-line-number="76"></td>
-        <td id="LC76" class="blob-code blob-code-inner js-file-line">                <span class="pl-k">for</span> line <span class="pl-k">in</span> xml_lines:</td>
+        <td id="LC76" class="blob-code blob-code-inner js-file-line">            <span class="pl-v">summary</span><span class="pl-k">=</span>summary,</td>
       </tr>
       <tr>
         <td id="L77" class="blob-num js-line-number" data-line-number="77"></td>
-        <td id="LC77" class="blob-code blob-code-inner js-file-line">                    <span class="pl-k">if</span> ( line.find( <span class="pl-s"><span class="pl-pds">&quot;</span>&lt;?xml<span class="pl-pds">&quot;</span></span> ) <span class="pl-k">&gt;=</span> <span class="pl-c1">0</span> ): <span class="pl-k">continue</span></td>
+        <td id="LC77" class="blob-code blob-code-inner js-file-line">            <span class="pl-v">description</span><span class="pl-k">=</span>description,</td>
       </tr>
       <tr>
         <td id="L78" class="blob-num js-line-number" data-line-number="78"></td>
-        <td id="LC78" class="blob-code blob-code-inner js-file-line">                    <span class="pl-k">if</span> <span class="pl-s"><span class="pl-pds">&#39;</span>version=&quot;<span class="pl-pds">&#39;</span></span> <span class="pl-k">in</span> line <span class="pl-k">and</span> <span class="pl-k">not</span> ver_found:</td>
+        <td id="LC78" class="blob-code blob-code-inner js-file-line">            <span class="pl-v">url</span><span class="pl-k">=</span>url,</td>
       </tr>
       <tr>
         <td id="L79" class="blob-num js-line-number" data-line-number="79"></td>
-        <td id="LC79" class="blob-code blob-code-inner js-file-line">                        version <span class="pl-k">=</span> re.compile(<span class="pl-s"><span class="pl-pds">&#39;</span>version=&quot;(.+?)&quot;<span class="pl-pds">&#39;</span></span>).findall(line)[<span class="pl-c1">0</span>]</td>
+        <td id="LC79" class="blob-code blob-code-inner js-file-line">            <span class="pl-v">output_path</span><span class="pl-k">=</span><span class="pl-c1">self</span>.output_path)</td>
       </tr>
       <tr>
         <td id="L80" class="blob-num js-line-number" data-line-number="80"></td>
-        <td id="LC80" class="blob-code blob-code-inner js-file-line">                        ver_found <span class="pl-k">=</span> <span class="pl-c1">True</span></td>
+        <td id="LC80" class="blob-code blob-code-inner js-file-line">        </td>
       </tr>
       <tr>
         <td id="L81" class="blob-num js-line-number" data-line-number="81"></td>
-        <td id="LC81" class="blob-code blob-code-inner js-file-line">                    addon_xml <span class="pl-k">+=</span> <span class="pl-v">unicode</span>( line.rstrip() <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>utf-8<span class="pl-pds">&quot;</span></span>)</td>
+        <td id="LC81" class="blob-code blob-code-inner js-file-line">        <span class="pl-c"><span class="pl-c">#</span> save file</span></td>
       </tr>
       <tr>
         <td id="L82" class="blob-num js-line-number" data-line-number="82"></td>
-        <td id="LC82" class="blob-code blob-code-inner js-file-line">                addons_xml <span class="pl-k">+=</span> addon_xml.rstrip() <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-cce">\n\n</span><span class="pl-pds">&quot;</span></span></td>
+        <td id="LC82" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">if</span> <span class="pl-k">not</span> os.path.exists(addonid):</td>
       </tr>
       <tr>
         <td id="L83" class="blob-num js-line-number" data-line-number="83"></td>
-        <td id="LC83" class="blob-code blob-code-inner js-file-line">
-</td>
+        <td id="LC83" class="blob-code blob-code-inner js-file-line">            os.makedirs(addonid)</td>
       </tr>
       <tr>
         <td id="L84" class="blob-num js-line-number" data-line-number="84"></td>
-        <td id="LC84" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span> Create the zip files                </span></td>
+        <td id="LC84" class="blob-code blob-code-inner js-file-line">            </td>
       </tr>
       <tr>
         <td id="L85" class="blob-num js-line-number" data-line-number="85"></td>
-        <td id="LC85" class="blob-code blob-code-inner js-file-line">                <span class="pl-c1">self</span>.Create_Zips(addon,version)</td>
+        <td id="LC85" class="blob-code blob-code-inner js-file-line">        <span class="pl-c1">self</span>._save_file( repo_xml.encode( <span class="pl-s"><span class="pl-pds">&quot;</span>utf-8<span class="pl-pds">&quot;</span></span> ), <span class="pl-v">file</span><span class="pl-k">=</span>addonid <span class="pl-k">+</span> os.path.sep <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">&quot;</span>addon.xml<span class="pl-pds">&quot;</span></span> )</td>
       </tr>
       <tr>
         <td id="L86" class="blob-num js-line-number" data-line-number="86"></td>
-        <td id="LC86" class="blob-code blob-code-inner js-file-line">
-</td>
+        <td id="LC86" class="blob-code blob-code-inner js-file-line">        </td>
       </tr>
       <tr>
         <td id="L87" class="blob-num js-line-number" data-line-number="87"></td>
-        <td id="LC87" class="blob-code blob-code-inner js-file-line">            <span class="pl-k">except</span> <span class="pl-c1">Exception</span>, e:</td>
+        <td id="LC87" class="blob-code blob-code-inner js-file-line">
+</td>
       </tr>
       <tr>
         <td id="L88" class="blob-num js-line-number" data-line-number="88"></td>
-        <td id="LC88" class="blob-code blob-code-inner js-file-line">                <span class="pl-c1">print</span> <span class="pl-s"><span class="pl-pds">&quot;</span>Excluding <span class="pl-c1">%s</span> for <span class="pl-c1">%s</span><span class="pl-pds">&quot;</span></span> <span class="pl-k">%</span> ( _path, e, )</td>
+        <td id="LC88" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">def</span> <span class="pl-en">_generate_zip_files</span> ( <span class="pl-smi"><span class="pl-smi">self</span></span> ):</td>
       </tr>
       <tr>
         <td id="L89" class="blob-num js-line-number" data-line-number="89"></td>
-        <td id="LC89" class="blob-code blob-code-inner js-file-line">
-</td>
+        <td id="LC89" class="blob-code blob-code-inner js-file-line">        addons <span class="pl-k">=</span> os.listdir( <span class="pl-s"><span class="pl-pds">&quot;</span>.<span class="pl-pds">&quot;</span></span> )</td>
       </tr>
       <tr>
         <td id="L90" class="blob-num js-line-number" data-line-number="90"></td>
-        <td id="LC90" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span> clean and add closing tag</span></td>
+        <td id="LC90" class="blob-code blob-code-inner js-file-line">        <span class="pl-c"><span class="pl-c">#</span> loop thru and add each addons addon.xml file</span></td>
       </tr>
       <tr>
         <td id="L91" class="blob-num js-line-number" data-line-number="91"></td>
-        <td id="LC91" class="blob-code blob-code-inner js-file-line">        addons_xml <span class="pl-k">=</span> addons_xml.strip() <span class="pl-k">+</span> <span class="pl-s"><span class="pl-k">u</span><span class="pl-pds">&quot;</span><span class="pl-cce">\n</span>&lt;/addons&gt;<span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span></td>
+        <td id="LC91" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">for</span> addon <span class="pl-k">in</span> addons:</td>
       </tr>
       <tr>
         <td id="L92" class="blob-num js-line-number" data-line-number="92"></td>
-        <td id="LC92" class="blob-code blob-code-inner js-file-line">        <span class="pl-c1">self</span>._save_file(addons_xml.encode( <span class="pl-s"><span class="pl-pds">&quot;</span>utf-8<span class="pl-pds">&quot;</span></span> ), <span class="pl-v">file</span><span class="pl-k">=</span>os.path.join(<span class="pl-s"><span class="pl-pds">&#39;</span>zips<span class="pl-pds">&#39;</span></span>,<span class="pl-s"><span class="pl-pds">&#39;</span>addons.xml<span class="pl-pds">&#39;</span></span>))</td>
+        <td id="LC92" class="blob-code blob-code-inner js-file-line">            <span class="pl-c"><span class="pl-c">#</span> create path</span></td>
       </tr>
       <tr>
         <td id="L93" class="blob-num js-line-number" data-line-number="93"></td>
-        <td id="LC93" class="blob-code blob-code-inner js-file-line">
-</td>
+        <td id="LC93" class="blob-code blob-code-inner js-file-line">            _path <span class="pl-k">=</span> os.path.join( addon, <span class="pl-s"><span class="pl-pds">&quot;</span>addon.xml<span class="pl-pds">&quot;</span></span> )         </td>
       </tr>
       <tr>
         <td id="L94" class="blob-num js-line-number" data-line-number="94"></td>
-        <td id="LC94" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">def</span> <span class="pl-en">_generate_md5_file</span>(<span class="pl-smi"><span class="pl-smi">self</span></span>):</td>
+        <td id="LC94" class="blob-code blob-code-inner js-file-line">            <span class="pl-c"><span class="pl-c">#</span>skip path if it has no addon.xml</span></td>
       </tr>
       <tr>
         <td id="L95" class="blob-num js-line-number" data-line-number="95"></td>
-        <td id="LC95" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">try</span>:</td>
+        <td id="LC95" class="blob-code blob-code-inner js-file-line">            <span class="pl-k">if</span> <span class="pl-k">not</span> os.path.isfile( _path ): <span class="pl-k">continue</span>       </td>
       </tr>
       <tr>
         <td id="L96" class="blob-num js-line-number" data-line-number="96"></td>
-        <td id="LC96" class="blob-code blob-code-inner js-file-line">            m <span class="pl-k">=</span> md5.new(<span class="pl-c1">open</span>(os.path.join(<span class="pl-s"><span class="pl-pds">&#39;</span>zips<span class="pl-pds">&#39;</span></span>,<span class="pl-s"><span class="pl-pds">&#39;</span>addons.xml<span class="pl-pds">&#39;</span></span>)).read()).hexdigest()</td>
+        <td id="LC96" class="blob-code blob-code-inner js-file-line">            <span class="pl-k">try</span>:</td>
       </tr>
       <tr>
         <td id="L97" class="blob-num js-line-number" data-line-number="97"></td>
-        <td id="LC97" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">self</span>._save_file(m, <span class="pl-v">file</span><span class="pl-k">=</span>os.path.join(<span class="pl-s"><span class="pl-pds">&#39;</span>zips<span class="pl-pds">&#39;</span></span>,<span class="pl-s"><span class="pl-pds">&#39;</span>addons.xml.md5<span class="pl-pds">&#39;</span></span>))</td>
+        <td id="LC97" class="blob-code blob-code-inner js-file-line">                <span class="pl-c"><span class="pl-c">#</span> skip any file or .git folder</span></td>
       </tr>
       <tr>
         <td id="L98" class="blob-num js-line-number" data-line-number="98"></td>
-        <td id="LC98" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">except</span> <span class="pl-c1">Exception</span>, e:</td>
+        <td id="LC98" class="blob-code blob-code-inner js-file-line">                <span class="pl-k">if</span> ( <span class="pl-k">not</span> os.path.isdir( addon ) <span class="pl-k">or</span> addon <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">&quot;</span>.git<span class="pl-pds">&quot;</span></span> <span class="pl-k">or</span> addon <span class="pl-k">==</span> <span class="pl-c1">self</span>.output_path <span class="pl-k">or</span> addon <span class="pl-k">==</span> <span class="pl-c1">self</span>.tools_path): <span class="pl-k">continue</span></td>
       </tr>
       <tr>
         <td id="L99" class="blob-num js-line-number" data-line-number="99"></td>
-        <td id="LC99" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">print</span> <span class="pl-s"><span class="pl-pds">&quot;</span>An error occurred creating addons.xml.md5 file!<span class="pl-cce">\n</span><span class="pl-c1">%s</span><span class="pl-pds">&quot;</span></span> <span class="pl-k">%</span> (e)</td>
+        <td id="LC99" class="blob-code blob-code-inner js-file-line">                <span class="pl-c"><span class="pl-c">#</span> create path</span></td>
       </tr>
       <tr>
         <td id="L100" class="blob-num js-line-number" data-line-number="100"></td>
-        <td id="LC100" class="blob-code blob-code-inner js-file-line">
-</td>
+        <td id="LC100" class="blob-code blob-code-inner js-file-line">                _path <span class="pl-k">=</span> os.path.join( addon, <span class="pl-s"><span class="pl-pds">&quot;</span>addon.xml<span class="pl-pds">&quot;</span></span> )</td>
       </tr>
       <tr>
         <td id="L101" class="blob-num js-line-number" data-line-number="101"></td>
-        <td id="LC101" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">def</span> <span class="pl-en">_save_file</span>(<span class="pl-smi"><span class="pl-smi">self</span></span>,<span class="pl-smi">data</span>,<span class="pl-smi">file</span>):</td>
+        <td id="LC101" class="blob-code blob-code-inner js-file-line">                <span class="pl-c"><span class="pl-c">#</span> split lines for stripping</span></td>
       </tr>
       <tr>
         <td id="L102" class="blob-num js-line-number" data-line-number="102"></td>
-        <td id="LC102" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">try</span>:</td>
+        <td id="LC102" class="blob-code blob-code-inner js-file-line">                document <span class="pl-k">=</span> minidom.parse(_path)</td>
       </tr>
       <tr>
         <td id="L103" class="blob-num js-line-number" data-line-number="103"></td>
-        <td id="LC103" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">open</span>(<span class="pl-v">file</span>, <span class="pl-s"><span class="pl-pds">&#39;</span>w<span class="pl-pds">&#39;</span></span>).write(data)</td>
+        <td id="LC103" class="blob-code blob-code-inner js-file-line">                <span class="pl-k">for</span> parent <span class="pl-k">in</span> document.getElementsByTagName(<span class="pl-s"><span class="pl-pds">&quot;</span>addon<span class="pl-pds">&quot;</span></span>):</td>
       </tr>
       <tr>
         <td id="L104" class="blob-num js-line-number" data-line-number="104"></td>
-        <td id="LC104" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">except</span> <span class="pl-c1">Exception</span>, e:</td>
+        <td id="LC104" class="blob-code blob-code-inner js-file-line">                    version <span class="pl-k">=</span> parent.getAttribute(<span class="pl-s"><span class="pl-pds">&quot;</span>version<span class="pl-pds">&quot;</span></span>)</td>
       </tr>
       <tr>
         <td id="L105" class="blob-num js-line-number" data-line-number="105"></td>
-        <td id="LC105" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">print</span> <span class="pl-s"><span class="pl-pds">&quot;</span>An error occurred saving <span class="pl-c1">%s</span> file!<span class="pl-cce">\n</span><span class="pl-c1">%s</span><span class="pl-pds">&quot;</span></span> <span class="pl-k">%</span> (<span class="pl-v">file</span>,e)</td>
+        <td id="LC105" class="blob-code blob-code-inner js-file-line">                    addonid <span class="pl-k">=</span> parent.getAttribute(<span class="pl-s"><span class="pl-pds">&quot;</span>id<span class="pl-pds">&quot;</span></span>)</td>
       </tr>
       <tr>
         <td id="L106" class="blob-num js-line-number" data-line-number="106"></td>
-        <td id="LC106" class="blob-code blob-code-inner js-file-line">
-</td>
+        <td id="LC106" class="blob-code blob-code-inner js-file-line">                <span class="pl-c1">self</span>._generate_zip_file(addon, version, addonid)</td>
       </tr>
       <tr>
         <td id="L107" class="blob-num js-line-number" data-line-number="107"></td>
-        <td id="LC107" class="blob-code blob-code-inner js-file-line">
-</td>
+        <td id="LC107" class="blob-code blob-code-inner js-file-line">            <span class="pl-k">except</span> <span class="pl-c1">Exception</span>, e:</td>
       </tr>
       <tr>
         <td id="L108" class="blob-num js-line-number" data-line-number="108"></td>
-        <td id="LC108" class="blob-code blob-code-inner js-file-line"><span class="pl-k">if</span> ( <span class="pl-c1">__name__</span> <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">&quot;</span>__main__<span class="pl-pds">&quot;</span></span> ):</td>
+        <td id="LC108" class="blob-code blob-code-inner js-file-line">                <span class="pl-c1">print</span> e</td>
       </tr>
       <tr>
         <td id="L109" class="blob-num js-line-number" data-line-number="109"></td>
-        <td id="LC109" class="blob-code blob-code-inner js-file-line">    Generator()</td>
+        <td id="LC109" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L110" class="blob-num js-line-number" data-line-number="110"></td>
+        <td id="LC110" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">def</span> <span class="pl-en">_generate_zip_file</span> ( <span class="pl-smi"><span class="pl-smi">self</span></span>, <span class="pl-smi">path</span>, <span class="pl-smi">version</span>, <span class="pl-smi">addonid</span>):</td>
+      </tr>
+      <tr>
+        <td id="L111" class="blob-num js-line-number" data-line-number="111"></td>
+        <td id="LC111" class="blob-code blob-code-inner js-file-line">        <span class="pl-c1">print</span> <span class="pl-s"><span class="pl-pds">&quot;</span>Generate zip file for <span class="pl-pds">&quot;</span></span> <span class="pl-k">+</span> addonid <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">&quot;</span> <span class="pl-pds">&quot;</span></span> <span class="pl-k">+</span> version</td>
+      </tr>
+      <tr>
+        <td id="L112" class="blob-num js-line-number" data-line-number="112"></td>
+        <td id="LC112" class="blob-code blob-code-inner js-file-line">        filename <span class="pl-k">=</span> path <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">&quot;</span>-<span class="pl-pds">&quot;</span></span> <span class="pl-k">+</span> version <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">&quot;</span>.zip<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="L113" class="blob-num js-line-number" data-line-number="113"></td>
+        <td id="LC113" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">try</span>:</td>
+      </tr>
+      <tr>
+        <td id="L114" class="blob-num js-line-number" data-line-number="114"></td>
+        <td id="LC114" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">zip</span> <span class="pl-k">=</span> zipfile.ZipFile(filename, <span class="pl-s"><span class="pl-pds">&#39;</span>w<span class="pl-pds">&#39;</span></span>)</td>
+      </tr>
+      <tr>
+        <td id="L115" class="blob-num js-line-number" data-line-number="115"></td>
+        <td id="LC115" class="blob-code blob-code-inner js-file-line">            <span class="pl-k">for</span> root, dirs, files <span class="pl-k">in</span> os.walk(path <span class="pl-k">+</span> os.path.sep):</td>
+      </tr>
+      <tr>
+        <td id="L116" class="blob-num js-line-number" data-line-number="116"></td>
+        <td id="LC116" class="blob-code blob-code-inner js-file-line">                <span class="pl-k">for</span> <span class="pl-v">file</span> <span class="pl-k">in</span> files:</td>
+      </tr>
+      <tr>
+        <td id="L117" class="blob-num js-line-number" data-line-number="117"></td>
+        <td id="LC117" class="blob-code blob-code-inner js-file-line">                    <span class="pl-c1">zip</span>.write(os.path.join(root, <span class="pl-v">file</span>))</td>
+      </tr>
+      <tr>
+        <td id="L118" class="blob-num js-line-number" data-line-number="118"></td>
+        <td id="LC118" class="blob-code blob-code-inner js-file-line">                    </td>
+      </tr>
+      <tr>
+        <td id="L119" class="blob-num js-line-number" data-line-number="119"></td>
+        <td id="LC119" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">zip</span>.close()</td>
+      </tr>
+      <tr>
+        <td id="L120" class="blob-num js-line-number" data-line-number="120"></td>
+        <td id="LC120" class="blob-code blob-code-inner js-file-line">         </td>
+      </tr>
+      <tr>
+        <td id="L121" class="blob-num js-line-number" data-line-number="121"></td>
+        <td id="LC121" class="blob-code blob-code-inner js-file-line">            <span class="pl-k">if</span> <span class="pl-k">not</span> os.path.exists(<span class="pl-c1">self</span>.output_path <span class="pl-k">+</span> addonid):</td>
+      </tr>
+      <tr>
+        <td id="L122" class="blob-num js-line-number" data-line-number="122"></td>
+        <td id="LC122" class="blob-code blob-code-inner js-file-line">                os.makedirs(<span class="pl-c1">self</span>.output_path <span class="pl-k">+</span> addonid)</td>
+      </tr>
+      <tr>
+        <td id="L123" class="blob-num js-line-number" data-line-number="123"></td>
+        <td id="LC123" class="blob-code blob-code-inner js-file-line">         </td>
+      </tr>
+      <tr>
+        <td id="L124" class="blob-num js-line-number" data-line-number="124"></td>
+        <td id="LC124" class="blob-code blob-code-inner js-file-line">            <span class="pl-k">if</span> os.path.isfile(<span class="pl-c1">self</span>.output_path <span class="pl-k">+</span> addonid <span class="pl-k">+</span> os.path.sep <span class="pl-k">+</span> filename):</td>
+      </tr>
+      <tr>
+        <td id="L125" class="blob-num js-line-number" data-line-number="125"></td>
+        <td id="LC125" class="blob-code blob-code-inner js-file-line">                os.rename(<span class="pl-c1">self</span>.output_path <span class="pl-k">+</span> addonid <span class="pl-k">+</span> os.path.sep <span class="pl-k">+</span> filename, <span class="pl-c1">self</span>.output_path <span class="pl-k">+</span> addonid <span class="pl-k">+</span> os.path.sep <span class="pl-k">+</span> filename <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">&quot;</span>.<span class="pl-pds">&quot;</span></span> <span class="pl-k">+</span> datetime.datetime.now().strftime(<span class="pl-s"><span class="pl-pds">&quot;</span>%Y%m<span class="pl-c1">%d</span>%H%M%S<span class="pl-pds">&quot;</span></span>) )</td>
+      </tr>
+      <tr>
+        <td id="L126" class="blob-num js-line-number" data-line-number="126"></td>
+        <td id="LC126" class="blob-code blob-code-inner js-file-line">            shutil.move(filename, <span class="pl-c1">self</span>.output_path <span class="pl-k">+</span> addonid <span class="pl-k">+</span> os.path.sep <span class="pl-k">+</span> filename)</td>
+      </tr>
+      <tr>
+        <td id="L127" class="blob-num js-line-number" data-line-number="127"></td>
+        <td id="LC127" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">except</span> <span class="pl-c1">Exception</span>, e:</td>
+      </tr>
+      <tr>
+        <td id="L128" class="blob-num js-line-number" data-line-number="128"></td>
+        <td id="LC128" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">print</span> e</td>
+      </tr>
+      <tr>
+        <td id="L129" class="blob-num js-line-number" data-line-number="129"></td>
+        <td id="LC129" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L130" class="blob-num js-line-number" data-line-number="130"></td>
+        <td id="LC130" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">def</span> <span class="pl-en">_generate_addons_file</span>( <span class="pl-smi"><span class="pl-smi">self</span></span> ):</td>
+      </tr>
+      <tr>
+        <td id="L131" class="blob-num js-line-number" data-line-number="131"></td>
+        <td id="LC131" class="blob-code blob-code-inner js-file-line">        <span class="pl-c"><span class="pl-c">#</span> addon list</span></td>
+      </tr>
+      <tr>
+        <td id="L132" class="blob-num js-line-number" data-line-number="132"></td>
+        <td id="LC132" class="blob-code blob-code-inner js-file-line">        addons <span class="pl-k">=</span> os.listdir( <span class="pl-s"><span class="pl-pds">&quot;</span>.<span class="pl-pds">&quot;</span></span> )</td>
+      </tr>
+      <tr>
+        <td id="L133" class="blob-num js-line-number" data-line-number="133"></td>
+        <td id="LC133" class="blob-code blob-code-inner js-file-line">        <span class="pl-c"><span class="pl-c">#</span> final addons text</span></td>
+      </tr>
+      <tr>
+        <td id="L134" class="blob-num js-line-number" data-line-number="134"></td>
+        <td id="LC134" class="blob-code blob-code-inner js-file-line">        addons_xml <span class="pl-k">=</span> <span class="pl-s"><span class="pl-k">u</span><span class="pl-pds">&quot;</span>&lt;?xml version=<span class="pl-cce">\&quot;</span>1.0<span class="pl-cce">\&quot;</span> encoding=<span class="pl-cce">\&quot;</span>UTF-8<span class="pl-cce">\&quot;</span>?&gt;<span class="pl-cce">\n</span>&lt;addons&gt;<span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="L135" class="blob-num js-line-number" data-line-number="135"></td>
+        <td id="LC135" class="blob-code blob-code-inner js-file-line">        <span class="pl-c"><span class="pl-c">#</span> loop thru and add each addons addon.xml file</span></td>
+      </tr>
+      <tr>
+        <td id="L136" class="blob-num js-line-number" data-line-number="136"></td>
+        <td id="LC136" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">for</span> addon <span class="pl-k">in</span> addons:</td>
+      </tr>
+      <tr>
+        <td id="L137" class="blob-num js-line-number" data-line-number="137"></td>
+        <td id="LC137" class="blob-code blob-code-inner js-file-line">            <span class="pl-c"><span class="pl-c">#</span> create path</span></td>
+      </tr>
+      <tr>
+        <td id="L138" class="blob-num js-line-number" data-line-number="138"></td>
+        <td id="LC138" class="blob-code blob-code-inner js-file-line">            _path <span class="pl-k">=</span> os.path.join( addon, <span class="pl-s"><span class="pl-pds">&quot;</span>addon.xml<span class="pl-pds">&quot;</span></span> )</td>
+      </tr>
+      <tr>
+        <td id="L139" class="blob-num js-line-number" data-line-number="139"></td>
+        <td id="LC139" class="blob-code blob-code-inner js-file-line">            <span class="pl-c"><span class="pl-c">#</span>skip path if it has no addon.xml</span></td>
+      </tr>
+      <tr>
+        <td id="L140" class="blob-num js-line-number" data-line-number="140"></td>
+        <td id="LC140" class="blob-code blob-code-inner js-file-line">            <span class="pl-k">if</span> <span class="pl-k">not</span> os.path.isfile( _path ): <span class="pl-k">continue</span></td>
+      </tr>
+      <tr>
+        <td id="L141" class="blob-num js-line-number" data-line-number="141"></td>
+        <td id="LC141" class="blob-code blob-code-inner js-file-line">            <span class="pl-k">try</span>:               </td>
+      </tr>
+      <tr>
+        <td id="L142" class="blob-num js-line-number" data-line-number="142"></td>
+        <td id="LC142" class="blob-code blob-code-inner js-file-line">                <span class="pl-c"><span class="pl-c">#</span> split lines for stripping</span></td>
+      </tr>
+      <tr>
+        <td id="L143" class="blob-num js-line-number" data-line-number="143"></td>
+        <td id="LC143" class="blob-code blob-code-inner js-file-line">                xml_lines <span class="pl-k">=</span> <span class="pl-c1">open</span>( _path, <span class="pl-s"><span class="pl-pds">&quot;</span>r<span class="pl-pds">&quot;</span></span> ).read().splitlines()</td>
+      </tr>
+      <tr>
+        <td id="L144" class="blob-num js-line-number" data-line-number="144"></td>
+        <td id="LC144" class="blob-code blob-code-inner js-file-line">                <span class="pl-c"><span class="pl-c">#</span> new addon</span></td>
+      </tr>
+      <tr>
+        <td id="L145" class="blob-num js-line-number" data-line-number="145"></td>
+        <td id="LC145" class="blob-code blob-code-inner js-file-line">                addon_xml <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="L146" class="blob-num js-line-number" data-line-number="146"></td>
+        <td id="LC146" class="blob-code blob-code-inner js-file-line">                <span class="pl-c"><span class="pl-c">#</span> loop thru cleaning each line</span></td>
+      </tr>
+      <tr>
+        <td id="L147" class="blob-num js-line-number" data-line-number="147"></td>
+        <td id="LC147" class="blob-code blob-code-inner js-file-line">                <span class="pl-k">for</span> line <span class="pl-k">in</span> xml_lines:</td>
+      </tr>
+      <tr>
+        <td id="L148" class="blob-num js-line-number" data-line-number="148"></td>
+        <td id="LC148" class="blob-code blob-code-inner js-file-line">                    <span class="pl-c"><span class="pl-c">#</span> skip encoding format line</span></td>
+      </tr>
+      <tr>
+        <td id="L149" class="blob-num js-line-number" data-line-number="149"></td>
+        <td id="LC149" class="blob-code blob-code-inner js-file-line">                    <span class="pl-k">if</span> ( line.find( <span class="pl-s"><span class="pl-pds">&quot;</span>&lt;?xml<span class="pl-pds">&quot;</span></span> ) <span class="pl-k">&gt;=</span> <span class="pl-c1">0</span> ): <span class="pl-k">continue</span></td>
+      </tr>
+      <tr>
+        <td id="L150" class="blob-num js-line-number" data-line-number="150"></td>
+        <td id="LC150" class="blob-code blob-code-inner js-file-line">                    <span class="pl-c"><span class="pl-c">#</span> add line</span></td>
+      </tr>
+      <tr>
+        <td id="L151" class="blob-num js-line-number" data-line-number="151"></td>
+        <td id="LC151" class="blob-code blob-code-inner js-file-line">                    addon_xml <span class="pl-k">+=</span> <span class="pl-v">unicode</span>( line.rstrip() <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>, <span class="pl-s"><span class="pl-pds">&quot;</span>utf-8<span class="pl-pds">&quot;</span></span> )</td>
+      </tr>
+      <tr>
+        <td id="L152" class="blob-num js-line-number" data-line-number="152"></td>
+        <td id="LC152" class="blob-code blob-code-inner js-file-line">                <span class="pl-c"><span class="pl-c">#</span> we succeeded so add to our final addons.xml text</span></td>
+      </tr>
+      <tr>
+        <td id="L153" class="blob-num js-line-number" data-line-number="153"></td>
+        <td id="LC153" class="blob-code blob-code-inner js-file-line">                addons_xml <span class="pl-k">+=</span> addon_xml.rstrip() <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-cce">\n\n</span><span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="L154" class="blob-num js-line-number" data-line-number="154"></td>
+        <td id="LC154" class="blob-code blob-code-inner js-file-line">            <span class="pl-k">except</span> <span class="pl-c1">Exception</span>, e:</td>
+      </tr>
+      <tr>
+        <td id="L155" class="blob-num js-line-number" data-line-number="155"></td>
+        <td id="LC155" class="blob-code blob-code-inner js-file-line">                <span class="pl-c"><span class="pl-c">#</span> missing or poorly formatted addon.xml</span></td>
+      </tr>
+      <tr>
+        <td id="L156" class="blob-num js-line-number" data-line-number="156"></td>
+        <td id="LC156" class="blob-code blob-code-inner js-file-line">                <span class="pl-c1">print</span> <span class="pl-s"><span class="pl-pds">&quot;</span>Excluding <span class="pl-c1">%s</span> for <span class="pl-c1">%s</span><span class="pl-pds">&quot;</span></span> <span class="pl-k">%</span> ( _path, e, )</td>
+      </tr>
+      <tr>
+        <td id="L157" class="blob-num js-line-number" data-line-number="157"></td>
+        <td id="LC157" class="blob-code blob-code-inner js-file-line">        <span class="pl-c"><span class="pl-c">#</span> clean and add closing tag</span></td>
+      </tr>
+      <tr>
+        <td id="L158" class="blob-num js-line-number" data-line-number="158"></td>
+        <td id="LC158" class="blob-code blob-code-inner js-file-line">        addons_xml <span class="pl-k">=</span> addons_xml.strip() <span class="pl-k">+</span> <span class="pl-s"><span class="pl-k">u</span><span class="pl-pds">&quot;</span><span class="pl-cce">\n</span>&lt;/addons&gt;<span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="L159" class="blob-num js-line-number" data-line-number="159"></td>
+        <td id="LC159" class="blob-code blob-code-inner js-file-line">        <span class="pl-c"><span class="pl-c">#</span> save file</span></td>
+      </tr>
+      <tr>
+        <td id="L160" class="blob-num js-line-number" data-line-number="160"></td>
+        <td id="LC160" class="blob-code blob-code-inner js-file-line">        <span class="pl-c1">self</span>._save_file( addons_xml.encode( <span class="pl-s"><span class="pl-pds">&quot;</span>utf-8<span class="pl-pds">&quot;</span></span> ), <span class="pl-v">file</span><span class="pl-k">=</span><span class="pl-c1">self</span>.output_path <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">&quot;</span>addons.xml<span class="pl-pds">&quot;</span></span> )</td>
+      </tr>
+      <tr>
+        <td id="L161" class="blob-num js-line-number" data-line-number="161"></td>
+        <td id="LC161" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L162" class="blob-num js-line-number" data-line-number="162"></td>
+        <td id="LC162" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">def</span> <span class="pl-en">_generate_md5_file</span>( <span class="pl-smi"><span class="pl-smi">self</span></span> ):</td>
+      </tr>
+      <tr>
+        <td id="L163" class="blob-num js-line-number" data-line-number="163"></td>
+        <td id="LC163" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">try</span>:</td>
+      </tr>
+      <tr>
+        <td id="L164" class="blob-num js-line-number" data-line-number="164"></td>
+        <td id="LC164" class="blob-code blob-code-inner js-file-line">            <span class="pl-c"><span class="pl-c">#</span> create a new md5 hash</span></td>
+      </tr>
+      <tr>
+        <td id="L165" class="blob-num js-line-number" data-line-number="165"></td>
+        <td id="LC165" class="blob-code blob-code-inner js-file-line">            m <span class="pl-k">=</span> md5.new( <span class="pl-c1">open</span>(<span class="pl-c1">self</span>.output_path <span class="pl-k">+</span>  <span class="pl-s"><span class="pl-pds">&quot;</span>addons.xml<span class="pl-pds">&quot;</span></span> ).read() ).hexdigest()</td>
+      </tr>
+      <tr>
+        <td id="L166" class="blob-num js-line-number" data-line-number="166"></td>
+        <td id="LC166" class="blob-code blob-code-inner js-file-line">            <span class="pl-c"><span class="pl-c">#</span> save file</span></td>
+      </tr>
+      <tr>
+        <td id="L167" class="blob-num js-line-number" data-line-number="167"></td>
+        <td id="LC167" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">self</span>._save_file( m, <span class="pl-v">file</span><span class="pl-k">=</span><span class="pl-c1">self</span>.output_path <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">&quot;</span>addons.xml.md5<span class="pl-pds">&quot;</span></span> )</td>
+      </tr>
+      <tr>
+        <td id="L168" class="blob-num js-line-number" data-line-number="168"></td>
+        <td id="LC168" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">except</span> <span class="pl-c1">Exception</span>, e:</td>
+      </tr>
+      <tr>
+        <td id="L169" class="blob-num js-line-number" data-line-number="169"></td>
+        <td id="LC169" class="blob-code blob-code-inner js-file-line">            <span class="pl-c"><span class="pl-c">#</span> oops</span></td>
+      </tr>
+      <tr>
+        <td id="L170" class="blob-num js-line-number" data-line-number="170"></td>
+        <td id="LC170" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">print</span> <span class="pl-s"><span class="pl-pds">&quot;</span>An error occurred creating addons.xml.md5 file!<span class="pl-cce">\n</span><span class="pl-c1">%s</span><span class="pl-pds">&quot;</span></span> <span class="pl-k">%</span> ( e, )</td>
+      </tr>
+      <tr>
+        <td id="L171" class="blob-num js-line-number" data-line-number="171"></td>
+        <td id="LC171" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L172" class="blob-num js-line-number" data-line-number="172"></td>
+        <td id="LC172" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">def</span> <span class="pl-en">_save_file</span>( <span class="pl-smi"><span class="pl-smi">self</span></span>, <span class="pl-smi">data</span>, <span class="pl-smi">file</span> ):</td>
+      </tr>
+      <tr>
+        <td id="L173" class="blob-num js-line-number" data-line-number="173"></td>
+        <td id="LC173" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">try</span>:</td>
+      </tr>
+      <tr>
+        <td id="L174" class="blob-num js-line-number" data-line-number="174"></td>
+        <td id="LC174" class="blob-code blob-code-inner js-file-line">            <span class="pl-c"><span class="pl-c">#</span> write data to the file</span></td>
+      </tr>
+      <tr>
+        <td id="L175" class="blob-num js-line-number" data-line-number="175"></td>
+        <td id="LC175" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">open</span>( <span class="pl-v">file</span>, <span class="pl-s"><span class="pl-pds">&quot;</span>w<span class="pl-pds">&quot;</span></span> ).write( data )</td>
+      </tr>
+      <tr>
+        <td id="L176" class="blob-num js-line-number" data-line-number="176"></td>
+        <td id="LC176" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">except</span> <span class="pl-c1">Exception</span>, e:</td>
+      </tr>
+      <tr>
+        <td id="L177" class="blob-num js-line-number" data-line-number="177"></td>
+        <td id="LC177" class="blob-code blob-code-inner js-file-line">            <span class="pl-c"><span class="pl-c">#</span> oops</span></td>
+      </tr>
+      <tr>
+        <td id="L178" class="blob-num js-line-number" data-line-number="178"></td>
+        <td id="LC178" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">print</span> <span class="pl-s"><span class="pl-pds">&quot;</span>An error occurred saving <span class="pl-c1">%s</span> file!<span class="pl-cce">\n</span><span class="pl-c1">%s</span><span class="pl-pds">&quot;</span></span> <span class="pl-k">%</span> ( <span class="pl-v">file</span>, e, )</td>
+      </tr>
+      <tr>
+        <td id="L179" class="blob-num js-line-number" data-line-number="179"></td>
+        <td id="LC179" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L180" class="blob-num js-line-number" data-line-number="180"></td>
+        <td id="LC180" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L181" class="blob-num js-line-number" data-line-number="181"></td>
+        <td id="LC181" class="blob-code blob-code-inner js-file-line"><span class="pl-k">if</span> ( <span class="pl-c1">__name__</span> <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">&quot;</span>__main__<span class="pl-pds">&quot;</span></span> ):</td>
+      </tr>
+      <tr>
+        <td id="L182" class="blob-num js-line-number" data-line-number="182"></td>
+        <td id="LC182" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span> start</span></td>
+      </tr>
+      <tr>
+        <td id="L183" class="blob-num js-line-number" data-line-number="183"></td>
+        <td id="LC183" class="blob-code blob-code-inner js-file-line">    Generator()</td>
       </tr>
 </table>
 
@@ -1511,8 +1802,8 @@
       <ul class="BlobToolbar-dropdown dropdown-menu dropdown-menu-se mt-2" style="width:185px">
         <li><clipboard-copy role="menuitem" class="dropdown-item" id="js-copy-lines" style="cursor:pointer;" data-original-text="Copy lines">Copy lines</clipboard-copy></li>
         <li><clipboard-copy role="menuitem" class="dropdown-item" id="js-copy-permalink" style="cursor:pointer;" data-original-text="Copy permalink">Copy permalink</clipboard-copy></li>
-        <li><a class="dropdown-item js-update-url-with-hash" id="js-view-git-blame" role="menuitem" href="/jenaddon/repository.jenrepo/blame/fc66d7e52a3b606f5cefe3f7d0ef7f7b5c892435/_repo_xml_generator.py">View git blame</a></li>
-          <li><a class="dropdown-item" id="js-new-issue" role="menuitem" href="/jenaddon/repository.jenrepo/issues/new">Reference in new issue</a></li>
+        <li><a class="dropdown-item js-update-url-with-hash" id="js-view-git-blame" role="menuitem" href="/BartOtten/kodi-repo-bootstrap/blame/4e5d613e4e986823aeeb33a82954662b3dd02c12/_tools/generate_repo.py">View git blame</a></li>
+          <li><a class="dropdown-item" id="js-new-issue" role="menuitem" href="/BartOtten/kodi-repo-bootstrap/issues/new">Reference in new issue</a></li>
       </ul>
     </details-menu>
   </details>
@@ -1548,7 +1839,7 @@
 <div class="footer container-lg width-full p-responsive" role="contentinfo">
   <div class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
     <ul class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
-      <li class="mr-3 mr-lg-0">&copy; 2019 <span title="0.37638s from unicorn-74c7b8f9fd-ds77v">GitHub</span>, Inc.</li>
+      <li class="mr-3 mr-lg-0">&copy; 2019 <span title="0.49157s from unicorn-647dd4ff64-svhcq">GitHub</span>, Inc.</li>
         <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
         <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
         <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to security, text:security" href="https://github.com/security">Security</a></li>
@@ -1586,9 +1877,9 @@
 
 
     
-    <script crossorigin="anonymous" integrity="sha512-tvpJOpHKYOu+dVKq1e7vf5Ble6rQlpDAhxbiu8KqVZpeztFNcLtD1EwUsvHkXGe6lEIn+1xHgvt/m360g1gdCw==" type="application/javascript" src="https://github.githubassets.com/assets/frameworks-a142dc33.js"></script>
+    <script crossorigin="anonymous" integrity="sha512-mwYwXdzIDUCOw/22oVTooeS/oLxq3UPn/NcTtz5dbtlbKqNemfytY1ZDpVwoGinjLCx+oyfVvNAN/HGrKiLqsQ==" type="application/javascript" src="https://github.githubassets.com/assets/frameworks-4d365955.js"></script>
     
-    <script crossorigin="anonymous" async="async" integrity="sha512-6LE2oWk4AiebkyKR6IxUAZQCFE8H7BONa4XfRkuOTmXcmo3vknKrdKgJovDPKrTrJf+Ryho5uF41x5K1Byhwrg==" type="application/javascript" src="https://github.githubassets.com/assets/github-bootstrap-cf2472f1.js"></script>
+    <script crossorigin="anonymous" async="async" integrity="sha512-3i4KjzuKhBCharNvMm1ZTuyYUbimLGtsUAeuEZSolCBBAugQObGv9DqEhgldtsgYhdxBXobxecM6n4MBr+1WWw==" type="application/javascript" src="https://github.githubassets.com/assets/github-bootstrap-8e6dcf97.js"></script>
     
     
     
